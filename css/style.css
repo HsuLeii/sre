@@ -184,8 +184,13 @@ div#toggle span:after {
   display: block;
 }
 
-.main {
-  margin-top: 80px;
+.slide {
+  margin-bottom: 80px;
+  background-image: url(../image/photo/slide/slide-test.jpg);
+  padding: 150px 0px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 /*index 首頁開始*/
@@ -570,7 +575,7 @@ footer .footer_copyright p {
     top: 20px;
     background-color: #FFE4D1;
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 10px;
   }
   .header nav .menu div {
     -webkit-box-orient: vertical;
@@ -641,6 +646,16 @@ footer .footer_copyright p {
   a {
     font-size: 15px;
   }
+  div#toggle {
+    top: 10px;
+  }
+  .header nav .menu {
+    height: calc(100vh - 20px);
+    top: 10px;
+  }
+  .header .header_logo img {
+    height: 50px;
+  }
   .start {
     margin: 0 auto 60px;
   }
@@ -708,6 +723,9 @@ footer .footer_copyright p {
     width: 15%;
     margin: 0px 0px 15px;
   }
+  .start .start_text {
+    margin: 0px;
+  }
   .three_item .project {
     width: 100%;
     margin: 25px 0px;
@@ -759,6 +777,16 @@ footer .footer_copyright p {
   }
   a {
     font-size: 13px;
+  }
+  div#toggle {
+    top: 0px;
+  }
+  .header nav .menu {
+    height: calc(100vh - 10px);
+    top: 5px;
+  }
+  .header .header_logo img {
+    height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
