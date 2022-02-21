@@ -49,6 +49,11 @@ figure {
   list-style: none;
 }
 
+h1 {
+  font-size: 40px;
+  color: #E54F4F;
+}
+
 h3 {
   font-size: 35px;
 }
@@ -60,6 +65,7 @@ h4 {
 p {
   font-size: 17px;
   color: #5B3716;
+  line-height: 1.7;
 }
 
 a {
@@ -154,34 +160,97 @@ div#toggle span:after {
   display: flex;
 }
 
-.header nav .menu div li {
-  padding: 15px 5px;
-}
-
-.header nav .menu div li a {
-  color: #5B3716;
-}
-
-.dropdown {
+.header nav .menu div li.dropdown {
   position: relative;
   display: inline-block;
   cursor: default;
 }
 
-.dropdown .dropdown-content {
+.header nav .menu div li.dropdown span.arrow {
+  border: solid #5B3716;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0px 0px 3px 3px;
+}
+
+.header nav .menu div li.dropdown.open a {
+  color: #E54F4F;
+}
+
+.header nav .menu div li.dropdown.open a span.arrow {
+  border: solid #E54F4F;
+  border-width: 0 3px 3px 0;
+}
+
+.header nav .menu div li.dropdown .dropdown-content {
   position: absolute;
   display: none;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 6px);
+          transform: translate(-50%, 6px);
   z-index: 1;
   background-color: #ffe4d1;
   border-radius: 0px 0px 10px 10px;
   white-space: nowrap;
 }
 
-.dropdown:hover .dropdown-content {
+.header nav .menu div li.dropdown .dropdown-content li {
+  padding: 5px 15px;
+}
+
+.header nav .menu div li.dropdown .dropdown-content li:last-child {
+  margin-bottom: 10px;
+}
+
+.header nav .menu div li.dropdown .dropdown-content.open {
   display: block;
+}
+
+.header nav .menu div li.dropdown .dropdown-content.open a {
+  color: #5B3716;
+}
+
+.header nav .menu div li.dropdown .dropdown-content.open a:hover {
+  color: #E54F4F;
+}
+
+.header nav .menu div li a {
+  color: #5B3716;
+  padding: 5px;
+}
+
+.header nav .menu div li:hover a {
+  color: #E54F4F;
+}
+
+.header nav .menu div li:hover a span.arrow {
+  border: solid #E54F4F;
+  border-width: 0 3px 3px 0;
+}
+
+.header nav .menu div.menu-language {
+  padding: 0px 10px;
+  border: 1px solid #E54F4F;
+  border-radius: 10px;
+}
+
+.header nav .menu div.menu-language a {
+  color: #E54F4F;
+}
+
+.header nav .menu div.menu-language li.dropdown span.arrow {
+  border: solid #E54F4F;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0px 0px 3px 3px;
 }
 
 .slide {
@@ -191,6 +260,10 @@ div#toggle span:after {
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.main {
+  margin: 60px auto 80px;
 }
 
 /*index 首頁開始*/
@@ -432,6 +505,67 @@ div#toggle span:after {
 }
 
 /*index 首頁結束*/
+/*about_sre 關於SRE開始*/
+.main.about_sre {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.main.about_sre .tittle {
+  padding-bottom: 40px;
+}
+
+.main.about_sre .item_introduction, .main.about_sre .item_feature, .main.about_sre .item_application {
+  margin: 60px auto;
+}
+
+.main.about_sre .item_introduction .sre_introduction, .main.about_sre .item_feature .sre_introduction, .main.about_sre .item_application .sre_introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_number, .main.about_sre .item_feature .sre_introduction .item_number, .main.about_sre .item_application .sre_introduction .item_number {
+  position: relative;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_number h3, .main.about_sre .item_feature .sre_introduction .item_number h3, .main.about_sre .item_application .sre_introduction .item_number h3 {
+  color: #E54F4F;
+  border: 1px solid #E54F4F;
+  border-radius: 50%;
+  padding: 7px;
+  background-color: #fff;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_number::before, .main.about_sre .item_feature .sre_introduction .item_number::before, .main.about_sre .item_application .sre_introduction .item_number::before {
+  content: "";
+  position: absolute;
+  left: calc(100% + 15px);
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  width: 1px;
+  height: 90px;
+  background-color: #E54F4F;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_content, .main.about_sre .item_feature .sre_introduction .item_content, .main.about_sre .item_application .sre_introduction .item_content {
+  border: 1px solid #E54F4F;
+  border-radius: 10px;
+  padding: 25px 30px 25px 70px;
+  background-color: #fff;
+  margin-left: -30px;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_content h3, .main.about_sre .item_feature .sre_introduction .item_content h3, .main.about_sre .item_application .sre_introduction .item_content h3 {
+  color: #E54F4F;
+  margin-bottom: 15px;
+}
+
+/*about_sre 關於SRE結束*/
 footer {
   padding: 35px 0px;
   border-top: 1px solid #5B3716;
@@ -595,7 +729,7 @@ footer .footer_copyright p {
             transform: translate(0px, 0px);
   }
   .header nav .menu div li.dropdown .dropdown-content li {
-    padding: 8px 22px;
+    padding: 5px 15px;
   }
   .header nav .menu.opened {
     visibility: visible;
@@ -710,6 +844,7 @@ footer .footer_copyright p {
   h4 {
     font-size: 16px;
   }
+  /*index 首頁開始*/
   .start {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -740,6 +875,30 @@ footer .footer_copyright p {
   .best_book .swiper .swiper-slide .book_content h4 {
     height: 40px;
   }
+  /*index 首頁結束*/
+  /*about_sre 關於SRE開始*/
+  .main.about_sre .item_introduction .sre_introduction, .main.about_sre .item_feature .sre_introduction, .main.about_sre .item_application .sre_introduction {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .main.about_sre .item_introduction .sre_introduction .item_number, .main.about_sre .item_feature .sre_introduction .item_number, .main.about_sre .item_application .sre_introduction .item_number {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .main.about_sre .item_introduction .sre_introduction .item_number h3, .main.about_sre .item_feature .sre_introduction .item_number h3, .main.about_sre .item_application .sre_introduction .item_number h3 {
+    color: #fff;
+    background-color: #E54F4F;
+  }
+  .main.about_sre .item_introduction .sre_introduction .item_number::before, .main.about_sre .item_feature .sre_introduction .item_number::before, .main.about_sre .item_application .sre_introduction .item_number::before {
+    display: none;
+  }
+  .main.about_sre .item_introduction .sre_introduction .item_content, .main.about_sre .item_feature .sre_introduction .item_content, .main.about_sre .item_application .sre_introduction .item_content {
+    padding: 25px 30px 25px 30px;
+    margin-left: 0px;
+  }
+  /*about_sre 關於SRE結束*/
   footer {
     padding: 20px 0px;
   }
