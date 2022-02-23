@@ -1,40 +1,54 @@
+var question = document.getElementsByClassName("faq-question");
+
 $("#toggle").click(function () {
   $(".menu").toggleClass("opened");
   $(this).toggleClass("open");
   $("body").toggleClass("fixed");
 });
 
-$(".about-dropdown").click(function () {
+$(".about_dropdown").click(function () {
   $(this).toggleClass("open");
-  $(this).children(".dropdown-content").toggleClass("open");
-  $(".language-dropdown").removeClass("open");
-  $(".language-dropdown").children(".dropdown-content").removeClass("open");
+  $(this).children(".dropdown_content").toggleClass("open");
+  $(".language_dropdown").removeClass("open");
+  $(".language_dropdown").children(".dropdown_content").removeClass("open");
 });
 
-$(".language-dropdown").click(function () {
+$(".language_dropdown").click(function () {
   $(this).toggleClass("open");
-  $(this).children(".dropdown-content").toggleClass("open");
-  $(".about-dropdown").removeClass("open");
-  $(".about-dropdown").children(".dropdown-content").removeClass("open");
+  $(this).children(".dropdown_content").toggleClass("open");
+  $(".about_dropdown").removeClass("open");
+  $(".about_dropdown").children(".dropdown_content").removeClass("open");
 });
 // 彈跳視窗資訊書籍選擇開始
-$('.modal-btn ul li.introduction').click(function(){
-  $('.modal-btn ul li').removeClass('active');
-  $('.modal-btn ul li.introduction').addClass('active');
-  var selector = $('.modal-btn ul li.introduction').attr('data-filter');
-    $('.introduction-item').isotope({
+$('.modal_btn ul li.introduction').click(function(){
+  $('.modal_btn ul li').removeClass('active');
+  $('.modal_btn ul li.introduction').addClass('active');
+  var selector = $('.modal_btn ul li.introduction').attr('data_filter');
+    $('.introduction_item').isotope({
       filter: selector
     })
 });
 $('.item.vocabulary').hide();
-$('.modal-btn ul li.vocabulary').click(function(){
-  $('.modal-btn ul li').removeClass('active');
-  $('.modal-btn ul li.vocabulary').addClass('active');
+$('.modal_btn ul li.vocabulary').click(function(){
+  $('.modal_btn ul li').removeClass('active');
+  $('.modal_btn ul li.vocabulary').addClass('active');
   $('.item.vocabulary').addClass('active');
   $('.item.vocabulary').show();
-  var selector = $('.modal-btn ul li.vocabulary').attr('data-filter');
-    $('.introduction-item').isotope({
+  var selector = $('.modal_btn ul li.vocabulary').attr('data_filter');
+    $('.introduction_item').isotope({
       filter: selector
     })
 });
 // 彈跳視窗資訊書籍選擇結束
+// 常見問題開始
+
+    $("div.faq_answer").hide(); //子選單(div.faq-answer)隱藏
+  $(".faq_question").click(function () {
+    $("div.faq_answer").slideUp();
+    if ($("+div", this).css("display") == "none") {
+      $("+div", this).slideDown();
+      $(".faq_question").children("span").removeClass("up");
+      $(this).children("span").toggleClass("up");
+    } 
+  })
+// 常見問題結束

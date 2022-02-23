@@ -13,6 +13,10 @@
           box-shadow: 1px 1px 5px #4b4b4b45;
 }
 
+.main.about_sre, .main.about_dcec, .main.question {
+  max-width: 1200px;
+}
+
 /*swiper*/
 .swiper-pagination-bullet {
   background: #E54F4F;
@@ -52,14 +56,17 @@ figure {
 h1 {
   font-size: 40px;
   color: #E54F4F;
+  line-height: 1.7;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 28px;
+  line-height: 1.7;
 }
 
 h4 {
   font-size: 20px;
+  line-height: 1.7;
 }
 
 p {
@@ -71,6 +78,7 @@ p {
 a {
   font-size: 17px;
   text-decoration: none;
+  line-height: 1.7;
 }
 
 img {
@@ -186,7 +194,7 @@ div#toggle span:after {
   border-width: 0 3px 3px 0;
 }
 
-.header nav .menu div li.dropdown .dropdown-content {
+.header nav .menu div li.dropdown .dropdown_content {
   position: absolute;
   display: none;
   left: 50%;
@@ -198,23 +206,23 @@ div#toggle span:after {
   white-space: nowrap;
 }
 
-.header nav .menu div li.dropdown .dropdown-content li {
+.header nav .menu div li.dropdown .dropdown_content li {
   padding: 5px 15px;
 }
 
-.header nav .menu div li.dropdown .dropdown-content li:last-child {
+.header nav .menu div li.dropdown .dropdown_content li:last-child {
   margin-bottom: 10px;
 }
 
-.header nav .menu div li.dropdown .dropdown-content.open {
+.header nav .menu div li.dropdown .dropdown_content.open {
   display: block;
 }
 
-.header nav .menu div li.dropdown .dropdown-content.open a {
+.header nav .menu div li.dropdown .dropdown_content.open a {
   color: #5B3716;
 }
 
-.header nav .menu div li.dropdown .dropdown-content.open a:hover {
+.header nav .menu div li.dropdown .dropdown_content.open a:hover {
   color: #E54F4F;
 }
 
@@ -232,17 +240,17 @@ div#toggle span:after {
   border-width: 0 3px 3px 0;
 }
 
-.header nav .menu div.menu-language {
+.header nav .menu div.menu_language {
   padding: 0px 10px;
   border: 1px solid #E54F4F;
   border-radius: 10px;
 }
 
-.header nav .menu div.menu-language a {
+.header nav .menu div.menu_language a {
   color: #E54F4F;
 }
 
-.header nav .menu div.menu-language li.dropdown span.arrow {
+.header nav .menu div.menu_language li.dropdown span.arrow {
   border: solid #E54F4F;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -264,6 +272,10 @@ div#toggle span:after {
 
 .main {
   margin: 60px auto 80px;
+}
+
+.main .tittle {
+  padding-bottom: 40px;
 }
 
 /*index 首頁開始*/
@@ -446,7 +458,7 @@ div#toggle span:after {
      object-fit: cover;
 }
 
-.best_book .swiper .swiper-slide .audio-icon {
+.best_book .swiper .swiper-slide .audio_icon {
   background-image: url(../image/svg/sound.svg);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -485,7 +497,7 @@ div#toggle span:after {
   width: calc(100% - 35px);
 }
 
-.best_book .swiper .swiper-slide .try-icon {
+.best_book .swiper .swiper-slide .try_icon {
   background-image: url(../image/svg/try.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -508,11 +520,6 @@ div#toggle span:after {
 /*about_sre 關於SRE開始*/
 .main.about_sre {
   width: 80%;
-  max-width: 1200px;
-}
-
-.main.about_sre .tittle {
-  padding-bottom: 40px;
 }
 
 .main.about_sre .item_introduction, .main.about_sre .item_feature, .main.about_sre .item_application {
@@ -566,6 +573,152 @@ div#toggle span:after {
 }
 
 /*about_sre 關於SRE結束*/
+/*about_dcec 關於DCEC開始*/
+.main.about_dcec {
+  width: 80%;
+}
+
+.main.about_dcec .diagnostic_test {
+  margin: 60px auto;
+}
+
+.main.about_dcec .diagnostic_test h3 {
+  color: #E54F4F;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.main.about_dcec .diagnostic_test h4 {
+  color: #5B3716;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.main.about_dcec .diagnostic_test h4 span {
+  color: #E54F4F;
+}
+
+.main.about_dcec .diagnostic_test img {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.main.about_dcec .detection_report {
+  margin: 60px auto;
+}
+
+.main.about_dcec .detection_report h3 {
+  color: #E54F4F;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.main.about_dcec .detection_report .report_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.about_dcec .detection_report .report_content img {
+  width: 35%;
+}
+
+.main.about_dcec .detection_report .report_content .report_text {
+  width: 55%;
+}
+
+.main.about_dcec .detection_report .report_content .report_text .try_button {
+  margin-top: 20px;
+}
+
+.main.about_dcec .detection_report .report_content .report_text .try_button a {
+  color: #E54F4F;
+  border: 1px solid #E54F4F;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px 5px 5px 0px;
+}
+
+.main.about_dcec .detection_report .report_content .report_text .try_button a:hover {
+  color: #fff;
+  background-color: #E54F4F;
+}
+
+/*about_dcec 關於DCEC結束*/
+/*question 常見問題開始*/
+.main.question {
+  width: 80%;
+}
+
+.main.question .question_area {
+  margin: 60px auto;
+}
+
+.main.question .question_area .item_question {
+  padding: 20px 15px;
+  background-color: #fff;
+  border: 1px solid #E54F4F;
+  border-radius: 10px;
+  margin: 0px auto 40px;
+}
+
+.main.question .question_area .item_question .faq_question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main.question .question_area .item_question .faq_question h3 {
+  color: #E54F4F;
+  margin: 0 10px 0px 0px;
+}
+
+.main.question .question_area .item_question .faq_question span {
+  border: solid #E54F4F;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: 0px 0px 0px auto;
+  width: 12px;
+  height: 12px;
+}
+
+.main.question .question_area .item_question .faq_question span.up {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.main.question .question_area .item_question .faq_answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20px auto 0px;
+}
+
+.main.question .question_area .item_question .faq_answer h3 {
+  color: #5B3716;
+  margin: 0 10px 0px 0px;
+}
+
+/*question 常見問題結束*/
 footer {
   padding: 35px 0px;
   border-top: 1px solid #5B3716;
@@ -722,13 +875,13 @@ footer .footer_copyright p {
   .header nav .menu div li {
     padding: 10px 0px;
   }
-  .header nav .menu div li.dropdown .dropdown-content {
+  .header nav .menu div li.dropdown .dropdown_content {
     position: relative;
     left: 0px;
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
-  .header nav .menu div li.dropdown .dropdown-content li {
+  .header nav .menu div li.dropdown .dropdown_content li {
     padding: 5px 15px;
   }
   .header nav .menu.opened {
@@ -844,6 +997,9 @@ footer .footer_copyright p {
   h4 {
     font-size: 16px;
   }
+  .main .tittle {
+    padding-bottom: 10px;
+  }
   /*index 首頁開始*/
   .start {
     -webkit-box-orient: vertical;
@@ -899,6 +1055,51 @@ footer .footer_copyright p {
     margin-left: 0px;
   }
   /*about_sre 關於SRE結束*/
+  /*about_dcec 關於DCEC開始*/
+  .main.about_dcec .diagnostic_test {
+    margin: 40px auto;
+  }
+  .main.about_dcec .diagnostic_test h3 {
+    margin-bottom: 20px;
+  }
+  .main.about_dcec .diagnostic_test h4 {
+    margin-bottom: 20px;
+  }
+  .main.about_dcec .detection_report {
+    margin: 40px auto;
+  }
+  .main.about_dcec .detection_report h3 {
+    margin-bottom: 20px;
+  }
+  .main.about_dcec .detection_report .report_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main.about_dcec .detection_report .report_content img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .main.about_dcec .detection_report .report_content .report_text {
+    width: 100%;
+  }
+  .main.about_dcec .detection_report .report_content .report_text .try_button {
+    margin-top: 20px;
+  }
+  .main.about_dcec .detection_report .report_content .report_text .try_button a {
+    color: #E54F4F;
+    border: 1px solid #E54F4F;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px 5px 5px 0px;
+  }
+  .main.about_dcec .detection_report .report_content .report_text .try_button a:hover {
+    color: #fff;
+    background-color: #E54F4F;
+  }
+  /*about_dcec 關於DCEC結束*/
   footer {
     padding: 20px 0px;
   }
