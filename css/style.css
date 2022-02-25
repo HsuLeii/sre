@@ -1343,7 +1343,7 @@ footer .footer_copyright p {
   }
   .header .header_logo {
     position: absolute;
-    left: 10;
+    left: 10px;
   }
   .header nav .menu {
     visibility: hidden;
