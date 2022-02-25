@@ -154,6 +154,7 @@ div#toggle span:after {
 
 .header .header_logo img {
   height: 70px;
+  width: auto;
 }
 
 .header nav .menu {
@@ -1335,15 +1336,6 @@ footer .footer_copyright p {
   div#toggle.open span:after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-  }
-  .header {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .header .header_logo {
-    position: absolute;
-    left: 10px;
   }
   .header nav .menu {
     visibility: hidden;
