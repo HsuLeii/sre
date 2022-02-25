@@ -844,8 +844,8 @@ div#toggle span:after {
   background-color: #fff;
 }
 
-.main.grade .chart_content .grade_content h4 {
-  margin-bottom: 10px;
+.main.grade .chart_content .grade_content p {
+  margin-top: 10px;
 }
 
 .main.grade .chart_content .first_grade_content {
@@ -936,31 +936,41 @@ div#toggle span:after {
   background-color: #E54F4F;
 }
 
-.level_correspondence_item {
+.main.grade .level_correspondence_area {
+  margin: 60px auto;
+}
+
+.main.grade .level_correspondence_area h3 {
+  color: #E54F4F;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 0px;
   position: relative;
 }
 
-.level_correspondence_item:nth-child(2n) {
+.main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.level_correspondence_item .level_correspondence_content {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   min-width: 25%;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,7 +979,7 @@ div#toggle span:after {
           align-items: flex-start;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
   width: calc(100%);
   padding: 10px;
   background-color: #fff;
@@ -977,89 +987,89 @@ div#toggle span:after {
   border-radius: 10px;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
   border-color: #D72B2B;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction h4 {
   color: #D72B2B;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
   border-color: #EB772A;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
   color: #EB772A;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
   border-color: #8DA429;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction h4 {
   color: #8DA429;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
   border-color: #00AD5E;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction h4 {
   color: #00AD5E;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
   border-color: #00B1B9;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction h4 {
   color: #00B1B9;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
   border-color: #0163C6;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction h4 {
   color: #0163C6;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
   border-color: #4F1AC4;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction h4 {
   color: #4F1AC4;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
   border-color: #8400A1;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction h4 {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction h4 {
   color: #8400A1;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
   margin-right: 20px;
   -webkit-transition: .5S;
   transition: .5S;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_tag {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_tag {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
   margin-left: 20px;
   -webkit-transition: .5S;
   transition: .5S;
 }
 
-.level_correspondence_item .level_correspondence_marker {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -1076,55 +1086,55 @@ div#toggle span:after {
           justify-content: center;
 }
 
-.level_correspondence_item .level_correspondence_marker:before {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker:before {
   position: absolute;
   top: 0;
-  bottom: -100px;
-  width: 2px;
+  bottom: 0px;
+  width: 3px;
   content: '';
   background: #E54F4F;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
-  width: 40px;
-  height: 40px;
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   z-index: 1;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner {
   background-color: #D72B2B;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner {
   background-color: #EB772A;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner {
   background: linear-gradient(-45deg, #F3BA03 50%, #8DA429 50%);
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner {
   background: linear-gradient(-45deg, #00AD5E 50%, #00B1B9 50%);
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner {
   background-color: #00B1B9;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner {
   background-color: #0163C6;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner {
   background-color: #4F1AC4;
 }
 
-.level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner {
   background-color: #8400A1;
 }
 
-.level_correspondence_item .x-timeline-item_meta {
+.main.grade .level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -1423,6 +1433,7 @@ footer .footer_copyright p {
   .header .header_logo img {
     height: 50px;
   }
+  /*index 首頁開始*/
   .start {
     margin: 0 auto 60px;
   }
@@ -1445,6 +1456,66 @@ footer .footer_copyright p {
     height: 45.6px;
     margin-bottom: 15px;
   }
+  /*index 首頁結束*/
+  /*grade 分級對應開始*/
+  .main.grade .chart_area .chart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main.grade .chart_area .chart .bar {
+    width: 100%;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 10px 0px;
+  }
+  .main.grade .chart_area .chart .bar p {
+    position: relative;
+    width: 85px;
+    height: 40px;
+    padding: 8px;
+  }
+  .main.grade .chart_area .chart .bar p:before {
+    display: none;
+  }
+  .main.grade .chart_area .chart .first_grade_background {
+    width: calc(100% / 10 * 6);
+  }
+  .main.grade .chart_area .chart .second_grade_background {
+    width: calc(100% / 10 * 6.5);
+  }
+  .main.grade .chart_area .chart .third_grade_background {
+    width: calc(100% / 10 * 7);
+  }
+  .main.grade .chart_area .chart .fourth_grade_background {
+    width: calc(100% / 10 * 7.5);
+  }
+  .main.grade .chart_area .chart .fifth_grade_background {
+    width: calc(100% / 10 * 8);
+  }
+  .main.grade .chart_area .chart .sixth_grade_background {
+    width: calc(100% / 10 * 8.5);
+  }
+  .main.grade .chart_area .chart .seventh_grade_background {
+    width: calc(100% / 10 * 9);
+  }
+  .main.grade .chart_area .chart .eighth_grade_background {
+    width: calc(100% / 10 * 9.5);
+  }
+  .main.grade .chart_area .chart .ninth_grade_background {
+    width: calc(100% / 10 * 10);
+  }
+  .main.grade .chart_content {
+    margin: 30px auto;
+  }
+  .main.grade .chart_content .grade_content {
+    padding: 15px;
+  }
+  /*grade 分級對應結束*/
   footer .footer_information .products {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1595,6 +1666,72 @@ footer .footer_copyright p {
     background-color: #E54F4F;
   }
   /*about_dcec 關於DCEC結束*/
+  /*grade 分級對應開始*/
+  .main.grade {
+    width: 80%;
+  }
+  .main.grade .chart_content {
+    margin: 20px auto;
+  }
+  .main.grade .grade_introduce .grade_introduce_button {
+    margin: 20px 0px;
+  }
+  .main.grade .grade_introduce .grade_introduce_button a {
+    color: #E54F4F;
+    border: 1px solid #E54F4F;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .main.grade .grade_introduce .grade_introduce_button a:hover {
+    color: #fff;
+    background-color: #E54F4F;
+  }
+  .main.grade .level_correspondence_area {
+    margin: 40px auto;
+  }
+  .main.grade .level_correspondence_area h3 {
+    margin: 40px auto;
+    text-align: left;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item {
+    margin-bottom: 40px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 15px;
+    height: 15px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker::before {
+    bottom: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 15px;
+    height: 15px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+    bottom: -40px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+  /*grade 分級對應結束*/
   footer {
     padding: 20px 0px;
   }
