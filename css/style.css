@@ -1342,8 +1342,8 @@ footer .footer_copyright p {
             justify-content: flex-start;
   }
   .header .header_logo {
-    position: relative;
-    left: 0;
+    position: absolute;
+    left: 10;
   }
   .header nav .menu {
     visibility: hidden;
