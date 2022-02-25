@@ -1340,6 +1340,8 @@ footer .footer_copyright p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    position: relative;
+    left: 0;
   }
   .header nav .menu {
     visibility: hidden;
@@ -1795,7 +1797,7 @@ footer .footer_copyright p {
     font-size: 13px;
   }
   div#toggle {
-    top: 0px;
+    top: 2.5px;
   }
   .header nav .menu {
     height: calc(100vh - 10px);
