@@ -1340,6 +1340,8 @@ footer .footer_copyright p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .header .header_logo {
     position: relative;
     left: 0;
   }
