@@ -698,6 +698,7 @@ div#toggle span:after {
   bottom: 0px;
   color: #fff;
   text-align: center;
+  padding: 5px 0px;
 }
 
 .main.grade .chart_area .chart .bar p:before {
