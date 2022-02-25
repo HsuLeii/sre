@@ -1526,7 +1526,7 @@ footer .footer_copyright p {
   }
   footer .footer_information .products p {
     width: 100%;
-    margin: 15px 0px;
+    margin: 15px 0px 5px;
   }
   footer .footer_information .products .products_logo img {
     margin: 0 15px 0 0;
@@ -1758,6 +1758,9 @@ footer .footer_copyright p {
   footer .footer_logo img {
     width: 45%;
   }
+  footer .footer_information {
+    margin-bottom: 20px;
+  }
   footer .footer_information .products {
     margin-top: 10px;
   }
@@ -1798,6 +1801,10 @@ footer .footer_copyright p {
     top: 5px;
   }
   .header .header_logo img {
+    height: 30px;
+  }
+  footer .footer_information .products .products_logo img {
+    margin: 10px 15px 10px 0;
     height: 30px;
   }
 }
