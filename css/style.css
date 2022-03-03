@@ -13,7 +13,7 @@
           box-shadow: 1px 1px 5px #4b4b4b45;
 }
 
-.main.about_sre, .main.about_dcec, .main.question {
+.main.about_sre, .main.about_dcec, .main.question, .main.booklist {
   max-width: 1200px;
 }
 
@@ -1210,6 +1210,172 @@ div#toggle span:after {
 }
 
 /*question 常見問題結束*/
+/*booklist 優選書單開始*/
+.main.booklist {
+  width: 80%;
+}
+
+.main.booklist .booklist_introduce .booklist_introduce_button {
+  margin: 20px 0px;
+}
+
+.main.booklist .booklist_introduce .booklist_introduce_button a {
+  color: #E54F4F;
+  border: 1px solid #E54F4F;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.main.booklist .booklist_introduce .booklist_introduce_button a:hover {
+  color: #fff;
+  background-color: #E54F4F;
+}
+
+.main.booklist .book_area {
+  margin: 80px auto 130px;
+}
+
+.main.booklist .book_area .book_area_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection p {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.first_grade_selection p {
+  color: #D72B2B;
+  border-color: #D72B2B;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.first_grade_selection p:hover {
+  color: #fff;
+  background-color: #D72B2B;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.second_grade_selection p {
+  color: #EB772A;
+  border-color: #EB772A;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.second_grade_selection p:hover {
+  color: #fff;
+  background-color: #EB772A;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.third_grade_selection p {
+  color: #F3BA03;
+  border-color: #F3BA03;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.third_grade_selection p:hover {
+  color: #fff;
+  background-color: #F3BA03;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.fourth_grade_selection p {
+  color: #8DA429;
+  border-color: #8DA429;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.fourth_grade_selection p:hover {
+  color: #fff;
+  background-color: #8DA429;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.fifth_grade_selection p {
+  color: #00AD5E;
+  border-color: #00AD5E;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.fifth_grade_selection p:hover {
+  color: #fff;
+  background-color: #00AD5E;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.sixth_grade_selection p {
+  color: #00B1B9;
+  border-color: #00B1B9;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.sixth_grade_selection p:hover {
+  color: #fff;
+  background-color: #00B1B9;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.seventh_grade_selection p {
+  color: #0163C6;
+  border-color: #0163C6;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.seventh_grade_selection p:hover {
+  color: #fff;
+  background-color: #0163C6;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.eighth_grade_selection p {
+  color: #4F1AC4;
+  border-color: #4F1AC4;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.eighth_grade_selection p:hover {
+  color: #fff;
+  background-color: #4F1AC4;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.ninth_grade_selection p {
+  color: #8400A1;
+  border-color: #8400A1;
+}
+
+.main.booklist .book_area .book_area_menu .book_selection.ninth_grade_selection p:hover {
+  color: #fff;
+  background-color: #8400A1;
+}
+
+/*booklist 優選書單結束*/
+/*grade_map 地圖所有內頁開始*/
+.main.grade_map {
+  margin: 0px auto 0px;
+}
+
+.main.grade_map .map_object {
+  position: relative;
+}
+
+.main.grade_map .map_object .map_object_item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*grade_map 地圖所有內頁結束*/
+/*map_first_grade 一年級地圖開始*/
+.main.map_first_grade .booklist_introduce .booklist_introduce_button {
+  margin: 20px 0px;
+}
+
+.main.map_first_grade .booklist_introduce .booklist_introduce_button a {
+  color: #E54F4F;
+  border: 1px solid #E54F4F;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.main.map_first_grade .booklist_introduce .booklist_introduce_button a:hover {
+  color: #fff;
+  background-color: #E54F4F;
+}
+
+/*map_first_grade 一年級地圖結束*/
 footer {
   padding: 35px 0px;
   border-top: 1px solid #5B3716;
