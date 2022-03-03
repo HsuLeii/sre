@@ -8,12 +8,12 @@
   transition: all .3s ease;
 }
 
-.best_book .swiper .swiper-slide {
+.best_book .swiper .swiper-slide, .book_area .book_list a {
   -webkit-box-shadow: 1px 1px 5px #4b4b4b45;
           box-shadow: 1px 1px 5px #4b4b4b45;
 }
 
-.main.about_sre, .main.about_dcec, .main.question, .main.booklist {
+.main.about_sre, .main.about_dcec, .main.question, .main.booklist, .main.grade_map .book_area {
   max-width: 1200px;
 }
 
@@ -421,6 +421,35 @@ div#toggle span:after {
   margin-bottom: 40px;
 }
 
+.best_book .audio_icon {
+  background-image: url(../image/svg/sound.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #E54F4F;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  border-radius: 0px 10px 0px 10px;
+}
+
+.best_book .try_icon {
+  background-image: url(../image/svg/try.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 0px 10px 0px 10px;
+}
+
 .best_book .swiper {
   width: 100%;
   height: 100%;
@@ -458,21 +487,6 @@ div#toggle span:after {
      object-fit: cover;
 }
 
-.best_book .swiper .swiper-slide .audio_icon {
-  background-image: url(../image/svg/sound.svg);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #E54F4F;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 0;
-  border-radius: 0px 10px 0px 10px;
-}
-
 .best_book .swiper .swiper-slide .book_content {
   width: 80%;
   margin: 0px auto;
@@ -489,26 +503,12 @@ div#toggle span:after {
   -webkit-box-orient: vertical;
   white-space: normal;
   width: 100%;
-  height: 60.6px;
+  height: 66px;
   margin-bottom: 8px;
 }
 
 .best_book .swiper .swiper-slide .book_content .value {
   width: calc(100% - 35px);
-}
-
-.best_book .swiper .swiper-slide .try_icon {
-  background-image: url(../image/svg/try.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 1;
-  right: 10px;
-  bottom: 10px;
-  border-radius: 0px 10px 0px 10px;
 }
 
 .best_book .swiper-pagination {
@@ -1231,11 +1231,11 @@ div#toggle span:after {
   background-color: #E54F4F;
 }
 
-.main.booklist .book_area {
+.book_area {
   margin: 80px auto 130px;
 }
 
-.main.booklist .book_area .book_area_menu {
+.book_area .book_area_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1243,7 +1243,7 @@ div#toggle span:after {
       flex-wrap: wrap;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection p {
+.book_area .book_area_menu .book_selection p {
   border: 1px solid;
   border-radius: 10px;
   padding: 5px 10px;
@@ -1251,94 +1251,154 @@ div#toggle span:after {
   cursor: pointer;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.first_grade_selection p {
+.book_area .book_area_menu .book_selection.first_grade_selection p {
   color: #D72B2B;
   border-color: #D72B2B;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.first_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.first_grade_selection p:hover {
   color: #fff;
   background-color: #D72B2B;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.second_grade_selection p {
+.book_area .book_area_menu .book_selection.second_grade_selection p {
   color: #EB772A;
   border-color: #EB772A;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.second_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.second_grade_selection p:hover {
   color: #fff;
   background-color: #EB772A;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.third_grade_selection p {
+.book_area .book_area_menu .book_selection.third_grade_selection p {
   color: #F3BA03;
   border-color: #F3BA03;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.third_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.third_grade_selection p:hover {
   color: #fff;
   background-color: #F3BA03;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.fourth_grade_selection p {
+.book_area .book_area_menu .book_selection.fourth_grade_selection p {
   color: #8DA429;
   border-color: #8DA429;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.fourth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.fourth_grade_selection p:hover {
   color: #fff;
   background-color: #8DA429;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.fifth_grade_selection p {
+.book_area .book_area_menu .book_selection.fifth_grade_selection p {
   color: #00AD5E;
   border-color: #00AD5E;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.fifth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.fifth_grade_selection p:hover {
   color: #fff;
   background-color: #00AD5E;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.sixth_grade_selection p {
+.book_area .book_area_menu .book_selection.sixth_grade_selection p {
   color: #00B1B9;
   border-color: #00B1B9;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.sixth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.sixth_grade_selection p:hover {
   color: #fff;
   background-color: #00B1B9;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.seventh_grade_selection p {
+.book_area .book_area_menu .book_selection.seventh_grade_selection p {
   color: #0163C6;
   border-color: #0163C6;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.seventh_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.seventh_grade_selection p:hover {
   color: #fff;
   background-color: #0163C6;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.eighth_grade_selection p {
+.book_area .book_area_menu .book_selection.eighth_grade_selection p {
   color: #4F1AC4;
   border-color: #4F1AC4;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.eighth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.eighth_grade_selection p:hover {
   color: #fff;
   background-color: #4F1AC4;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.ninth_grade_selection p {
+.book_area .book_area_menu .book_selection.ninth_grade_selection p {
   color: #8400A1;
   border-color: #8400A1;
 }
 
-.main.booklist .book_area .book_area_menu .book_selection.ninth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.ninth_grade_selection p:hover {
   color: #fff;
   background-color: #8400A1;
+}
+
+.book_area .book_list {
+  width: 100%;
+  max-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.book_area .book_list a {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  width: 22%;
+  margin: 20px 1.3%;
+}
+
+.book_area .book_list a:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.book_area .book_list a .book_content {
+  width: 80%;
+  margin: 0px auto;
+  padding: 15px 0px;
+}
+
+.book_area .book_list a .book_content h4 {
+  color: #5B3716;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  width: 100%;
+  height: 66px;
+  margin-bottom: 8px;
+}
+
+.book_area .book_list a .book_content .value {
+  width: calc(100% - 35px);
 }
 
 /*booklist 優選書單結束*/
@@ -1355,6 +1415,10 @@ div#toggle span:after {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.main.grade_map .book_area {
+  width: 80%;
 }
 
 /*grade_map 地圖所有內頁結束*/
@@ -1623,7 +1687,7 @@ footer .footer_copyright p {
     margin: 0 auto 60px;
   }
   .best_book .swiper .swiper-slide .book_content h4 {
-    height: 45.6px;
+    height: 58.13px;
     margin-bottom: 15px;
   }
   /*index 首頁結束*/
@@ -1756,7 +1820,7 @@ footer .footer_copyright p {
     margin: 20px auto 0px 0px;
   }
   .best_book .swiper .swiper-slide .book_content h4 {
-    height: 40px;
+    height: 51.66px;
   }
   /*index 首頁結束*/
   /*about_sre 關於SRE開始*/
@@ -1969,6 +2033,11 @@ footer .footer_copyright p {
   .header .header_logo img {
     height: 30px;
   }
+  /*index 首頁開始*/
+  .best_book .swiper .swiper-slide .book_content h4 {
+    height: 49.98px;
+  }
+  /*index 首頁結束*/
   footer .footer_information .products .products_logo img {
     margin: 10px 15px 10px 0;
     height: 30px;
