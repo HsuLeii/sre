@@ -345,6 +345,32 @@ div#toggle span:after {
   width: 30%;
 }
 
+.three_item .project:nth-child(1) h4 {
+  background-color: #53c1e2;
+}
+
+.three_item .project:nth-child(1) p {
+  color: #53c1e2;
+  border: 1px solid #53c1e2;
+}
+
+.three_item .project:nth-child(1) p:before {
+  border-color: #53c1e2 transparent transparent;
+}
+
+.three_item .project:nth-child(2) h4 {
+  background-color: #abc564;
+}
+
+.three_item .project:nth-child(2) p {
+  color: #abc564;
+  border: 1px solid #abc564;
+}
+
+.three_item .project:nth-child(2) p:before {
+  border-color: #abc564 transparent transparent;
+}
+
 .three_item .project::before {
   position: absolute;
   content: "";
@@ -584,6 +610,40 @@ div#toggle span:after {
 .main.about_sre .item_application .sre_introduction .item_content h3 {
   color: #E54F4F;
   margin-bottom: 15px;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_number h3 {
+  color: #53c1e2;
+  border: 1px solid #53c1e2;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_number::before {
+  background-color: #53c1e2;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_content {
+  border: 1px solid #53c1e2;
+}
+
+.main.about_sre .item_introduction .sre_introduction .item_content h3 {
+  color: #53c1e2;
+}
+
+.main.about_sre .item_feature .sre_introduction .item_number h3 {
+  color: #abc564;
+  border: 1px solid #abc564;
+}
+
+.main.about_sre .item_feature .sre_introduction .item_number::before {
+  background-color: #abc564;
+}
+
+.main.about_sre .item_feature .sre_introduction .item_content {
+  border: 1px solid #abc564;
+}
+
+.main.about_sre .item_feature .sre_introduction .item_content h3 {
+  color: #abc564;
 }
 
 /*about_sre 關於SRE結束*/
