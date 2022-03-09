@@ -3,7 +3,7 @@
   font-weight: bold;
 }
 
-.start .start_text .start_button a {
+.start .start_text .start_button a, .main.test .send_button a {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -78,6 +78,12 @@ p {
 a {
   font-size: 17px;
   text-decoration: none;
+  line-height: 1.7;
+}
+
+label {
+  font-size: 21px;
+  color: #5B3716;
   line-height: 1.7;
 }
 
@@ -1501,7 +1507,7 @@ div#toggle span:after {
 }
 
 /*map_first_grade 一年級地圖結束*/
-/*test 讀後測驗*/
+/*test 讀後測驗開始*/
 .main.test {
   width: 80%;
 }
@@ -1516,8 +1522,8 @@ div#toggle span:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #E54F4F), color-stop(20%, #efe8e0));
-  background: linear-gradient(0deg, #E54F4F 80%, #efe8e0 20%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #E54F4F), color-stop(50%, #efe8e0));
+  background: linear-gradient(0deg, #E54F4F 50%, #efe8e0 50%);
   position: relative;
   padding: 20px 10px;
   z-index: -1;
@@ -1527,7 +1533,7 @@ div#toggle span:after {
   content: "";
   position: absolute;
   left: 0px;
-  top: calc(20% - 30px);
+  top: calc(50% - 30px);
   width: 100%;
   height: 30px;
   background-image: radial-gradient(#E54F4F 20%, transparent 20%), radial-gradient(#53c1e2 20%, transparent 20%);
@@ -1545,9 +1551,9 @@ div#toggle span:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #F2F2F2;
   border-radius: 16px;
   padding: 15px;
@@ -1556,13 +1562,36 @@ div#toggle span:after {
 }
 
 .main.test .test_top .test_book .test_book_img {
-  width: 30%;
+  width: 35%;
   line-height: 0;
+}
+
+.main.test .test_top .test_book .test_book_img img {
+  border-radius: 10px;
+}
+
+.main.test .test_top .test_book .test_book_title {
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.main.test .test_top .test_book .test_book_grade {
+  width: 100%;
+  margin: 15px auto 0px;
+}
+
+.main.test .test_top .test_book .test_book_grade p {
+  color: #E54F4F;
 }
 
 .main.test .test_top .test_title {
   position: absolute;
-  bottom: 4%;
+  bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
@@ -1573,21 +1602,24 @@ div#toggle span:after {
   text-align: center;
 }
 
+.main.test .test_top .test_title p {
+  color: #fff;
+  text-align: center;
+}
+
 .main.test .test_top .test_badge {
   position: absolute;
-  right: 10px;
-  bottom: 50%;
-  -webkit-transform: translate(0px, 25%);
-          transform: translate(0px, 25%);
+  right: 0px;
+  bottom: calc(50% + 40px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 35%;
 }
 
 .main.test .test_top .test_badge div {
-  width: calc(33% - 5px);
-  margin-left: 5px;
+  width: calc(33% - 15px);
+  margin-left: 15px;
 }
 
 .main.test .test_top .test_badge div.notget {
@@ -1620,6 +1652,25 @@ div#toggle span:after {
   margin-top: 15px;
 }
 
+.main.test .answer_area .test_form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.test .answer_area .test_form fieldset .answer_text {
+  width: 100%;
+}
+
+.main.test .answer_area .test_form fieldset .answer_picture {
+  width: calc(45% - 15px);
+}
+
 .main.test .answer_area .test_form .topic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1635,27 +1686,25 @@ div#toggle span:after {
 }
 
 .main.test .answer_area .test_form .answer_list {
-  margin: 15px auto;
+  margin: 15px;
 }
 
 .main.test .answer_area .test_form .answer_list.answer_picture {
-  margin: 60px auto;
-}
-
-.main.test .answer_area .test_form .answer_list.answer_picture input[type="radio"] + *::before {
-  top: 0%;
-  -webkit-transform: translate(0px, 0%);
-          transform: translate(0px, 0%);
+  margin: 25px 15px;
 }
 
 .main.test .answer_area .test_form .answer_list.answer_picture img {
-  margin: 20px 0px;
+  margin: 10px 0px;
+  max-height: 300px;
+  max-width: 80%;
 }
 
 .main.test .answer_area .test_form img {
   display: block;
   max-height: 300px;
+  max-width: 80%;
   width: auto;
+  height: auto;
   margin: 20px;
 }
 
@@ -1664,6 +1713,27 @@ div#toggle span:after {
   padding: 15px 0px;
 }
 
+.main.test .send_button {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.main.test .send_button a {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #E54F4F;
+  border-radius: 10px;
+}
+
+.main.test .send_button a:hover {
+  background: #e23939;
+}
+
+.main.test .send_button a:active {
+  background: #de2323;
+}
+
+/*test 讀後測驗結束*/
 footer {
   padding: 35px 0px;
   border-top: 1px solid #5B3716;
@@ -1769,18 +1839,15 @@ input[type="radio"] + .img-answer::before {
 input[type="radio"] + *::before {
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.3rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   border-style: solid;
-  border-width: 0.1rem;
+  border-width: 1.5px;
   border-color: #E54F4F;
   position: absolute;
-  left: -1.2rem;
-  top: 50%;
-  -webkit-transform: translate(0px, -50%);
-          transform: translate(0px, -50%);
+  left: calc(-0.8rem - 0.75px);
+  top: calc(0.4rem + 0.75px);
 }
 
 input[type="radio" i] {
@@ -1799,7 +1866,6 @@ input[type="radio" i] ~ label {
   padding-left: 20px;
   display: block;
   position: relative;
-  color: #5B3716;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1930,6 +1996,9 @@ input[type="radio" i] ~ label {
   a {
     font-size: 15px;
   }
+  label {
+    font-size: 17px;
+  }
   div#toggle {
     top: 10px;
   }
@@ -2023,6 +2092,69 @@ input[type="radio" i] ~ label {
     padding: 15px;
   }
   /*grade 分級對應結束*/
+  /*test 讀後測驗開始*/
+  .main.test {
+    width: 90%;
+    margin: 0px auto 80px;
+  }
+  .main.test .test_top {
+    background: transparent;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main.test .test_top::after {
+    position: relative;
+  }
+  .main.test .test_top .test_book {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 55%;
+  }
+  .main.test .test_top .test_book .test_book_title {
+    -webkit-line-clamp: 4;
+  }
+  .main.test .test_top .test_title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    padding: 10px 0px;
+    background-color: #E54F4F;
+    margin: 0px auto 15px;
+  }
+  .main.test .test_top .test_badge {
+    position: relative;
+    width: 40%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .main.test .answer_area {
+    padding: 0px calc(1.2rem + 30px);
+    margin-top: 15px;
+  }
+  .main.test .answer_area .test_form .answer_list {
+    margin: 10px auto;
+  }
+  .main.test .answer_area .test_form .answer_list.answer_picture {
+    margin: 15px auto;
+  }
+  .main.test .answer_area .test_form .answer_list.answer_picture img {
+    max-width: 100%;
+  }
+  .main.test .answer_area .test_form img {
+    margin: 10px 0px 10px 20px;
+  }
+  /*test 讀後測驗結束*/
   footer .footer_information .products {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2057,6 +2189,9 @@ input[type="radio" i] ~ label {
   }
   h4 {
     font-size: 16px;
+  }
+  label {
+    font-size: 15px;
   }
   .main {
     margin: 40px auto 80px;
@@ -2255,6 +2390,35 @@ input[type="radio" i] ~ label {
     margin: 20px auto;
   }
   /*question 常見問題結束*/
+  /*test 讀後測驗開始*/
+  .main.test {
+    margin: 0px auto 60px;
+  }
+  .main.test .test_top .test_book {
+    width: 80%;
+  }
+  .main.test .test_top .test_book .test_book_title {
+    -webkit-line-clamp: 5;
+  }
+  .main.test .test_top .test_badge {
+    width: 12%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main.test .test_top .test_badge div {
+    width: 100%;
+    margin-left: 0px;
+    margin: 0px auto 10px;
+  }
+  .main.test .answer_area .test_form fieldset .answer_picture {
+    width: 100%;
+  }
+  .main.test .answer_area .test_form img {
+    max-width: calc(100% - 20px);
+  }
+  /*test 讀後測驗結束*/
   footer {
     padding: 20px 0px;
   }
@@ -2299,6 +2463,9 @@ input[type="radio" i] ~ label {
   a {
     font-size: 13px;
   }
+  label {
+    font-size: 14px;
+  }
   div#toggle {
     top: 2.5px;
   }
@@ -2314,6 +2481,32 @@ input[type="radio" i] ~ label {
     height: 49.98px;
   }
   /*index 首頁結束*/
+  /*test 讀後測驗開始*/
+  .main.test {
+    margin: 0px auto 60px;
+  }
+  .main.test .test_top .test_book {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .main.test .test_top .test_badge {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0px auto 15px;
+  }
+  .main.test .test_top .test_badge div {
+    width: 20%;
+    margin: 0px auto;
+  }
+  /*test 讀後測驗結束*/
   footer .footer_information .products .products_logo img {
     margin: 10px 15px 10px 0;
     height: 30px;
