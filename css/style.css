@@ -1661,6 +1661,8 @@ div#toggle span:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-width: 0px;
+  padding: 15px 0px;
 }
 
 .main.test .answer_area .test_form fieldset .answer_text {
@@ -1683,6 +1685,7 @@ div#toggle span:after {
 
 .main.test .answer_area .test_form .topic .topic_text {
   padding-left: 20px;
+  font-weight: normal;
 }
 
 .main.test .answer_area .test_form .answer_list {
@@ -1708,9 +1711,20 @@ div#toggle span:after {
   margin: 20px;
 }
 
-.main.test .answer_area .test_form fieldset {
-  border-width: 0px;
-  padding: 15px 0px;
+.main.test .answer_area .test_form .dictionary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+.main.test .answer_area .test_form .dictionary img {
+  width: 22px;
+  margin: 0px 10px 0px 20px;
+  line-height: 1.7;
 }
 
 .main.test .send_button {
