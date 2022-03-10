@@ -164,3 +164,7 @@ $(".ninth_grade_background").click(function () {
   $(this).children("p").addClass("active");
 });
 // 分級對應結束
+// 閱讀地圖開始
+var ticketheight = $(".ticket_wrap").height();
+$(".wave_line").css({"width": ticketheight }); 
+// 閱讀地圖結束

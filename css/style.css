@@ -1484,6 +1484,106 @@ div#toggle span:after {
   left: 0;
 }
 
+.main.grade_map .ticket_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main.grade_map .ticket_area .ticket_wrap {
+  position: relative;
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 波浪線 */
+}
+
+.main.grade_map .ticket_area .ticket_wrap.redemption {
+  margin-right: 1%;
+}
+
+.main.grade_map .ticket_area .ticket_wrap.redemption .ticket_left .exchange {
+  display: block;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket {
+  background: linear-gradient(to bottom, #E54F4F 0%, #E54F4F 50px, #fff 50px, #fff 100%);
+  position: relative;
+  padding: 50px 0px 0px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket_left {
+  width: 100%;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket_left .exchange {
+  display: none;
+  width: 30%;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%) rotate(45deg);
+          transform: translate(0px, -50%) rotate(45deg);
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket_right {
+  display: none;
+  width: 10%;
+  position: relative;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket_right:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 90px;
+  height: 8px;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: radial-gradient(circle, #fff 2px, #fff, transparent 3px, transparent 4px, transparent 4px, transparent);
+  background-size: 8px 8px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket_right h4 {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_line {
+  position: absolute;
+  top: -4px;
+  height: 8px;
+  background: radial-gradient(circle, #fff 2px, #fff, transparent 3px, transparent 4px, transparent 4px, transparent);
+  background-size: 8px 8px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_left {
+  width: 90px;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_right {
+  right: 0px;
+  width: 90px;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .main.grade_map .book_area {
   width: 80%;
 }
