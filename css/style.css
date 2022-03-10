@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .header nav .menu div li a, input[type="radio" i] ~ label {
   font-weight: bold;
 }
@@ -93,7 +94,7 @@ img {
 
 *,
 body {
-  font-family: "微軟正黑體", 'Open Sans', 'Noto Sans TC', "PingFang TC", "蘋果儷中黑", 'sans-serif';
+  font-family: 'Noto Sans','Noto Sans TC','Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro','STXihei', sans-serif;
   letter-spacing: 1.5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
