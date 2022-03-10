@@ -1499,6 +1499,7 @@ div#toggle span:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   /* 波浪線 */
 }
 
@@ -1511,7 +1512,7 @@ div#toggle span:after {
 }
 
 .main.grade_map .ticket_area .ticket_wrap .ticket {
-  background: linear-gradient(to bottom, #E54F4F 0%, #E54F4F 50px, #fff 50px, #fff 100%);
+  background: linear-gradient(to bottom, #E54F4F 0%, #E54F4F 50px, #186e44 50px, #186e44 100%);
   position: relative;
   padding: 50px 0px 0px;
 }
@@ -1549,7 +1550,7 @@ div#toggle span:after {
           transform-origin: center left;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  background: radial-gradient(circle, #fff 2px, #fff, transparent 3px, transparent 4px, transparent 4px, transparent);
+  background: radial-gradient(circle, transparent 2px, transparent, transparent 3px, transparent 4px, transparent 4px, transparent);
   background-size: 8px 8px;
 }
 
@@ -1563,7 +1564,7 @@ div#toggle span:after {
   position: absolute;
   top: -4px;
   height: 8px;
-  background: radial-gradient(circle, #fff 2px, #fff, transparent 3px, transparent 4px, transparent 4px, transparent);
+  background: radial-gradient(circle, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
   background-size: 8px 8px;
 }
 
