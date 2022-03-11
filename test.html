@@ -14,6 +14,318 @@
   <link rel="stylesheet" href="css/jquery.modal.min.css" />
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script type="text/javascript">
+    $(function () {
+
+
+      //0 可選取 1選取中  2已鎖定
+
+      drawpoint()
+      drawallline()
+      $("#aa1,#aa2,#aa3").click(function (e) {
+
+        if ($("#HsL").val() != "0" && $("#HsL").val() != this.id.substr(2, 1)) {
+          //console.log("同一邊重選");
+          //改選
+          if ($("#L" + this.id).val() != "2") {
+            $("#Laa" + $("#HsL").val()).val('0');
+            $("#L" + this.id).val("1");
+            $("#HsL").val(this.id.substr(2, 1));
+          }
+        } else {
+          if ($("#HsR").val() == "0") {
+            //右邊沒有選取 只可以選左邊0可選取
+            if ($("#L" + this.id).val() == "2") {
+              //此項不可選 不進行動作
+              //右邊改未選 取消左邊的鎖定
+              $("#HsR").val($("#T" + this.id).val()); //右邊已選取 為此項原本的連線目標
+              $("#Lbb" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
+              $("#L" + this.id).val('0') //左邊為未選取
+              $("#Tbb" + $("#T" + this.id).val()).val("0");
+              $("#T" + this.id).val('0')
+              $("#Can" + this.id.substr(2, 1) + $("#HsR").val()).fadeOut();
+            } else if ($("#L" + this.id).val() == "1") {
+              //取消選取
+              $("#L" + this.id).val("0");
+              $("#HsL").val("0");
+            } else if ($("#L" + this.id).val() == "0") {
+              //未選取狀態  標示選取
+              $("#L" + this.id).val("1");
+              $("#HsL").val(this.id.substr(2, 1));
+            }
+          } else {
+            //右邊有選取 左邊選第二答案
+            if ($("#L" + this.id).val() == "2") {
+              //此項不可選 不進行動作
+
+
+            } else if ($("#L" + this.id).val() == "1") {
+              //已選取 但左邊理應未選 
+              //$("#L" + this.id).val("0");
+              //$("#HsL").val("0");
+            } else if ($("#L" + this.id).val() == "0") {
+              //未選取狀態  標示選取 開始連線
+              $("#T" + this.id).val($("#HsR").val()); //儲存左邊目標
+              $("#Tbb" + $("#HsR").val()).val(this.id.substr(2, 1)); //儲存右邊目標
+
+
+              $("#L" + this.id).val("2");
+              $("#Lbb" + $("#HsR").val()).val("2");
+              $("#Can" + this.id.substr(2, 1) + $("#HsR").val()).show();
+
+
+              $("#HsL").val("0");
+              $("#HsR").val("0");
+
+
+            }
+
+          }
+
+
+        }
+
+
+
+
+
+
+
+
+        setborder()
+
+      });
+
+
+      $("#bb1,#bb2,#bb3").click(function (e) {
+
+        if ($("#HsR").val() != "0" && $("#HsR").val() != this.id.substr(2, 1)) {
+          //console.log("同一邊重選");
+          //改選
+          if ($("#L" + this.id).val() != "2") {
+            $("#Lbb" + $("#HsR").val()).val('0');
+            $("#L" + this.id).val("1");
+            $("#HsR").val(this.id.substr(2, 1));
+
+          }
+
+        } else {
+          if ($("#HsL").val() == "0") {
+            if ($("#L" + this.id).val() == "2") {
+              //此項不可選 不進行動作
+              //左邊改未選 取消右邊的鎖定
+              $("#HsL").val($("#T" + this.id).val()); //左邊已選取 為此項原本的連線目標
+              $("#Laa" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
+
+
+              $("#L" + this.id).val('0') //左邊為未選取
+
+              $("#Taa" + $("#T" + this.id).val()).val("0");
+              $("#T" + this.id).val('0')
+
+
+
+              $("#Can" + $("#HsL").val() + this.id.substr(2, 1)).fadeOut();
+
+            } else if ($("#L" + this.id).val() == "1") {
+              //取消選取
+              $("#L" + this.id).val("0");
+              $("#HsR").val("0");
+            } else if ($("#L" + this.id).val() == "0") {
+              //未選取狀態  標示選取
+              $("#L" + this.id).val("1");
+              $("#HsR").val(this.id.substr(2, 1));
+
+            }
+
+
+
+          } else {
+            //右邊有選取 左邊選第二答案
+            if ($("#L" + this.id).val() == "2") {
+              //此項不可選 不進行動作
+
+
+            } else if ($("#L" + this.id).val() == "1") {
+              //已選取 但左邊理應未選 
+              //$("#L" + this.id).val("0");
+              //$("#HsL").val("0");
+            } else if ($("#L" + this.id).val() == "0") {
+              //未選取狀態  標示選取 開始連線
+
+              $("#T" + this.id).val($("#HsL").val()); //儲存右邊目標
+              $("#Taa" + $("#HsL").val()).val(this.id.substr(2, 1)); //儲存左邊目標
+
+              $("#L" + this.id).val("2");
+              $("#Laa" + $("#HsL").val()).val("2");
+              // drawline(this.id.substr(2, 1), $("#HsR").val());
+              $("#Can" + $("#HsL").val() + this.id.substr(2, 1)).show();
+
+
+              $("#HsL").val("0");
+              $("#HsR").val("0");
+
+
+            }
+
+
+          }
+
+        }
+
+
+
+        setborder()
+
+      });
+
+
+
+
+
+      function setborder() {
+
+        for (var i = 1; i <= 3; i++) {
+
+
+          if ($("#Laa" + i).val() == "1") {
+            $("#aa" + i).css("border", "3px solid #E54F4F");
+          } else if ($("#Laa" + i).val() == "2") {
+            $("#aa" + i).css("border", "3px solid #f6d367");
+          } else {
+            $("#aa" + i).css("border", "3px solid white");
+          }
+
+
+          if ($("#Lbb" + i).val() == "1") {
+            $("#bb" + i).css("border", "3px solid #E54F4F");
+          } else if ($("#Lbb" + i).val() == "2") {
+            $("#bb" + i).css("border", "3px solid #f6d367");
+          } else {
+            $("#bb" + i).css("border", "3px solid white");
+          }
+
+        }
+
+
+
+
+      }
+
+
+      function drawline(a, b) {
+
+        var aa = $("#aa" + a)
+        var bb = $("#bb" + b)
+
+        var canvas = document.getElementById("Can" + a + b);
+        var context = canvas.getContext("2d");
+
+
+        context.strokeStyle = 'gray';
+        context.lineWidth = "2";
+        context.beginPath();
+
+        context.moveTo(aa.offset().left + 10 + aa.width(), aa.offset().top + aa.height() / 2);
+        context.lineTo(bb.offset().left - 10, bb.offset().top + bb.height() / 2);
+        context.closePath();
+        context.stroke();
+
+        $("#Can" + a + b).hide();
+
+
+        //console.log(a);
+        //console.log(b);
+
+
+      }
+
+
+      //畫點
+      function drawpoint() {
+
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        for (var i = 1; i <= 3; i++) {
+
+          var aa = $("#aa" + i)
+          context.beginPath();
+          context.arc(aa.offset().left + aa.width() + 10, aa.offset().top + aa.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
+          var bb = $("#bb" + i)
+          context.beginPath();
+          context.arc(bb.offset().left - 10, bb.offset().top + bb.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
+
+        }
+
+      }
+
+      //預先畫線
+      function drawallline() {
+
+        drawline(1, 1);
+        drawline(1, 2);
+        drawline(1, 3);
+        drawline(2, 1);
+        drawline(2, 2);
+        drawline(2, 3);
+        drawline(3, 1);
+        drawline(3, 2);
+        drawline(3, 3);
+
+
+      }
+
+
+
+
+
+      $("#bb3").click(function (e) {
+        //var canvas = document.getElementById("myCanvas");
+        //var context = canvas.getContext("2d");
+
+        //context.strokeStyle = '#0000ff';
+        //context.lineWidth = "2";
+        //context.beginPath();
+        ////context.moveTo(153, 113);
+        ////context.lineTo(491, 390);
+        //context.moveTo(aa.offset().left + aa.width(), aa.offset().top + aa.height()/2 );
+        //context.lineTo(bb.offset().left, bb.offset().top + aa.height() / 2);
+        //context.closePath();
+        //context.stroke();
+
+
+        // console.log($("#myCanvas"));
+
+      });
+
+      $("#bb2").click(function (e) {
+
+        //  $("#myCanvas").hide();
+
+
+
+
+      });
+
+      $("#bb1").click(function (e) {
+
+        //  $("#myCanvas").show();
+
+        //   drawline(1, 1);
+
+      });
+
+
+    });
+  </script>
+
+
+
 </head>
 
 <body>
@@ -24,13 +336,13 @@
         <div class="test_book_img">
           <img src="image/index/book-1.jpg" alt="">
         </div>
-          <div class="test_book_title">
-            <p>What’s Ameena Up To?
-              What’s Ameena Up To?
-              What’s Ameena Up To?
-            </p>
-          </div>
-          
+        <div class="test_book_title">
+          <p>What’s Ameena Up To?
+            What’s Ameena Up To?
+            What’s Ameena Up To?
+          </p>
+        </div>
+
         <div class="test_book_grade">
           <!-- <p>SRE score：SRE 001</p>
           <p>SRE score：SRE 001</p> -->
@@ -312,12 +624,118 @@
         </div>
       </div>
       <!-- 題目有圖/選項有圖結束 -->
+
+      <!-- 題目連連看開始 -->
+      <table class="connect">
+        <tbody>
+          <tr>
+            <td>
+              <img src="image/photo/test/300.png" id="aa1">
+              <div class="test_audio_icon left_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <img src="image/photo/test/300.png" id="bb1">
+              <div class="test_audio_icon right_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="image/photo/test/300.png" id="aa2">
+              <div class="test_audio_icon left_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <img src="image/photo/test/300.png" id="bb2">
+              <div class="test_audio_icon right_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="image/photo/test/300.png" id="aa3">
+              <div class="test_audio_icon left_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <img src="image/photo/test/300.png" id="bb3">
+              <div class="test_audio_icon right_sound">
+                <img src="image/svg/sound.svg" alt="">
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+      <canvas id="myCanvas" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can11" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can12" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can13" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can21" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can22" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can23" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can31" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can32" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+      <canvas id="Can33" width="800" height="600"
+        style="border:0px solid black; position:absolute; left:0; top:0; z-index:-10"></canvas>
+
+      <hr />
+      <hr />
+      <p>連線目標</p>
+      a1<input name="Taa1" type="text" value="0" id="Taa1" style="width:80px;" />
+      a2<input name="Taa2" type="text" value="0" id="Taa2" style="width:80px;" />
+      a3<input name="Taa3" type="text" value="0" id="Taa3" style="width:80px;" />
+
+      <br />
+      b1<input name="Tbb1" type="text" value="0" id="Tbb1" style="width:80px;" />
+      b2<input name="Tbb2" type="text" value="0" id="Tbb2" style="width:80px;" />
+      b3<input name="Tbb3" type="text" value="0" id="Tbb3" style="width:80px;" />
+
+
+      <hr />
+      <p>鎖定狀態</p>
+      a1<input name="Laa1" type="text" value="0" id="Laa1" style="width:80px;" />
+      a2<input name="Laa2" type="text" value="0" id="Laa2" style="width:80px;" />
+      a3<input name="Laa3" type="text" value="0" id="Laa3" style="width:80px;" />
+
+      <br />
+      b1<input name="Lbb1" type="text" value="0" id="Lbb1" style="width:80px;" />
+      b2<input name="Lbb2" type="text" value="0" id="Lbb2" style="width:80px;" />
+      b3<input name="Lbb3" type="text" value="0" id="Lbb3" style="width:80px;" />
+
+
+
+      <br />
+
+      hasLeft<input name="HsL" type="text" value="0" id="HsL" style="width:80px;" />
+      hasRight<input name="HsR" type="text" value="0" id="HsR" style="width:80px;" />
+
+      <!-- 題目連連看結束 -->
+
     </div>
-      <div class="send_button">
-        <a href="">
-          送出
-        </a>
-      </div>
+    <div class="send_button">
+      <a href="">
+        送出
+      </a>
+    </div>
 
 
   </div>

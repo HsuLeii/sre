@@ -1829,6 +1829,60 @@ div#toggle span:after {
   line-height: 1.7;
 }
 
+.main.test .answer_area .connect {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main.test .answer_area .connect tr {
+  margin: 25px 40px;
+  display: block;
+  position: relative;
+}
+
+.main.test .answer_area .connect tr td {
+  cursor: pointer;
+}
+
+.main.test .answer_area .connect tr td img {
+  border: 3px solid transparent;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon {
+  position: absolute;
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  background-color: #E54F4F;
+  border-radius: 50%;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+  left: -40px;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+  right: -40px;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon:hover {
+  background: #e23939;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon:active {
+  background: #de2323;
+}
+
+.main.test .answer_area .connect tr td .test_audio_icon img {
+  border: 0px solid;
+  padding: 5px;
+}
+
+.main.test .answer_area .connect td:nth-child(2) {
+  width: 50%;
+  cursor: auto;
+}
+
 .main.test .send_button {
   margin: 20px auto;
   text-align: center;
@@ -1847,6 +1901,10 @@ div#toggle span:after {
 
 .main.test .send_button a:active {
   background: #de2323;
+}
+
+.main.test canvas {
+  width: 100%;
 }
 
 /*test 讀後測驗結束*/
@@ -2270,6 +2328,22 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form img {
     margin: 10px 0px 10px 20px;
   }
+  .main.test .answer_area .connect tr {
+    margin: 25px 35px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon {
+    width: 30px;
+    height: 30px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+    left: -35px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+    right: -35px;
+  }
+  .main.test .answer_area .connect td:nth-child(2) {
+    width: 35%;
+  }
   /*test 讀後測驗結束*/
   footer .footer_information .products {
     -ms-flex-wrap: wrap;
@@ -2534,6 +2608,25 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form img {
     max-width: calc(100% - 20px);
   }
+  .main.test .answer_area .connect tr {
+    margin: 25px 30px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon {
+    width: 25px;
+    height: 25px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+    left: -30px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+    right: -30px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon img {
+    padding: 3px;
+  }
+  .main.test .answer_area .connect td:nth-child(2) {
+    width: 15%;
+  }
   /*test 讀後測驗結束*/
   footer {
     padding: 20px 0px;
@@ -2621,6 +2714,22 @@ input[type="radio" i] ~ label {
   .main.test .test_top .test_badge div {
     width: 20%;
     margin: 0px auto;
+  }
+  .main.test .answer_area .connect tr {
+    margin: 25px 20px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+    left: -20px;
+  }
+  .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+    right: -20px;
+  }
+  .main.test .answer_area .connect td:nth-child(2) {
+    width: 10%;
   }
   /*test 讀後測驗結束*/
   footer .footer_information .products .products_logo img {
