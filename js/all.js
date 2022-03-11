@@ -169,11 +169,3 @@ var ticketheight = $(".ticket_wrap").height();
 $(".wave_line").css({"width": ticketheight }); 
 // 閱讀地圖結束
 
-var x = document.body.scrollHeight;
-
-  const canvas = document.querySelector('#Canvas');
-
-  // resize canvas
-  canvas.width = 120;
-  canvas.height = x;
-  alert( canvas.height);
