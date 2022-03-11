@@ -171,7 +171,7 @@ $(".wave_line").css({"width": ticketheight });
 
 var x = document.body.scrollHeight;
 
-  const canvas = document.querySelector('#myCanvas');
+  const canvas = document.querySelector('#Canvas');
 
   // resize canvas
   canvas.width = 120;
