@@ -1612,6 +1612,7 @@ div#toggle span:after {
 /*test 讀後測驗開始*/
 .main.test {
   width: 80%;
+  margin: 130px auto 80px;
 }
 
 .main.test .test_top {
