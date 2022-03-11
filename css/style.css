@@ -1891,9 +1891,6 @@ div#toggle span:after {
   cursor: auto;
 }
 
-.main.test .answer_area .connect_area {
-  position: relative;
-}
 
 .main.test .send_button {
   margin: 20px auto;
@@ -1915,14 +1912,13 @@ div#toggle span:after {
   background: #de2323;
 }
 
-.main.test canvas {
+/* .main.test canvas {
   border: 3px solid black;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  width: 100%;
-}
+} */
 
 /*test 讀後測驗結束*/
 footer {
