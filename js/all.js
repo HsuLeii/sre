@@ -168,3 +168,12 @@ $(".ninth_grade_background").click(function () {
 var ticketheight = $(".ticket_wrap").height();
 $(".wave_line").css({"width": ticketheight }); 
 // 閱讀地圖結束
+
+var x = document.body.scrollHeight;
+
+  const canvas = document.querySelector('#myCanvas');
+
+  // resize canvas
+  canvas.width = 120;
+  canvas.height = x;
+  alert( canvas.height);
