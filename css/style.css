@@ -1733,7 +1733,6 @@ div#toggle span:after {
 
 .main.test .answer_area {
   padding: 30px calc(1.2rem + 30px);
-  background-color: #fff;
   border: 1px solid #E54F4F;
   margin-top: -10px;
   border-radius: 10px;
@@ -1830,6 +1829,14 @@ div#toggle span:after {
   line-height: 1.7;
 }
 
+.main.test .answer_area td {
+  text-align: center;
+}
+
+.main.test .answer_area td img {
+  width: calc(100% - 20px);
+}
+
 .main.test .answer_area .connect {
   margin: 0 auto;
   width: 100%;
@@ -1884,6 +1891,10 @@ div#toggle span:after {
   cursor: auto;
 }
 
+.main.test .answer_area .connect_area {
+  position: relative;
+}
+
 .main.test .send_button {
   margin: 20px auto;
   text-align: center;
@@ -1905,6 +1916,11 @@ div#toggle span:after {
 }
 
 .main.test canvas {
+  border: 3px solid black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
   width: 100%;
 }
 
