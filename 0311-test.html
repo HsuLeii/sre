@@ -496,11 +496,12 @@
     </form>
 </body>
 
-<script>const canvas = document.querySelector('#Canvas');
-
+<script>
+const canvas = document.querySelector('#Canvas');
+var x = document.body.scrollHeight;
   // resize canvas
   canvas.width = window.innerWidth;
-  canvas.height = document.body.scrollHeight;
-  alert( document.body.scrollHeight );
+  canvas.height = x;
+  alert( x );
   </script>
 </html>
