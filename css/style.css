@@ -1917,6 +1917,7 @@ canvas {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -1;
 }
 
 /*test 讀後測驗結束*/
