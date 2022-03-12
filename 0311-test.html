@@ -461,7 +461,7 @@ $("#bb1").click(function (e) {
   
 var testDiv = document.getElementsByClassName("test");
 var y = document.body.scrollHeight + testDiv[0].offsetTop;
-var x = innerWidth;
+var x = $("body").width();
 const canvas = document.querySelector('#myCanvas');
 
 // resize canvas
