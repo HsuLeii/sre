@@ -328,56 +328,48 @@
       </div>
       <!-- 題目有圖/選項有圖結束 -->
 
-      <!-- 題目連連看開始 -->
+      <!-- 題目連連看圖加字開始 -->
       <div class="connect_area">
         <table class="connect">
-
           <tr>
             <td>
-              <img src="image/photo/test/300.png" id="aa1">
-              <div class="test_audio_icon left_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <img src="image/photo/test/300.png" id="aa1">
               </div>
             </td>
             <td></td>
             <td>
-              <img src="image/photo/test/300.png" id="bb1">
-              <div class="test_audio_icon right_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <p id="bb1">MEOW!</p>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <img src="image/photo/test/300.png" id="aa2">
-              <div class="test_audio_icon left_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <img src="image/photo/test/300.png" id="aa2">
               </div>
             </td>
             <td></td>
             <td>
-              <img src="image/photo/test/300.png" id="bb2">
-              <div class="test_audio_icon right_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <p id="bb2">BOW!</p>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <img src="image/photo/test/300.png" id="aa3">
-              <div class="test_audio_icon left_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <img src="image/photo/test/300.png" id="aa3">
               </div>
             </td>
             <td></td>
             <td>
-              <img src="image/photo/test/300.png" id="bb3">
-              <div class="test_audio_icon right_sound">
-                <img src="image/svg/sound.svg" alt="">
+              <div class="connect_topic">
+                <p id="bb3">BWOW!</p>
               </div>
             </td>
           </tr>
-
         </table>
 
         <canvas id="myCanvas"></canvas>
@@ -423,11 +415,205 @@
       hasRight<input name="HsR" type="text" value="0" id="HsR" style="width:80px;" />
 
       </div>
+      <!-- 題目連連看圖加字結束 -->
+
+      <!-- 題目連連看圖加聲開始 -->
+      <div class="connect_area">
+        <table class="connect">
+          <tr>
+            <td>
+              <div class="connect_topic connect_topic_audio">
+                <img src="image/svg/300sound.svg" alt="" id="cc1">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <div class="connect_topic">
+                <img src="image/photo/test/300.png" id="dd1">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="connect_topic connect_topic_audio">
+                <img src="image/svg/300sound.svg" alt="" id="cc2">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <img src="image/photo/test/300.png" id="dd2">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="connect_topic connect_topic_audio">
+                <img src="image/svg/300sound.svg" alt="" id="cc3">
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <img src="image/photo/test/300.png" id="dd3">
+            </td>
+          </tr>
+        </table>
+
+        <canvas id="myCanvas"></canvas>
+    <canvas id="Can11 " width="1920" height="6006"></canvas>
+    <canvas id="Can12 " width="1920" height="6006"></canvas>
+    <canvas id="Can13 " width="1920" height="6006"></canvas>
+    <canvas id="Can21 " width="1920" height="6006"></canvas>
+    <canvas id="Can22 " width="1920" height="6006"></canvas>
+    <canvas id="Can23 " width="1920" height="6006"></canvas>
+    <canvas id="Can31 " width="1920" height="6006"></canvas>
+    <canvas id="Can32 " width="1920" height="6006"></canvas>
+    <canvas id="Can33 " width="1920" height="6006"></canvas>
+
+        <hr />
+      <hr />
+      <p>連線目標</p>
+      a1<input name="Taa1" type="text" value="0" id="Taa1" style="width:80px;" />
+      a2<input name="Taa2" type="text" value="0" id="Taa2" style="width:80px;" />
+      a3<input name="Taa3" type="text" value="0" id="Taa3" style="width:80px;" />
+
+      <br />
+      b1<input name="Tbb1" type="text" value="0" id="Tbb1" style="width:80px;" />
+      b2<input name="Tbb2" type="text" value="0" id="Tbb2" style="width:80px;" />
+      b3<input name="Tbb3" type="text" value="0" id="Tbb3" style="width:80px;" />
+
+
+      <hr />
+      <p>鎖定狀態</p>
+      a1<input name="Laa1" type="text" value="0" id="Laa1" style="width:80px;" />
+      a2<input name="Laa2" type="text" value="0" id="Laa2" style="width:80px;" />
+      a3<input name="Laa3" type="text" value="0" id="Laa3" style="width:80px;" />
+
+      <br />
+      b1<input name="Lbb1" type="text" value="0" id="Lbb1" style="width:80px;" />
+      b2<input name="Lbb2" type="text" value="0" id="Lbb2" style="width:80px;" />
+      b3<input name="Lbb3" type="text" value="0" id="Lbb3" style="width:80px;" />
+
+
+
+      <br />
+
+      hasLeft<input name="HsL" type="text" value="0" id="HsL" style="width:80px;" />
+      hasRight<input name="HsR" type="text" value="0" id="HsR" style="width:80px;" />
+
+      </div>
+      <!-- 題目連連看圖加聲結束 -->
+
+            <!-- 題目連連看圖加圖開始 -->
+            <div class="connect_area">
+              <table class="connect">
+                <tr>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ee1">
+                    </div>
+                    <div class="test_audio_icon left_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ff1">
+                    </div>
+                    <div class="test_audio_icon right_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ee2">
+                    </div>
+                    <div class="test_audio_icon left_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ff2">
+                    </div>
+                    <div class="test_audio_icon right_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ee3">
+                    </div>
+                    <div class="test_audio_icon left_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                  <td></td>
+                  <td>
+                    <div class="connect_topic">
+                      <img src="image/photo/test/300.png" id="ff3">
+                    </div>
+                    <div class="test_audio_icon right_sound">
+                      <img src="image/svg/sound.svg" alt="">
+                    </div>
+                  </td>
+                </tr>
+              </table>
+      
+              <canvas id="myCanvas"></canvas>
+          <canvas id="Can11 " width="1920" height="6006"></canvas>
+          <canvas id="Can12 " width="1920" height="6006"></canvas>
+          <canvas id="Can13 " width="1920" height="6006"></canvas>
+          <canvas id="Can21 " width="1920" height="6006"></canvas>
+          <canvas id="Can22 " width="1920" height="6006"></canvas>
+          <canvas id="Can23 " width="1920" height="6006"></canvas>
+          <canvas id="Can31 " width="1920" height="6006"></canvas>
+          <canvas id="Can32 " width="1920" height="6006"></canvas>
+          <canvas id="Can33 " width="1920" height="6006"></canvas>
+      
+              <hr />
+            <hr />
+            <p>連線目標</p>
+            a1<input name="Taa1" type="text" value="0" id="Taa1" style="width:80px;" />
+            a2<input name="Taa2" type="text" value="0" id="Taa2" style="width:80px;" />
+            a3<input name="Taa3" type="text" value="0" id="Taa3" style="width:80px;" />
+      
+            <br />
+            b1<input name="Tbb1" type="text" value="0" id="Tbb1" style="width:80px;" />
+            b2<input name="Tbb2" type="text" value="0" id="Tbb2" style="width:80px;" />
+            b3<input name="Tbb3" type="text" value="0" id="Tbb3" style="width:80px;" />
+      
+      
+            <hr />
+            <p>鎖定狀態</p>
+            a1<input name="Laa1" type="text" value="0" id="Laa1" style="width:80px;" />
+            a2<input name="Laa2" type="text" value="0" id="Laa2" style="width:80px;" />
+            a3<input name="Laa3" type="text" value="0" id="Laa3" style="width:80px;" />
+      
+            <br />
+            b1<input name="Lbb1" type="text" value="0" id="Lbb1" style="width:80px;" />
+            b2<input name="Lbb2" type="text" value="0" id="Lbb2" style="width:80px;" />
+            b3<input name="Lbb3" type="text" value="0" id="Lbb3" style="width:80px;" />
+      
+      
+      
+            <br />
+      
+            hasLeft<input name="HsL" type="text" value="0" id="HsL" style="width:80px;" />
+            hasRight<input name="HsR" type="text" value="0" id="HsR" style="width:80px;" />
+      
+            </div>
+            <!-- 題目連連看圖加圖結束 -->
+
+            
     </div>
       
-      
 
-      <!-- 題目連連看結束 -->
+      
 
     
     <div class="send_button">
@@ -688,6 +874,28 @@
           context.arc(bb.offset().left - 10, bb.offset().top + bb.height() / 2, 5, 0, 360, false);
           context.fill(); //畫實心圓
           context.closePath();
+
+          var cc = $("#cc" + i)
+          context.beginPath();
+          context.arc(cc.offset().left + cc.width() + 10, cc.offset().top + cc.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
+          var dd = $("#dd" + i)
+          context.beginPath();
+          context.arc(dd.offset().left - 10, dd.offset().top + dd.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
+
+          var ee = $("#ee" + i)
+          context.beginPath();
+          context.arc(ee.offset().left + ee.width() + 10, ee.offset().top + ee.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
+          var ff = $("#ff" + i)
+          context.beginPath();
+          context.arc(ff.offset().left - 10, ff.offset().top + ff.height() / 2, 5, 0, 360, false);
+          context.fill(); //畫實心圓
+          context.closePath();
   
         }
   
@@ -761,7 +969,7 @@
     // resize canvas
     canvas.width = x;
     canvas.height = y;
-
+    $("canvas").css({"height": y , "width": x});
 
   </script>
 

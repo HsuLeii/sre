@@ -1849,11 +1849,20 @@ div#toggle span:after {
 }
 
 .main.test .answer_area .connect tr td {
-  cursor: pointer;
+  width: 25%;
 }
 
-.main.test .answer_area .connect tr td img {
+.main.test .answer_area .connect tr td .connect_topic {
+  cursor: pointer;
   border: 3px solid transparent;
+}
+
+.main.test .answer_area .connect tr td .connect_topic p {
+  text-align: left;
+}
+
+.main.test .answer_area .connect tr td .connect_topic.connect_topic_audio img {
+  width: 100%;
 }
 
 .main.test .answer_area .connect tr td .test_audio_icon {
@@ -1865,6 +1874,7 @@ div#toggle span:after {
   height: 35px;
   background-color: #E54F4F;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
