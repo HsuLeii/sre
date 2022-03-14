@@ -94,7 +94,7 @@ img {
 
 *,
 body {
-  font-family: 'Noto Sans','Noto Sans TC','Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro','STXihei', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
   letter-spacing: 1.5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1849,11 +1849,12 @@ div#toggle span:after {
 }
 
 .main.test .answer_area .connect tr td {
-  width: 25%;
+  width: 35%;
 }
 
 .main.test .answer_area .connect tr td .connect_topic {
   cursor: pointer;
+  line-height: 0;
 }
 
 .main.test .answer_area .connect tr td .connect_topic p {
@@ -1903,7 +1904,7 @@ div#toggle span:after {
 }
 
 .main.test .answer_area .connect td:nth-child(2) {
-  width: 50%;
+  width: 30%;
   cursor: auto;
 }
 
@@ -2051,7 +2052,7 @@ input[type="radio"] + *::before {
   border-color: #E54F4F;
   position: absolute;
   left: calc(-0.8rem - 0.75px);
-  top: calc(0.4rem + 0.75px);
+  top: calc(0.4rem - 3px);
 }
 
 input[type="radio" i] {
@@ -2343,7 +2344,6 @@ input[type="radio" i] ~ label {
             order: 3;
   }
   .main.test .answer_area {
-    padding: 0px calc(1.2rem + 30px);
     margin-top: 15px;
   }
   .main.test .answer_area .test_form .answer_list {
@@ -2632,29 +2632,36 @@ input[type="radio" i] ~ label {
     margin-left: 0px;
     margin: 0px auto 10px;
   }
+  .main.test .answer_area {
+    padding: 0px calc(1rem + 30px);
+  }
   .main.test .answer_area .test_form fieldset .answer_picture {
     width: 100%;
   }
   .main.test .answer_area .test_form img {
     max-width: calc(100% - 20px);
   }
-  .main.test .answer_area .connect tr {
-    margin: 25px 30px;
+  .main.test .answer_area .connect_area {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon {
+  .main.test .answer_area .connect_area .connect tr {
+    margin: 25px auto;
+  }
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon {
     width: 25px;
     height: 25px;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon.left_sound {
     left: -30px;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon.right_sound {
     right: -30px;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon img {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon img {
     padding: 3px;
   }
-  .main.test .answer_area .connect td:nth-child(2) {
+  .main.test .answer_area .connect_area .connect td:nth-child(2) {
     width: 15%;
   }
   /*test 讀後測驗結束*/
