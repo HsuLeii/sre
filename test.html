@@ -809,8 +809,8 @@
         context.lineWidth = "2";
         context.beginPath();
   
-        context.moveTo(aa.offset().left + 10 + aa.width(), aa.offset().top + aa.height() / 2);
-        context.lineTo(bb.offset().left - 10, bb.offset().top + bb.height() / 2);
+        context.moveTo(aa.offset().left + 20 + aa.width(), aa.offset().top + aa.height() / 2 + 10);
+        context.lineTo(bb.offset().left - 15, bb.offset().top + bb.height() / 2 + 5);
 
         context.closePath();
         context.stroke();
@@ -834,12 +834,12 @@
   
           var aa = $("#aa" + i)
           context.beginPath();
-          context.arc(aa.offset().left + aa.width() + 10, aa.offset().top + aa.height() / 2, 5, 0, 360, false);
+          context.arc(aa.offset().left + aa.width() + 20, aa.offset().top + aa.height() / 2 + 10, 5, 0, 360, false);
           context.fill(); //畫實心圓
           context.closePath();
           var bb = $("#bb" + i)
           context.beginPath();
-          context.arc(bb.offset().left - 10, bb.offset().top + bb.height() / 2, 5, 0, 360, false);
+          context.arc(bb.offset().left - 15, bb.offset().top + bb.height() / 2 + 5, 5, 0, 360, false);
           context.fill(); //畫實心圓
           context.closePath();
   
