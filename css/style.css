@@ -1858,7 +1858,9 @@ div#toggle span:after {
 
 .main.test .answer_area .connect tr td .test_audio_icon {
   position: absolute;
-  top: 5px;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
   width: 35px;
   height: 35px;
   background-color: #E54F4F;
@@ -1884,6 +1886,7 @@ div#toggle span:after {
 .main.test .answer_area .connect tr td .test_audio_icon img {
   border: 0px solid;
   padding: 5px;
+  width: 100%;
 }
 
 .main.test .answer_area .connect td:nth-child(2) {
@@ -1918,6 +1921,7 @@ canvas {
   top: 0;
   z-index: -10;
   width: 100%;
+  display: block;
 }
 
 /*test 讀後測驗結束*/

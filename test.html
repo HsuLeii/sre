@@ -379,10 +379,19 @@
           </tr>
 
         </table>
-      </div>
-    </div>
-      
-      <hr />
+
+        <canvas id="myCanvas"></canvas>
+    <canvas id="Can11 " width="1920" height="6006"></canvas>
+    <canvas id="Can12 " width="1920" height="6006"></canvas>
+    <canvas id="Can13 " width="1920" height="6006"></canvas>
+    <canvas id="Can21 " width="1920" height="6006"></canvas>
+    <canvas id="Can22 " width="1920" height="6006"></canvas>
+    <canvas id="Can23 " width="1920" height="6006"></canvas>
+    <canvas id="Can31 " width="1920" height="6006"></canvas>
+    <canvas id="Can32 " width="1920" height="6006"></canvas>
+    <canvas id="Can33 " width="1920" height="6006"></canvas>
+
+        <hr />
       <hr />
       <p>連線目標</p>
       a1<input name="Taa1" type="text" value="0" id="Taa1" style="width:80px;" />
@@ -413,6 +422,11 @@
       hasLeft<input name="HsL" type="text" value="0" id="HsL" style="width:80px;" />
       hasRight<input name="HsR" type="text" value="0" id="HsR" style="width:80px;" />
 
+      </div>
+    </div>
+      
+      
+
       <!-- 題目連連看結束 -->
 
     
@@ -425,16 +439,7 @@
 
   </div>
 
-  <canvas id="myCanvas"></canvas>
-    <canvas id="Can11 " width="1920" height="1920"></canvas>
-    <canvas id="Can12 " width="1920" height="1920"></canvas>
-    <canvas id="Can13 " width="1920" height="1920"></canvas>
-    <canvas id="Can21 " width="1920" height="1920"></canvas>
-    <canvas id="Can22 " width="1920" height="1920"></canvas>
-    <canvas id="Can23 " width="1920" height="1920"></canvas>
-    <canvas id="Can31 " width="1920" height="1920"></canvas>
-    <canvas id="Can32 " width="1920" height="1920"></canvas>
-    <canvas id="Can33 " width="1920" height="1920"></canvas>
+    
 
 
   </form>
@@ -656,7 +661,7 @@
         context.closePath();
         context.stroke();
   
-        // $("#Can" + a + b).hide(); 暫時註解
+        $("#Can" + a + b).hide();
   
   
         //console.log(a);
@@ -757,9 +762,7 @@
     canvas.width = x;
     canvas.height = y;
 
-    $("canvas").css({"height": y , "width": x});
 
-    
   </script>
 
   <script src="js/all.js"></script>
