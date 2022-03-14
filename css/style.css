@@ -1854,11 +1854,14 @@ div#toggle span:after {
 
 .main.test .answer_area .connect tr td .connect_topic {
   cursor: pointer;
-  border: 3px solid transparent;
 }
 
 .main.test .answer_area .connect tr td .connect_topic p {
   text-align: left;
+}
+
+.main.test .answer_area .connect tr td .connect_topic img {
+  border: 3px solid transparent;
 }
 
 .main.test .answer_area .connect tr td .connect_topic.connect_topic_audio img {
