@@ -1891,7 +1891,6 @@ div#toggle span:after {
   cursor: auto;
 }
 
-
 .main.test .send_button {
   margin: 20px auto;
   text-align: center;
@@ -1917,7 +1916,8 @@ canvas {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
+  z-index: -10;
+  width: 100%;
 }
 
 /*test 讀後測驗結束*/
