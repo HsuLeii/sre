@@ -1694,7 +1694,7 @@ div#toggle span:after {
 
 .main.test .test_top .test_title {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
@@ -1775,21 +1775,6 @@ div#toggle span:after {
   width: calc(45% - 15px);
 }
 
-.main.test .answer_area .test_form .topic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main.test .answer_area .test_form .topic .topic_number {
-  margin-left: -1rem;
-}
-
-.main.test .answer_area .test_form .topic .topic_text {
-  padding-left: 20px;
-  font-weight: normal;
-}
-
 .main.test .answer_area .test_form .answer_list {
   margin: 15px;
 }
@@ -1829,40 +1814,59 @@ div#toggle span:after {
   line-height: 1.7;
 }
 
-.main.test .answer_area td {
-  text-align: center;
+.main.test .answer_area .topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main.test .answer_area td img {
-  width: calc(100% - 20px);
+.main.test .answer_area .topic .topic_number {
+  margin-left: -1rem;
+}
+
+.main.test .answer_area .topic .topic_text {
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+.main.test .answer_area .topic .topic_text ruby {
+  margin-right: 10px;
+  line-height: 2.5;
 }
 
 .main.test .answer_area .connect {
-  margin: 0 auto;
-  width: 100%;
+  margin: 20px auto;
+  width: 95%;
 }
 
 .main.test .answer_area .connect tr {
-  margin: 25px 40px;
-  display: block;
-  position: relative;
+  margin: 0px 40px;
 }
 
 .main.test .answer_area .connect tr td {
-  width: 35%;
+  width: 27.5%;
+  position: relative;
+}
+
+.main.test .answer_area .connect tr td:nth-child(2) {
+  width: 45%;
+  cursor: auto;
 }
 
 .main.test .answer_area .connect tr td .connect_topic {
   cursor: pointer;
   line-height: 0;
+  border: 3px solid transparent;
 }
 
 .main.test .answer_area .connect tr td .connect_topic p {
   text-align: left;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .main.test .answer_area .connect tr td .connect_topic img {
-  border: 3px solid transparent;
+  line-height: 1.7;
 }
 
 .main.test .answer_area .connect tr td .connect_topic.connect_topic_audio img {
@@ -1903,11 +1907,6 @@ div#toggle span:after {
   width: 100%;
 }
 
-.main.test .answer_area .connect td:nth-child(2) {
-  width: 30%;
-  cursor: auto;
-}
-
 .main.test .send_button {
   margin: 20px auto;
   text-align: center;
@@ -1929,7 +1928,7 @@ div#toggle span:after {
 }
 
 canvas {
-  border: 1px solid gray;
+  border: 0px solid gray;
   position: absolute;
   left: 0;
   top: 0;
@@ -2358,8 +2357,17 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form img {
     margin: 10px 0px 10px 20px;
   }
+  .main.test .answer_area .connect {
+    margin: 10px auto;
+  }
   .main.test .answer_area .connect tr {
-    margin: 25px 35px;
+    margin: 0px 35px;
+  }
+  .main.test .answer_area .connect tr td {
+    width: 32.5%;
+  }
+  .main.test .answer_area .connect tr td:nth-child(2) {
+    width: 35%;
   }
   .main.test .answer_area .connect tr td .test_audio_icon {
     width: 30px;
@@ -2371,8 +2379,8 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
     right: -35px;
   }
-  .main.test .answer_area .connect td:nth-child(2) {
-    width: 35%;
+  .main.test .answer_area .connect tr td .connect_topic p {
+    font-size: 17px;
   }
   /*test 讀後測驗結束*/
   footer .footer_information .products {
@@ -2643,10 +2651,15 @@ input[type="radio" i] ~ label {
   }
   .main.test .answer_area .connect_area {
     width: calc(100% + 2rem);
-    margin-left: -1rem;
   }
   .main.test .answer_area .connect_area .connect tr {
-    margin: 25px auto;
+    margin: 0px auto;
+  }
+  .main.test .answer_area .connect_area .connect tr td {
+    width: 42.5%;
+  }
+  .main.test .answer_area .connect_area .connect tr td:nth-child(2) {
+    width: 15%;
   }
   .main.test .answer_area .connect_area .connect tr td .test_audio_icon {
     width: 25px;
@@ -2661,8 +2674,8 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect_area .connect tr td .test_audio_icon img {
     padding: 3px;
   }
-  .main.test .answer_area .connect_area .connect td:nth-child(2) {
-    width: 15%;
+  .main.test .answer_area .connect_area .connect tr td .connect_topic p {
+    font-size: 15px;
   }
   /*test 讀後測驗結束*/
   footer {
@@ -2755,6 +2768,12 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect tr {
     margin: 25px 20px;
   }
+  .main.test .answer_area .connect tr td {
+    width: 45%;
+  }
+  .main.test .answer_area .connect tr td:nth-child(2) {
+    width: 10%;
+  }
   .main.test .answer_area .connect tr td .test_audio_icon {
     width: 20px;
     height: 20px;
@@ -2765,8 +2784,8 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
     right: -20px;
   }
-  .main.test .answer_area .connect td:nth-child(2) {
-    width: 10%;
+  .main.test .answer_area .connect tr td .connect_topic p {
+    font-size: 14px;
   }
   /*test 讀後測驗結束*/
   footer .footer_information .products .products_logo img {
