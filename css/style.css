@@ -353,30 +353,36 @@ div#toggle span:after {
   width: 30%;
 }
 
-.three_item .project:nth-child(1) h4 {
-  background-color: #53c1e2;
-}
-
 .three_item .project:nth-child(1) p {
-  color: #53c1e2;
+  color: #fff;
   border: 1px solid #53c1e2;
+  background-color: #53c1e2;
 }
 
 .three_item .project:nth-child(1) p:before {
   border-color: #53c1e2 transparent transparent;
 }
 
-.three_item .project:nth-child(2) h4 {
-  background-color: #abc564;
+.three_item .project:nth-child(1) p:after {
+  border-color: #53c1e2 transparent transparent;
 }
 
 .three_item .project:nth-child(2) p {
-  color: #abc564;
+  color: #fff;
   border: 1px solid #abc564;
+  background-color: #abc564;
 }
 
 .three_item .project:nth-child(2) p:before {
   border-color: #abc564 transparent transparent;
+}
+
+.three_item .project:nth-child(2) p:after {
+  border-color: #abc564 transparent transparent;
+}
+
+.three_item .project:nth-last-child(1) {
+  border-right: 0px solid #E54F4F;
 }
 
 .three_item .project::before {
@@ -386,14 +392,10 @@ div#toggle span:after {
   padding-right: 2.5%;
 }
 
-.three_item .project:nth-last-child(1) {
-  border-right: 0px solid #E54F4F;
-}
-
 .three_item .project h4 {
   padding: 5px 10px;
-  background-color: #E54F4F;
-  color: #fff;
+  background-color: #f6d367;
+  color: #5B3716;
   border-radius: 10px;
   position: absolute;
   z-index: 1;
@@ -402,8 +404,8 @@ div#toggle span:after {
 }
 
 .three_item .project p {
-  color: #E54F4F;
-  background-color: #fff;
+  color: #fff;
+  background-color: #E54F4F;
   padding: 38.5px 20px 20px;
   border-radius: 10px;
   border: 1px solid #E54F4F;
@@ -425,7 +427,7 @@ div#toggle span:after {
 }
 
 .three_item .project p:after {
-  border-color: #fff transparent transparent;
+  border-color: #E54F4F transparent transparent;
   border-style: solid solid solid solid;
   border-width: 10px;
   /* 必須指定，才能顯示內容 */
@@ -1311,7 +1313,7 @@ div#toggle span:after {
       flex-wrap: wrap;
 }
 
-.book_area .book_area_menu .book_selection p {
+.book_area .book_area_menu .book_selection a {
   border: 1px solid;
   border-radius: 10px;
   padding: 5px 10px;
@@ -1319,92 +1321,92 @@ div#toggle span:after {
   cursor: pointer;
 }
 
-.book_area .book_area_menu .book_selection.first_grade_selection p {
+.book_area .book_area_menu .book_selection.first_grade_selection a {
   color: #D72B2B;
   border-color: #D72B2B;
 }
 
-.book_area .book_area_menu .book_selection.first_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.first_grade_selection a:hover {
   color: #fff;
   background-color: #D72B2B;
 }
 
-.book_area .book_area_menu .book_selection.second_grade_selection p {
+.book_area .book_area_menu .book_selection.second_grade_selection a {
   color: #EB772A;
   border-color: #EB772A;
 }
 
-.book_area .book_area_menu .book_selection.second_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.second_grade_selection a:hover {
   color: #fff;
   background-color: #EB772A;
 }
 
-.book_area .book_area_menu .book_selection.third_grade_selection p {
+.book_area .book_area_menu .book_selection.third_grade_selection a {
   color: #F3BA03;
   border-color: #F3BA03;
 }
 
-.book_area .book_area_menu .book_selection.third_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.third_grade_selection a:hover {
   color: #fff;
   background-color: #F3BA03;
 }
 
-.book_area .book_area_menu .book_selection.fourth_grade_selection p {
+.book_area .book_area_menu .book_selection.fourth_grade_selection a {
   color: #8DA429;
   border-color: #8DA429;
 }
 
-.book_area .book_area_menu .book_selection.fourth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.fourth_grade_selection a:hover {
   color: #fff;
   background-color: #8DA429;
 }
 
-.book_area .book_area_menu .book_selection.fifth_grade_selection p {
+.book_area .book_area_menu .book_selection.fifth_grade_selection a {
   color: #00AD5E;
   border-color: #00AD5E;
 }
 
-.book_area .book_area_menu .book_selection.fifth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.fifth_grade_selection a:hover {
   color: #fff;
   background-color: #00AD5E;
 }
 
-.book_area .book_area_menu .book_selection.sixth_grade_selection p {
+.book_area .book_area_menu .book_selection.sixth_grade_selection a {
   color: #00B1B9;
   border-color: #00B1B9;
 }
 
-.book_area .book_area_menu .book_selection.sixth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.sixth_grade_selection a:hover {
   color: #fff;
   background-color: #00B1B9;
 }
 
-.book_area .book_area_menu .book_selection.seventh_grade_selection p {
+.book_area .book_area_menu .book_selection.seventh_grade_selection a {
   color: #0163C6;
   border-color: #0163C6;
 }
 
-.book_area .book_area_menu .book_selection.seventh_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.seventh_grade_selection a:hover {
   color: #fff;
   background-color: #0163C6;
 }
 
-.book_area .book_area_menu .book_selection.eighth_grade_selection p {
+.book_area .book_area_menu .book_selection.eighth_grade_selection a {
   color: #4F1AC4;
   border-color: #4F1AC4;
 }
 
-.book_area .book_area_menu .book_selection.eighth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.eighth_grade_selection a:hover {
   color: #fff;
   background-color: #4F1AC4;
 }
 
-.book_area .book_area_menu .book_selection.ninth_grade_selection p {
+.book_area .book_area_menu .book_selection.ninth_grade_selection a {
   color: #8400A1;
   border-color: #8400A1;
 }
 
-.book_area .book_area_menu .book_selection.ninth_grade_selection p:hover {
+.book_area .book_area_menu .book_selection.ninth_grade_selection a:hover {
   color: #fff;
   background-color: #8400A1;
 }
@@ -1733,7 +1735,6 @@ div#toggle span:after {
 
 .main.test .answer_area {
   padding: 30px calc(1.2rem + 30px);
-  background-color: #fff;
   border: 1px solid #E54F4F;
   margin-top: -10px;
   border-radius: 10px;
