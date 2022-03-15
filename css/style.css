@@ -1733,6 +1733,7 @@ div#toggle span:after {
 
 .main.test .answer_area {
   padding: 30px calc(1.2rem + 30px);
+  background-color: #fff;
   border: 1px solid #E54F4F;
   margin-top: -10px;
   border-radius: 10px;
