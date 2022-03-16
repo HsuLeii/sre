@@ -169,3 +169,21 @@ var ticketheight = $(".ticket_wrap").height();
 $(".wave_line").css({"width": ticketheight }); 
 // 閱讀地圖結束
 
+$(".owl-carousel").owlCarousel({
+  loop: false, // 循環播放
+  nav: true, // 顯示箭頭
+  dots: false,// 顯示點點
+  items:1.4, 
+  navText: ["<span class='owl_arrow arrow_left'><</span>","<span class='owl_arrow arrow_right'>></span>"],
+  responsive: {
+    0: {
+      items: 1.5 // 螢幕大小為 0~600 顯示 1 個項目
+    },
+    600: {
+      items: 2.5 // 螢幕大小為 600~1000 顯示 3 個項目
+    },
+    1000: {
+      items: 3.5 // 螢幕大小為 1000 以上 顯示 5 個項目
+    }
+  }
+});

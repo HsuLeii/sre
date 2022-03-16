@@ -9,7 +9,8 @@
   transition: all .3s ease;
 }
 
-.best_book .swiper .swiper-slide, .book_area .book_list a {
+.best_book .swiper .swiper-slide, .book_area .book_list a, .owl-prev,
+.owl-next {
   -webkit-box-shadow: 1px 1px 5px #4b4b4b45;
           box-shadow: 1px 1px 5px #4b4b4b45;
 }
@@ -1494,39 +1495,31 @@ div#toggle span:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1800px;
 }
 
 .main.grade_map .ticket_area .ticket_wrap {
-  position: relative;
-  width: 18%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   /* 波浪線 */
 }
 
-.main.grade_map .ticket_area .ticket_wrap.redemption {
-  margin-right: 1%;
-}
-
-.main.grade_map .ticket_area .ticket_wrap.redemption .ticket_left .exchange {
-  display: block;
-}
-
 .main.grade_map .ticket_area .ticket_wrap .ticket {
-  background: linear-gradient(to bottom, #E54F4F 0%, #E54F4F 50px, #186e44 50px, #186e44 100%);
   position: relative;
-  padding: 50px 0px 0px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket_left {
-  width: 100%;
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left {
+  width: calc(100% - 115px);
+  background-color: #f6d367;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket_left .exchange {
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
   display: none;
-  width: 30%;
+  width: 20%;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -1534,64 +1527,150 @@ div#toggle span:after {
           transform: translate(0px, -50%) rotate(45deg);
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket_right {
-  display: none;
-  width: 10%;
-  position: relative;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
-
-.main.grade_map .ticket_area .ticket_wrap .ticket_right:before {
-  position: absolute;
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
   content: "";
-  top: -4px;
-  left: 0;
-  width: 90px;
-  height: 8px;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background: radial-gradient(circle, transparent 2px, transparent, transparent 3px, transparent 4px, transparent 4px, transparent);
-  background-size: 8px 8px;
-}
-
-.main.grade_map .ticket_area .ticket_wrap .ticket_right h4 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-}
-
-.main.grade_map .ticket_area .ticket_wrap .wave_line {
   position: absolute;
-  top: -4px;
-  height: 8px;
-  background: radial-gradient(circle, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-  background-size: 8px 8px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #EFE8E0;
+  border-radius: 50%;
+  right: -5px;
+  z-index: 1;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_left {
-  width: 90px;
-  -webkit-transform-origin: center left;
-          transform-origin: center left;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before {
+  top: -5px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_right {
-  right: 0px;
-  width: 90px;
-  -webkit-transform-origin: center right;
-          transform-origin: center right;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
+  bottom: -5px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left .ticket_object {
+  line-height: 0;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right {
+  width: 115px;
+  background-color: #f6d367;
+  position: relative;
+  border-left: 2px dotted #5B3716;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive {
+  background-color: #E54F4F;
+  border-radius: 10px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive a {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.main.grade_map .ticket_area .ticket_wrap.exchange_ticket {
+  margin-left: 10%;
+}
+
+.main.grade_map .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
+  display: block;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 5px;
+  max-width: 5px;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_test_one {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
+  background-size: 0.3rem 0.7rem;
+  background-repeat: repeat-y;
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 5px;
+  max-width: 5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_test_one {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
+  background-size: 0.3rem 0.7rem;
+  background-repeat: repeat-y;
 }
 
 .main.grade_map .book_area {
   width: 80%;
 }
 
+/*owlcarousel 票券輪播開始*/
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #EFE8E0 !important;
+  position: absolute;
+  top: 50%;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: #E54F4F !important;
+}
+
+.owl-prev:hover .owl_arrow,
+.owl-next:hover .owl_arrow {
+  color: #fff;
+}
+
+.owl-prev .owl_arrow,
+.owl-next .owl_arrow {
+  font-size: 25px;
+  color: #5B3716;
+}
+
+.owl-prev {
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.owl-next {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+/*owlcarousel 票券輪播結束*/
 /*grade_map 地圖所有內頁結束*/
 /*map_first_grade 一年級地圖開始*/
 .main.map_first_grade .booklist_introduce .booklist_introduce_button {
