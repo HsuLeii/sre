@@ -169,14 +169,13 @@ $(".ninth_grade_background").click(function () {
 document.getElementById("btn").addEventListener("click", function()
 {
   $("#btn").parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
-  $("#dummyimage").attr("src","image/photo/map/first_grade/color_1.png");
+  $("#changeimage").attr("src","image/photo/map/first_grade/color_1.png");
 });
 
 // 閱讀地圖結束
 
 $(".owl-carousel").owlCarousel({
   center: true,
-    items:2,
     loop:false, // 循環播放
   nav: true, // 顯示箭頭
   dots: false,// 顯示點點
@@ -184,14 +183,19 @@ $(".owl-carousel").owlCarousel({
   navText: ["<span class='owl_arrow arrow_left'><</span>","<span class='owl_arrow arrow_right'>></span>"],
   responsive: {
     0: {
-      items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+      items: 1.5 
     },
-    600: {
-      items: 2 // 螢幕大小為 600~1000 顯示 3 個項目
+    768: {
+      items: 2
     },
     1000: {
-      items: 3.5 // 螢幕大小為 1000 以上 顯示 5 個項目
+      items: 2.5
+    }
+    ,
+    1500: {
+      items: 3.5
     }
   }
 });
+
 
