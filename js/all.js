@@ -230,4 +230,3 @@ $(".owl-carousel").owlCarousel({
   }
 });
 
-
