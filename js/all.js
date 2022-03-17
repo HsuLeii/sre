@@ -165,25 +165,33 @@ $(".ninth_grade_background").click(function () {
 });
 // 分級對應結束
 // 閱讀地圖開始
-var ticketheight = $(".ticket_wrap").height();
-$(".wave_line").css({"width": ticketheight }); 
+
+document.getElementById("btn").addEventListener("click", function()
+{
+  $("#btn").parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
+  $("#dummyimage").attr("src","image/photo/map/first_grade/color_1.png");
+});
+
 // 閱讀地圖結束
 
 $(".owl-carousel").owlCarousel({
-  loop: false, // 循環播放
+  center: true,
+    items:2,
+    loop:false, // 循環播放
   nav: true, // 顯示箭頭
   dots: false,// 顯示點點
-  items:1.4, 
+  rewindNav: false,
   navText: ["<span class='owl_arrow arrow_left'><</span>","<span class='owl_arrow arrow_right'>></span>"],
   responsive: {
     0: {
-      items: 1.5 // 螢幕大小為 0~600 顯示 1 個項目
+      items: 1 // 螢幕大小為 0~600 顯示 1 個項目
     },
     600: {
-      items: 2.5 // 螢幕大小為 600~1000 顯示 3 個項目
+      items: 2 // 螢幕大小為 600~1000 顯示 3 個項目
     },
     1000: {
       items: 3.5 // 螢幕大小為 1000 以上 顯示 5 個項目
     }
   }
 });
+
