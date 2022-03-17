@@ -77,6 +77,13 @@ p {
   line-height: 1.7;
 }
 
+span {
+  font-size: 17px;
+  text-decoration: none;
+  color: #5B3716;
+  line-height: 1.7;
+}
+
 a {
   font-size: 17px;
   text-decoration: none;
@@ -292,6 +299,10 @@ div#toggle span:after {
   width: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.slide.slide_grade {
+  background-image: url(../image/photo/slide/slide_grade.png);
 }
 
 .main {
@@ -1490,6 +1501,43 @@ div#toggle span:after {
   width: calc(100% - 35px);
 }
 
+.book_area .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book_area .page .pagination {
+  display: inline-block;
+}
+
+.book_area .page .pagination a,
+.book_area .page .pagination span {
+  float: left;
+  padding: 2px 10px;
+  cursor: pointer;
+  color: #5B3716;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin: 5px 8px;
+}
+
+.book_area .page .pagination a:hover,
+.book_area .page .pagination span:hover {
+  border: 1px solid #E54F4F;
+}
+
+.book_area .page .pagination a.active,
+.book_area .page .pagination span.active {
+  border: 1px solid #E54F4F;
+  background-color: #E54F4F;
+  color: white;
+  cursor: auto;
+}
+
 /*booklist 優選書單結束*/
 /*grade_map 地圖所有內頁開始*/
 .main.grade_map {
@@ -2315,6 +2363,9 @@ input[type="radio" i] ~ label {
   p {
     font-size: 15px;
   }
+  span {
+    font-size: 15px;
+  }
   a {
     font-size: 15px;
   }
@@ -2457,7 +2508,7 @@ input[type="radio" i] ~ label {
     padding: 5px 8px;
   }
   .main.grade_map .book_area {
-    margin: 45px auto 0px;
+    margin: 45px auto 80px;
   }
   /*owlcarousel 票券輪播開始*/
   .owl-prev,
@@ -2801,6 +2852,14 @@ input[type="radio" i] ~ label {
   .book_area .book_list a .book_content h4 {
     height: 50px;
   }
+  .book_area .page .pagination a,
+  .book_area .page .pagination span {
+    margin: 5px;
+  }
+  .book_area .page .pagination .firstnn,
+  .book_area .page .pagination .lastnn {
+    display: none;
+  }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
   .main.grade_map .ticket_area {
@@ -2820,7 +2879,7 @@ input[type="radio" i] ~ label {
     padding: 5px;
   }
   .main.grade_map .book_area {
-    margin: 40px auto 0px;
+    margin: 40px auto 70px;
   }
   /*owlcarousel 票券輪播開始*/
   .owl-prev,
@@ -2933,6 +2992,9 @@ input[type="radio" i] ~ label {
     font-size: 15px;
   }
   p {
+    font-size: 13px;
+  }
+  span {
     font-size: 13px;
   }
   a {
