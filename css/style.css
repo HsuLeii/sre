@@ -293,18 +293,6 @@ div#toggle span:after {
   margin: 0px 0px 3px 3px;
 }
 
-.slide {
-  background-image: url(../image/photo/slide/slide-test.jpg);
-  padding: 150px 0px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-}
-
-.slide.slide_grade {
-  background-image: url(../image/photo/slide/slide_grade.png);
-}
-
 .main {
   margin: 60px auto 80px;
 }
