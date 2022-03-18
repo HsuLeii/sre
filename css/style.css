@@ -24,6 +24,19 @@
   background: #E54F4F;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  color: #E54F4F;
+  opacity: 0.5;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  opacity: 1;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 40px;
+}
+
 body,
 div,
 dl,
@@ -306,6 +319,55 @@ div#toggle span:after {
 }
 
 /*index 首頁開始*/
+.slide_index .slide_index_text {
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  width: calc(90% - 60px);
+}
+
+.slide_index .slide_index_text img {
+  width: 80%;
+  max-width: 400px;
+}
+
+.slide_index .slide_index_text p {
+  font-size: 35px;
+  color: #fff;
+  line-height: 1.5;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-weight: bold;
+}
+
+.slide_index .slide_index_text.slide_index_2 {
+  top: 35px;
+  bottom: inherit;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.slide_index .slide_index_text.slide_index_2 p {
+  text-shadow: black 0em 0em 0.5em;
+}
+
+.slide_index .slide_index_text.slide_index_3 {
+  top: 50%;
+  bottom: initial;
+  -webkit-transform: translate(0px, -25%);
+          transform: translate(0px, -25%);
+}
+
+.slide_index .slide_index_text.slide_index_3 h4 {
+  font-size: 45px;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.slide_index .slide_index_text.slide_index_3 p {
+  font-weight: 300;
+}
+
 .start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2337,6 +2399,17 @@ input[type="radio" i] ~ label {
   .header nav .menu.opened {
     visibility: visible;
   }
+  /*index 首頁開始*/
+  .slide_index .slide_index_text p {
+    font-size: 29px;
+  }
+  .slide_index .slide_index_text.slide_index_2 {
+    top: 30px;
+  }
+  .slide_index .slide_index_text.slide_index_3 h4 {
+    font-size: 40px;
+  }
+  /*index 首頁結束*/
   footer {
     padding: 35px 0px;
     border-top: 1px solid #5B3716;
@@ -2403,6 +2476,15 @@ input[type="radio" i] ~ label {
     height: 50px;
   }
   /*index 首頁開始*/
+  .slide_index .slide_index_text p {
+    font-size: 21px;
+  }
+  .slide_index .slide_index_text.slide_index_2 {
+    top: 20px;
+  }
+  .slide_index .slide_index_text.slide_index_3 h4 {
+    font-size: 32px;
+  }
   .start {
     margin: 0 auto 60px;
   }
@@ -2668,6 +2750,16 @@ input[type="radio" i] ~ label {
   label {
     font-size: 15px;
   }
+  /*swiper*/
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 25px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
   .main {
     margin: 40px auto 80px;
   }
@@ -2678,6 +2770,24 @@ input[type="radio" i] ~ label {
     font-size: 15px;
   }
   /*index 首頁開始*/
+  .slide_index .slide_index_text {
+    bottom: 20px;
+    left: 35px;
+    width: calc(100% - 70px);
+  }
+  .slide_index .slide_index_text p {
+    font-size: 17px;
+  }
+  .slide_index .slide_index_text.slide_index_2 {
+    top: 10px;
+  }
+  .slide_index .slide_index_text.slide_index_3 {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  .slide_index .slide_index_text.slide_index_3 h4 {
+    font-size: 25px;
+  }
   .start {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3034,6 +3144,18 @@ input[type="radio" i] ~ label {
     height: 30px;
   }
   /*index 首頁開始*/
+  .slide_index .slide_index_text {
+    bottom: 20px;
+  }
+  .slide_index .slide_index_text p {
+    font-size: 12px;
+  }
+  .slide_index .slide_index_text.slide_index_2 {
+    top: 5px;
+  }
+  .slide_index .slide_index_text.slide_index_3 h4 {
+    font-size: 20px;
+  }
   .best_book .swiper .swiper-slide .book_content h4 {
     height: 49.98px;
   }
