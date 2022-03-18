@@ -15,7 +15,7 @@
           box-shadow: 1px 1px 5px #4b4b4b45;
 }
 
-.main.about_sre, .main.about_dcec, .main.question, .main.booklist, .main.grade_map .book_area, .main.test {
+.main.about_sre, .main.about_dcec, .main.question, .main.booklist, .main.grade_map .map_book_area .book_area, .main.test {
   max-width: 1200px;
 }
 
@@ -180,6 +180,10 @@ div#toggle span:after {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 5%;
+}
+
+.header.map_first_grade_header {
+  background-color: #cdffff;
 }
 
 .header .header_logo img {
@@ -1543,6 +1547,8 @@ div#toggle span:after {
 /*grade_map 地圖所有內頁開始*/
 .main.grade_map {
   margin: 0px auto 0px;
+  background-color: #00AD5E;
+  padding: 0px 0px 130px;
 }
 
 .main.grade_map .map_object {
@@ -1555,7 +1561,15 @@ div#toggle span:after {
   left: 0;
 }
 
-.main.grade_map .ticket_area {
+.main.grade_map .map_book_area {
+  width: 80%;
+  margin: 80px auto 0px;
+  background-color: #EFE8E0;
+  padding: 80px 0px;
+  border-radius: 10px;
+}
+
+.main.grade_map .map_book_area .ticket_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1563,11 +1577,11 @@ div#toggle span:after {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
-  margin: 80px auto 0px;
+  margin: 0px auto;
   max-width: 1800px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1575,16 +1589,16 @@ div#toggle span:after {
   /* 波浪線 */
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket {
   position: relative;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left {
   width: calc(100% - 115px);
   background-color: #f6d367;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
   display: none;
   width: 30%;
   position: absolute;
@@ -1594,7 +1608,7 @@ div#toggle span:after {
           transform: translate(0px, -50%) rotate(45deg);
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
   content: "";
   position: absolute;
   display: block;
@@ -1606,23 +1620,23 @@ div#toggle span:after {
   z-index: 1;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before {
   top: -5px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
   bottom: -5px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left .ticket_object {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .ticket_object {
   line-height: 0;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left .wave_line_right {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .wave_line_right {
   display: none;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right {
   width: 115px;
   background-color: #f6d367;
   position: relative;
@@ -1638,35 +1652,35 @@ div#toggle span:after {
           justify-content: center;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
   background-color: #E54F4F;
   padding: 5px 10px;
   color: #fff;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive button:disabled {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button:disabled {
   background-color: grey;
   border-radius: 10px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive p {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive p {
   color: #fff;
   cursor: pointer;
 }
 
-.main.grade_map .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
   display: block;
 }
 
-.main.grade_map .ticket_area .ticket_wrap.exchange_ticket .ticket_left .wave_line_right {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_left .wave_line_right {
   display: block;
 }
 
-.main.grade_map .ticket_area .ticket_wrap.exchange_ticket .ticket_right {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_right {
   display: none;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_left {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_left {
   position: absolute;
   top: 0;
   left: 0;
@@ -1678,7 +1692,7 @@ div#toggle span:after {
   max-width: 5px;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal {
   height: 100%;
   width: 100%;
   background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
@@ -1686,7 +1700,7 @@ div#toggle span:after {
   background-repeat: repeat-y;
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_right {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_right {
   position: absolute;
   top: 0;
   right: 0;
@@ -1700,7 +1714,7 @@ div#toggle span:after {
           transform: rotate(180deg);
 }
 
-.main.grade_map .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal {
+.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal {
   height: 100%;
   width: 100%;
   background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
@@ -1708,8 +1722,9 @@ div#toggle span:after {
   background-repeat: repeat-y;
 }
 
-.main.grade_map .book_area {
-  width: 80%;
+.main.grade_map .map_book_area .book_area {
+  width: 90%;
+  margin: 80px auto 0px;
 }
 
 /*owlcarousel 票券輪播開始*/
@@ -1759,6 +1774,10 @@ div#toggle span:after {
 /*owlcarousel 票券輪播結束*/
 /*grade_map 地圖所有內頁結束*/
 /*map_first_grade 一年級地圖開始*/
+.main.map_first_grade {
+  background-color: #c4cc23;
+}
+
 .main.map_first_grade .booklist_introduce .booklist_introduce_button {
   margin: 20px 0px;
 }
@@ -2476,16 +2495,17 @@ input[type="radio" i] ~ label {
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
-  .main.grade_map .ticket_area {
-    margin: 45px auto 0px;
+  .main.grade_map .map_book_area {
+    margin: 60px auto 0px;
+    padding: 45px 0px;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket {
     position: relative;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left {
     width: calc(100% - 100px);
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
     content: "";
     position: absolute;
     display: block;
@@ -2496,20 +2516,20 @@ input[type="radio" i] ~ label {
     right: -5px;
     z-index: 1;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:before {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before {
     top: -5px;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left:after {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
     bottom: -5px;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right {
     width: 100px;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
     padding: 5px 8px;
   }
-  .main.grade_map .book_area {
-    margin: 45px auto 80px;
+  .main.grade_map .map_book_area .book_area {
+    margin: 45px auto 0px;
   }
   /*owlcarousel 票券輪播開始*/
   .owl-prev,
@@ -2860,24 +2880,26 @@ input[type="radio" i] ~ label {
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
-  .main.grade_map .ticket_area {
-    margin: 40px auto 0px;
+  .main.grade_map .map_book_area {
     width: 90%;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket {
+  .main.grade_map .map_book_area .ticket_area {
+    width: 100%;
+  }
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket {
     position: relative;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_left {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left {
     width: calc(100% - 95px);
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right {
     width: 95px;
   }
-  .main.grade_map .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
+  .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
     padding: 5px;
   }
-  .main.grade_map .book_area {
-    margin: 40px auto 70px;
+  .main.grade_map .map_book_area .book_area {
+    margin: 40px auto 0px;
   }
   /*owlcarousel 票券輪播開始*/
   .owl-prev,
