@@ -76,6 +76,21 @@
         </nav>
     </header>
     <div class="slide">
+        <div class="swiper mySwiper_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="image/photo/slide/slide_index_1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="image/photo/slide/slide_index_2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="image/photo/slide/slide_index_3.png" alt="">
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
     </div>
     <div class="main">
         <div class="start">
@@ -288,6 +303,28 @@
                     loop: false,
                 }
             }
+        });
+    </script>
+    <script>
+        var swiper_slide = new Swiper(".mySwiper_slide", {
+
+            autoplay: true,
+            spaceBetween: 15,
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                draggable: true,
+            },
+
         });
     </script>
 </body>
