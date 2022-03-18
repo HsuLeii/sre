@@ -1019,7 +1019,8 @@ div#toggle span:after {
 }
 
 .main.grade .grade_introduce .grade_introduce_button {
-  margin: 20px 0px;
+  margin: 20px 10px 20px 0px;
+  display: inline-block;
 }
 
 .main.grade .grade_introduce .grade_introduce_button a {
@@ -1099,6 +1100,14 @@ div#toggle span:after {
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
   color: #EB772A;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction {
+  border-color: #F3BA03;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction h4 {
+  color: #F3BA03;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
@@ -1208,12 +1217,16 @@ div#toggle span:after {
   background-color: #EB772A;
 }
 
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner {
+  background-color: #F3BA03;
+}
+
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner {
-  background: linear-gradient(-45deg, #F3BA03 50%, #8DA429 50%);
+  background-color: #8DA429;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner {
-  background: linear-gradient(-45deg, #00AD5E 50%, #00B1B9 50%);
+  background-color: #00AD5E;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner {
@@ -2779,9 +2792,6 @@ input[type="radio" i] ~ label {
   }
   .main.grade .chart_content {
     margin: 20px auto;
-  }
-  .main.grade .grade_introduce .grade_introduce_button {
-    margin: 20px 0px;
   }
   .main.grade .grade_introduce .grade_introduce_button a {
     color: #E54F4F;
