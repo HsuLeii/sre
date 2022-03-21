@@ -2074,12 +2074,21 @@ div#toggle span:after {
 
 .main.test .answer_area .topic .topic_text {
   padding-left: 20px;
-  font-weight: normal;
 }
 
 .main.test .answer_area .topic .topic_text ruby {
   margin-right: 10px;
   line-height: 2.5;
+}
+
+.main.test .answer_area .topic .topic_text p {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.main.test .answer_area .topic span {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .main.test .answer_area .connect {
@@ -2185,6 +2194,281 @@ canvas {
   display: block;
 }
 
+/*注音開始*/
+h-ruby.zhuyin h-zhuyin, ruby.mps h-zhuyin, ruby.zhuyin h-zhuyin {
+  position: relative;
+  letter-spacing: 0;
+}
+
+h-ruby.zhuyin h-diao, ruby.mps h-diao, ruby.zhuyin h-diao {
+  position: absolute;
+  right: -0.8em;
+  bottom: .5em;
+  display: block;
+  font-size: 1em;
+}
+
+h-ruby.zhuyin h-diao h-char, ruby.mps h-diao h-char, ruby.zhuyin h-diao h-char {
+  -webkit-writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+}
+
+h-ruby.zhuyin [diao="˙"] h-diao, ruby.mps [diao="˙"] h-diao, ruby.zhuyin [diao="˙"] h-diao {
+  top: -.3em;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  font-size: 1em;
+}
+
+h-ruby.zhuyin [diao="󳆴"] h-diao, h-ruby.zhuyin [diao="󳆵"] h-diao, h-ruby.zhuyin [diao="󳆶"] h-diao, h-ruby.zhuyin [diao="󳆷"] h-diao, h-ruby.zhuyin [diao^="ㆴ"] h-diao, h-ruby.zhuyin [diao^="ㆵ"] h-diao, h-ruby.zhuyin [diao^="ㆶ"] h-diao, h-ruby.zhuyin [diao^="ㆷ"] h-diao, ruby.mps [diao="󳆴"] h-diao, ruby.mps [diao="󳆵"] h-diao, ruby.mps [diao="󳆶"] h-diao, ruby.mps [diao="󳆷"] h-diao, ruby.mps [diao^="ㆴ"] h-diao, ruby.mps [diao^="ㆵ"] h-diao, ruby.mps [diao^="ㆶ"] h-diao, ruby.mps [diao^="ㆷ"] h-diao, ruby.zhuyin [diao="󳆴"] h-diao, ruby.zhuyin [diao="󳆵"] h-diao, ruby.zhuyin [diao="󳆶"] h-diao, ruby.zhuyin [diao="󳆷"] h-diao, ruby.zhuyin [diao^="ㆴ"] h-diao, ruby.zhuyin [diao^="ㆵ"] h-diao, ruby.zhuyin [diao^="ㆶ"] h-diao, ruby.zhuyin [diao^="ㆷ"] h-diao {
+  right: -1em;
+  bottom: -.125em;
+  font-size: 1em;
+}
+
+h-ru[annotation] {
+  position: relative;
+  display: inline-table;
+  line-height: 1.1;
+  text-align: center;
+  vertical-align: 1em;
+}
+
+h-ru[annotation] > rt, h-ru[order="0"] > rt, h-ruby[rightangle][doubleline] h-ru[order="0"] > rt {
+  display: table-header-group;
+}
+
+h-ru[annotation] > h-ru[annotation] {
+  vertical-align: -.1em;
+}
+
+h-ru[annotation] > h-ru, h-ru[annotation] > rb, h-ru[annotation] > rt {
+  line-height: 1;
+  text-align: center;
+}
+
+h-ru[annotation] > rt {
+  height: 1em;
+  font-size: .5em;
+  white-space: nowrap;
+  word-break: normal;
+}
+
+h-ru[annotation] > rt:after, h-ru[annotation] > rt:before {
+  content: "\2006";
+}
+
+h-ru[order="1"] > rt, h-ruby[rightangle] h-ru[order="0"] > rt, h-ruby[rightangle][doubleline] h-ru[order="1"] > rt {
+  display: table-footer-group;
+}
+
+h-ru[order="0"] > h-ru[order="1"] {
+  vertical-align: .15em;
+}
+
+h-ruby[rightangle][doubleline] h-ru[order="0"] rt {
+  line-height: 1.5;
+}
+
+h-ruby[rightangle][doubleline] h-ru[annotation] {
+  vertical-align: .5em;
+}
+
+[zhuyin] h-zhuyin {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  text-indent: 0;
+  position: relative;
+  display: inline-block;
+  height: 1em;
+  width: .4em;
+  vertical-align: middle;
+}
+
+[zhuyin] h-diao, [zhuyin] h-yin {
+  line-height: 1;
+  position: absolute;
+}
+
+[zhuyin] h-zhuyin > * {
+  -webkit-transform: scale(0.4);
+  transform: scale(0.4);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  display: inline-block;
+}
+
+[zhuyin] h-yin {
+  left: 0;
+  height: 1em;
+  vertical-align: top;
+}
+
+[zhuyin] h-diao {
+  bottom: 0;
+  right: -0.8em;
+}
+
+[zhuyin] [length="0"] h-zhuyin, [zhuyin] h-diao:empty, [zhuyin] h-yin:empty {
+  display: none;
+}
+
+[zhuyin] [length="0"] {
+  margin-right: 0;
+}
+
+[zhuyin] [length="1"] h-yin {
+  top: .3em;
+}
+
+[zhuyin] [length="1"] h-diao {
+  bottom: -0.3em;
+}
+
+[zhuyin] [length="2"] h-yin {
+  top: .05em;
+}
+
+[zhuyin] [length="2"] h-diao {
+  bottom: -.3em;
+}
+
+[zhuyin] [length="3"] h-yin {
+  top: -.05em;
+  line-height: .85;
+}
+
+[zhuyin] [length="3"] h-diao {
+  bottom: -.35em;
+}
+
+[zhuyin] [diao="˙"] h-diao {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: .06em;
+}
+
+[zhuyin] [diao="˙"] [length="1"] h-diao {
+  top: .15em;
+}
+
+[zhuyin] [diao="˙"] [length="2"] h-diao {
+  top: -.05em;
+}
+
+[zhuyin] [diao="˙"] [length="3"] h-diao {
+  top: -.2em;
+}
+
+[zhuyin] [diao="˪"] h-diao, [zhuyin] [diao="˫"] h-diao {
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+[zhuyin] [diao="󳆴"] h-diao, [zhuyin] [diao="󳆵"] h-diao, [zhuyin] [diao="󳆶"] h-diao, [zhuyin] [diao="󳆷"] h-diao, [zhuyin] [diao^="ㆴ"] h-diao, [zhuyin] [diao^="ㆵ"] h-diao, [zhuyin] [diao^="ㆶ"] h-diao, [zhuyin] [diao^="ㆷ"] h-diao {
+  bottom: -.6em;
+  margin-right: .3em;
+}
+
+[zhuyin] {
+  margin-right: .2em;
+  display: inline-block;
+  line-height: 1.8;
+}
+
+[rightangle] h-ru[annotation] {
+  vertical-align: 0;
+  line-height: 1;
+}
+
+[rightangle] rt:after {
+  content: "";
+  display: inline-block;
+  width: 1.2em;
+}
+
+h-ru h-ru[zhuyin] {
+  margin-top: -.4em;
+  margin-bottom: -.2em;
+  line-height: 1.8;
+}
+
+h-jinze, h-word {
+  display: inline-block;
+  text-indent: 0;
+}
+
+/*注音結束*/
+/*另一種注音開始*/
+ruby {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+rt {
+  font-size: 26%;
+  ruby-align: center;
+  text-align: center;
+  text-orientation: upright;
+}
+
+@font-face {
+  font-family: BopomofoRuby;
+  src: url(BopomofoRuby1909-v1-Regular.ttf);
+}
+
+.dummy2 {
+  line-height: 1;
+  font-size: 5em;
+  font-family: BopomofoRuby, 'AR KaiB5', 'KaiTi TW', '標楷體';
+}
+
+.dummy2 rt {
+  font-family: 'BopomofoRuby';
+}
+
+.v {
+  line-height: 1.1;
+}
+
+.v ruby {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.v rt {
+  letter-spacing: 0;
+}
+
+.h {
+  font-variant-east-asian: salt;
+  -webkit-font-feature-settings: "salt";
+  font-feature-settings: "salt";
+}
+
+.h ruby {
+  padding: 0;
+  line-height: 1.5;
+}
+
+.h rt {
+  letter-spacing: -0.4em;
+}
+
+/*另一種注音結束*/
 /*test 讀後測驗結束*/
 footer {
   padding: 35px 0px;
@@ -2686,6 +2970,12 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form img {
     margin: 10px 0px 10px 20px;
   }
+  .main.test .answer_area .topic .topic_text p {
+    font-size: 22px;
+  }
+  .main.test .answer_area .topic span {
+    font-size: 22px;
+  }
   .main.test .answer_area .connect {
     margin: 10px auto;
   }
@@ -3054,6 +3344,12 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form img {
     max-width: calc(100% - 20px);
   }
+  .main.test .answer_area .topic .topic_text p {
+    font-size: 20px;
+  }
+  .main.test .answer_area .topic span {
+    font-size: 20px;
+  }
   .main.test .answer_area .connect_area {
     width: calc(100% + 2rem);
   }
@@ -3185,26 +3481,32 @@ input[type="radio" i] ~ label {
     width: 20%;
     margin: 0px auto;
   }
-  .main.test .answer_area .connect tr {
+  .main.test .answer_area .topic .topic_text p {
+    font-size: 19px;
+  }
+  .main.test .answer_area .topic span {
+    font-size: 19px;
+  }
+  .main.test .answer_area .connect_area .connect tr {
     margin: 25px 20px;
   }
-  .main.test .answer_area .connect tr td {
-    width: 45%;
+  .main.test .answer_area .connect_area .connect tr td {
+    width: 40%;
   }
-  .main.test .answer_area .connect tr td:nth-child(2) {
-    width: 10%;
+  .main.test .answer_area .connect_area .connect tr td:nth-child(2) {
+    width: 20%;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon {
     width: 20px;
     height: 20px;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon.left_sound {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon.left_sound {
     left: -20px;
   }
-  .main.test .answer_area .connect tr td .test_audio_icon.right_sound {
+  .main.test .answer_area .connect_area .connect tr td .test_audio_icon.right_sound {
     right: -20px;
   }
-  .main.test .answer_area .connect tr td .connect_topic p {
+  .main.test .answer_area .connect_area .connect tr td .connect_topic p {
     font-size: 14px;
   }
   /*test 讀後測驗結束*/
