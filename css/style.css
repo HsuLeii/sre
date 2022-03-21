@@ -4,7 +4,7 @@
   font-weight: bold;
 }
 
-.start .start_text .start_button a, .main.test .send_button a {
+.main.test .send_button a {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -366,55 +366,6 @@ div#toggle span:after {
 
 .slide_index .slide_index_text.slide_index_3 p {
   font-weight: 300;
-}
-
-.start {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1200px;
-  width: 80%;
-  margin: 0 auto 130px;
-}
-
-.start img {
-  width: 10%;
-  margin: 0px 15px;
-}
-
-.start .start_text {
-  margin: 0px 5px;
-}
-
-.start .start_text h3,
-.start .start_text p {
-  color: #E54F4F;
-  margin: 5px auto;
-}
-
-.start .start_text .start_button {
-  margin: 20px auto 0px;
-}
-
-.start .start_text .start_button a {
-  color: #fff;
-  padding: 5px 10px;
-  background-color: #E54F4F;
-  border-radius: 10px;
-}
-
-.start .start_text .start_button a:hover {
-  background: #e23939;
-}
-
-.start .start_text .start_button a:active {
-  background: #de2323;
 }
 
 .three_item {
@@ -798,24 +749,6 @@ div#toggle span:after {
 
 .main.about_dcec .detection_report .report_content .report_text {
   width: 55%;
-}
-
-.main.about_dcec .detection_report .report_content .report_text .try_button {
-  margin-top: 20px;
-}
-
-.main.about_dcec .detection_report .report_content .report_text .try_button a {
-  color: #E54F4F;
-  border: 1px solid #E54F4F;
-  padding: 5px 10px;
-  border-radius: 10px;
-  display: inline-block;
-  margin: 5px 5px 5px 0px;
-}
-
-.main.about_dcec .detection_report .report_content .report_text .try_button a:hover {
-  color: #fff;
-  background-color: #E54F4F;
 }
 
 /*about_dcec 關於DCEC結束*/
@@ -2769,9 +2702,6 @@ input[type="radio" i] ~ label {
   .slide_index .slide_index_text.slide_index_3 h4 {
     font-size: 32px;
   }
-  .start {
-    margin: 0 auto 60px;
-  }
   .three_item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3078,22 +3008,6 @@ input[type="radio" i] ~ label {
   .slide_index .slide_index_text.slide_index_3 h4 {
     font-size: 25px;
   }
-  .start {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .start img {
-    width: 15%;
-    margin: 0px 0px 15px;
-  }
-  .start .start_text {
-    margin: 0px;
-  }
   .three_item .project {
     width: 100%;
     margin: 25px 0px;
@@ -3177,21 +3091,6 @@ input[type="radio" i] ~ label {
   }
   .main.about_dcec .detection_report .report_content .report_text {
     width: 100%;
-  }
-  .main.about_dcec .detection_report .report_content .report_text .try_button {
-    margin-top: 20px;
-  }
-  .main.about_dcec .detection_report .report_content .report_text .try_button a {
-    color: #E54F4F;
-    border: 1px solid #E54F4F;
-    padding: 5px 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 5px 5px 5px 0px;
-  }
-  .main.about_dcec .detection_report .report_content .report_text .try_button a:hover {
-    color: #fff;
-    background-color: #E54F4F;
   }
   /*about_dcec 關於DCEC結束*/
   /*grade 分級對應開始*/
