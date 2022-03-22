@@ -80,7 +80,12 @@
             <h1>常見問題</h1>
         </div>
         <div class="question_area">
-            <div class="item_question">
+            <div id="question_btn_area" class="question_btn_area">
+                <button type="button" class="question_btn active" onclick="filterSelection('all')"><p>全部問題</p></button>
+                <button type="button" class="question_btn question_book" onclick="filterSelection('question_book')"><p>書籍問題</p> </button>
+                <button type="button" class="question_btn question_test" onclick="filterSelection('question_test')"><p>測驗問題</p> </button>
+              </div>
+            <div class="item_question filter_question question_book">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統在書籍分級上是否有國際通用的標準?</h4>
@@ -95,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_book">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>使用者該如何取得系統推薦的書籍?</h4>
@@ -109,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_test">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>能力測驗的分數，老師該如何解讀?</h4>
@@ -123,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_test">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>DCEC測驗的時間長短為何?</h4>
@@ -137,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_test">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>若施測DCEC時，做到一半因網路連線斷線，或是其他因素暫無法完成測驗，之後是否需要重做測驗?</h4>
@@ -151,7 +156,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_test">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統是否允許同一位使用者進行多次測驗?</h4>
@@ -165,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="item_question">
+            <div class="item_question filter_question question_test">
                 <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統在書籍分級上是否有國際通用的標準?</h4>
@@ -221,5 +226,48 @@
     <script src="js/all.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script>
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filter_question");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
 
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var question_btn = document.getElementById("question_btn_area");
+var btns = question_btn.getElementsByClassName("question_btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
 </body>
