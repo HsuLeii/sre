@@ -640,6 +640,7 @@ div#toggle span:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .book_information_modal .book_introduction .book_introduction_left {
@@ -685,13 +686,12 @@ div#toggle span:after {
   border-radius: 0px 10px 0px 10px;
 }
 
-.book_information_modal .book_introduction .book_introduction_left .book_introduction_left_border,
-.book_information_modal .book_introduction .book_introduction_left .book_introduction_right_border {
+.book_information_modal .book_introduction .book_introduction_left .book_introduction_top_border {
   display: none;
 }
 
 .book_information_modal .book_introduction .book_introduction_right {
-  width: calc(70% - 16%);
+  width: calc(65% - 16%);
   background-color: #ede8d2;
   margin: 15px auto;
   padding: 15px;
@@ -702,6 +702,12 @@ div#toggle span:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.book_information_modal .book_introduction .book_introduction_right .introduction_content {
+  max-height: 250px;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 .book_information_modal .book_introduction .book_introduction_right .modal_book_button {
@@ -748,6 +754,10 @@ div#toggle span:after {
   width: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.book_information_modal .book_introduction .book_introduction_right .book_introduction_bottom_border {
+  display: none;
 }
 
 .book_information_modal .modal_wave_line {
@@ -3373,22 +3383,25 @@ input[type="radio" i] ~ label {
   }
   .best_book .swiper .swiper-slide .book_content h4 {
     height: 51.66px;
+    margin-bottom: 5px;
   }
   .book_information_modal {
     background: repeating-linear-gradient(60deg, #f6d367, #f6d367 5%, #E54F4F 0, #E54F4F 10%);
+    padding: 15% 0px;
   }
   .book_information_modal .book_introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
   }
   .book_information_modal .book_introduction .book_introduction_left {
-    width: calc(100% - 16%);
+    width: 100%;
     background-color: #ede8d2;
     border-right: 0px dotted #fff;
     position: relative;
-    margin: 15px auto;
   }
   .book_information_modal .book_introduction .book_introduction_left .modal_book_img {
     max-width: 100%;
@@ -3399,46 +3412,43 @@ input[type="radio" i] ~ label {
     width: 25px;
     height: 25px;
   }
-  .book_information_modal .book_introduction .book_introduction_left .book_introduction_left_border {
+  .book_information_modal .book_introduction .book_introduction_left .book_introduction_top_border {
     display: block;
     position: absolute;
-    left: 5px;
-    top: 0;
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-    height: 100%;
-  }
-  .book_information_modal .book_introduction .book_introduction_left .book_introduction_left_border img {
-    height: 100%;
-    width: auto;
-  }
-  .book_information_modal .book_introduction .book_introduction_left .book_introduction_right_border {
-    position: absolute;
-    right: 5px;
-    top: 0;
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-    height: 100%;
-  }
-  .book_information_modal .book_introduction .book_introduction_left .book_introduction_right_border img {
-    height: 100%;
-    width: auto;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    left: 0px;
+    top: 0px;
+    -webkit-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
+    width: 100%;
+    line-height: 0;
   }
   .book_information_modal .book_introduction .book_introduction_right {
     width: 100%;
-    background-color: #f6d367;
     margin: 0px auto;
-    border-top: 5px dotted #fff;
+    border-top: 5px dotted #5B3716;
   }
   .book_information_modal .book_introduction .book_introduction_right .introduction_content {
     width: 80%;
     margin: 0 auto;
+    max-height: none;
+    overflow-y: initial;
+  }
+  .book_information_modal .book_introduction .book_introduction_right .modal_book_button {
+    margin: 10px 0px 0px;
   }
   .book_information_modal .book_introduction .book_introduction_right .book_introduction_right_border,
   .book_information_modal .book_introduction .book_introduction_right .book_introduction_left_border {
     display: none;
+  }
+  .book_information_modal .book_introduction .book_introduction_right .book_introduction_bottom_border {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    -webkit-transform: translate(0%, 100%) rotate(180deg);
+            transform: translate(0%, 100%) rotate(180deg);
+    width: 100%;
+    line-height: 0;
   }
   /*index 首頁結束*/
   /*about_sre 關於SRE開始*/
