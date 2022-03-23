@@ -1851,7 +1851,7 @@ div#toggle span:after {
 /*grade_map 地圖所有內頁開始*/
 .main.grade_map {
   margin: 0px auto 0px;
-  background-color: #00AD5E;
+  background-color: #EFE8E0;
   padding: 0px 0px 130px;
 }
 
@@ -2076,6 +2076,114 @@ div#toggle span:after {
 }
 
 /*owlcarousel 票券輪播結束*/
+/*grade_map 地圖所有內頁結束*/
+/*grade_map 地圖所有內頁開始*/
+.main.grade_map {
+  margin: 0px auto 0px;
+  background-color: #EFE8E0;
+  padding: 0px 0px 130px;
+}
+
+.main.grade_map .map_object {
+  position: relative;
+}
+
+.main.grade_map .map_object.map_object_item_page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7ddff3), color-stop(67%, #b9f3de), color-stop(67%, #cdc12e));
+  background: linear-gradient(#7ddff3, #b9f3de 67%, #cdc12e 67%);
+  height: 800px;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_bg {
+  width: 100%;
+  position: absolute;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_bg.item_bg_cloud {
+  bottom: 95%;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_bg.item_bg_grassland {
+  bottom: 50%;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project {
+  width: calc(100% / 5);
+  position: absolute;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_first_grade {
+  bottom: 25%;
+  left: 0;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_second_grade {
+  bottom: 20%;
+  left: calc(100% / 5 / 2);
+  z-index: 1;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_third_grade {
+  bottom: 25%;
+  left: calc(100% / 5);
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_fourth_grade {
+  bottom: 25%;
+  left: calc(100% / 5 * 2);
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_fifth_grade {
+  bottom: 20%;
+  left: calc(100% / 5 * 2.5);
+  z-index: 1;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_sixth_grade {
+  bottom: 25%;
+  left: calc(100% / 5 * 3 + 2%);
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_seventh_grade {
+  bottom: 20%;
+  left: calc(100% / 5 * 3.5);
+  z-index: 1;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_eighth_grade {
+  bottom: 25%;
+  left: calc(100% / 5 * 4);
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project.item_project_ninth_grade {
+  bottom: 60%;
+  right: 5%;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main.grade_map .map_object .map_object_item .map_object_item_project img {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+.main.grade_map .map_book_area {
+  width: 80%;
+  margin: 80px auto 0px;
+  background-color: #EFE8E0;
+  padding: 80px 0px;
+  border-radius: 10px;
+}
+
+.main.grade_map .map_book_area .book_area {
+  width: 90%;
+  margin: 80px auto 0px;
+}
+
 /*grade_map 地圖所有內頁結束*/
 /*map_first_grade 一年級地圖開始*/
 .main.map_first_grade {
@@ -3425,7 +3533,7 @@ input[type="radio" i] ~ label {
   .book_information_modal .book_introduction .book_introduction_right {
     width: 100%;
     margin: 0px auto;
-    border-top: 5px dotted #5B3716;
+    border-top: 2px dotted #5B3716;
   }
   .book_information_modal .book_introduction .book_introduction_right .introduction_content {
     width: 80%;
