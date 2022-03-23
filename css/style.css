@@ -2089,12 +2089,6 @@ div#toggle span:after {
   position: relative;
 }
 
-.main.grade_map .map_object.map_object_item_page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7ddff3), color-stop(67%, #b9f3de), color-stop(67%, #cdc12e));
-  background: linear-gradient(#7ddff3, #b9f3de 67%, #cdc12e 67%);
-  height: 800px;
-}
-
 .main.grade_map .map_object .map_object_item .map_object_item_bg {
   width: 100%;
   position: absolute;
