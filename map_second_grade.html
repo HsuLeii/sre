@@ -13,6 +13,10 @@
   <script src="js/jquery.modal.min.js"></script>
   <link rel="stylesheet" href="css/jquery.modal.min.css" />
 
+  <!-- owl.carousel -->
+<link rel="stylesheet" href="css/owl_carousel/owl.carousel.min.css"></link>
+<script src="js/owl_carousel/owl.carousel.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -79,459 +83,645 @@
   <div class="main grade_map map_second_grade">
       <div class="map_object">
           <div class="map_background">
-              <img src="image/photo/map/second_grade/bg.jpg" alt="">
+              <!-- <img src="image/photo/map/second_grade/bg.jpg" alt=""> -->
           </div>
           <div class="map_object_item">
-              <img src="image/photo/map/second_grade/1.png" alt="">
-              <img src="image/photo/map/second_grade/2.png" alt="">
-              <img src="image/photo/map/second_grade/3.png" alt="">
-              <img src="image/photo/map/second_grade/4.png" alt="">
-              <img src="image/photo/map/second_grade/5.png" alt="">
+              <div class="map_object_item_frame">
+                <div class="map_object_roof">
+                  <img src="image/photo/map/map_object/map_object_roof.png" alt="">
+                </div>
+                <div class="map_object_sign">
+                  <div class="map_object_sign_one">
+                    <img src="image/photo/map/map_object/map_object_sign.png" alt="">
+                  </div>
+                  <div class="map_object_sign_two">
+                    <img src="image/photo/map/map_object/map_object_sign.png" alt="">
+                    <div class="map_object_sign_item">
+                        <img src="image/photo/map/first_grade/bg.png" alt="">
+                        <img id="changeimage_1" src="image/photo/map/first_grade/gray_1.png" alt="">
+                        <img id="changeimage_2" src="image/photo/map/first_grade/gray_2.png" alt="">
+                        <img id="changeimage_3" src="image/photo/map/first_grade/gray_3.png" alt="">
+                        <img id="changeimage_4" src="image/photo/map/first_grade/gray_4.png" alt="">
+                        <img id="changeimage_5" src="image/photo/map/first_grade/gray_5.png" alt="">
+                    </div>
+                  </div>
+                  <div class="map_object_sign_three">
+                    <img src="image/photo/map/map_object/map_object_sign.png" alt="">
+                    <div class="map_object_sign_item">
+                      <img src="image/photo/map/second_grade/bg.png" alt="">
+                      <img src="image/photo/map/second_grade/1.png" alt="">
+                      <img src="image/photo/map/second_grade/2.png" alt="">
+                      <img src="image/photo/map/second_grade/3.png" alt="">
+                      <img src="image/photo/map/second_grade/4.png" alt="">
+                      <img src="image/photo/map/second_grade/5.png" alt="">
+                  </div>
+                  </div>
+                </div>
+              </div>
           </div>
       </div>
 
-      <div class="book_area">
-        <div class="book_area_menu">
-          <div class="book_selection first_grade_selection">
-            <a href="map_first_grade.html"> 一年級(含以下)</a>
-          </div>
-          <div class="book_selection second_grade_selection">
-            <a href="map_second_grade.html">二年級</a>
-          </div>
-          <div class="book_selection third_grade_selection">
-            <a href="map_first_grade.html">三年級</a>
-          </div>
-          <div class="book_selection fourth_grade_selection">
-            <a href="map_first_grade.html">四年級</a>
-          </div>
-          <div class="book_selection fifth_grade_selection">
-            <a href="map_first_grade.html">五年級</a>
-          </div>
-          <div class="book_selection sixth_grade_selection">
-            <a href="map_first_grade.html">六年級</a>
-          </div>
-          <div class="book_selection seventh_grade_selection">
-            <a href="map_first_grade.html">七年級</a>
-          </div>
-          <div class="book_selection eighth_grade_selection">
-            <a href="map_first_grade.html">八年級</a>
-          </div>
-          <div class="book_selection ninth_grade_selection">
-            <a href="map_first_grade.html">九年級</a>
+      <div class="map_book_area">
+        <div class="ticket_bg">
+          <div class="ticket_area owl-carousel owl-theme">
+            <div class="ticket_wrap">
+              <div class="ticket ticket_left">
+                <div class="ticket_object">
+                  <img src="image/photo/ticket/first_grade/color_1.png" alt="">
+                </div>
+                <div class="exchange">
+                  <img src="image/svg/exchange.svg" alt="">
+                </div>
+                <div class="wave_line wave_line_left">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+              <div class="ticket ticket_right" >
+                <div class="receive">
+                  <button type="button" id="btn"><p>兌換</p></button>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="ticket_wrap">
+              <div class="ticket ticket_left">
+                <div class="ticket_object">
+                  <img id="changeticket_2" src="image/photo/ticket/first_grade/gray_2.png" alt="">
+                </div>
+                <div class="exchange">
+                  <img src="image/svg/exchange.svg" alt="">
+                </div>
+                <div class="wave_line wave_line_left">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+              <div class="ticket ticket_right" >
+                <div class="receive">
+                  <button type="button" id="btn_2" disabled><p>兌換</p></button>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="ticket_wrap">
+              <div class="ticket ticket_left">
+                <div class="ticket_object">
+                  <img id="changeticket_3" src="image/photo/ticket/first_grade/gray_3.png" alt="">
+                </div>
+                <div class="exchange">
+                  <img src="image/svg/exchange.svg" alt="">
+                </div>
+                <div class="wave_line wave_line_left">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+              <div class="ticket ticket_right" >
+                <div class="receive">
+                  <button type="button" id="btn_3" disabled><p>exchange</p></button>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="ticket_wrap">
+              <div class="ticket ticket_left">
+                <div class="ticket_object">
+                  <img id="changeticket_4" src="image/photo/ticket/first_grade/gray_4.png" alt="">
+                </div>
+                <div class="exchange">
+                  <img src="image/svg/exchange.svg" alt="">
+                </div>
+                <div class="wave_line wave_line_left">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+              <div class="ticket ticket_right" >
+                <div class="receive">
+                  <button type="button" id="btn_4" disabled><p>exchange</p></button>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="ticket_wrap">
+              <div class="ticket ticket_left">
+                <div class="ticket_object">
+                  <img id="changeticket_5" src="image/photo/ticket/first_grade/gray_5.png" alt="">
+                </div>
+                <div class="exchange">
+                  <img src="image/svg/exchange.svg" alt="">
+                </div>
+                <div class="wave_line wave_line_left">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+              <div class="ticket ticket_right" >
+                <div class="receive">
+                  <button type="button" id="btn_5" disabled><p>exchange</p></button>
+                </div>
+                <div class="wave_line wave_line_right">
+                  <div class="wave_line_internal">
+                  </div>
+                </div>
+              </div>
+            </div>    
           </div>
         </div>
-        <div class="book_list best_book">
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
+        
+    
+        <div class="book_area">
+          <div class="book_area_menu">
+            <div class="book_selection first_grade_selection">
+              <a href="map_first_grade.html"> 一年級(含以下)</a>
             </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
-                  </div>
-                </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
-                    </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
+            <div class="book_selection second_grade_selection">
+              <a href="map_second_grade.html">二年級</a>
+            </div>
+            <div class="book_selection third_grade_selection">
+              <a href="map_first_grade.html">三年級</a>
+            </div>
+            <div class="book_selection fourth_grade_selection">
+              <a href="map_first_grade.html">四年級</a>
+            </div>
+            <div class="book_selection fifth_grade_selection">
+              <a href="map_first_grade.html">五年級</a>
+            </div>
+            <div class="book_selection sixth_grade_selection">
+              <a href="map_first_grade.html">六年級</a>
+            </div>
+            <div class="book_selection seventh_grade_selection">
+              <a href="map_first_grade.html">七年級</a>
+            </div>
+            <div class="book_selection eighth_grade_selection">
+              <a href="map_first_grade.html">八年級</a>
+            </div>
+            <div class="book_selection ninth_grade_selection">
+              <a href="map_first_grade.html">九年級</a>
+            </div>
+          </div>
+          <div class="book_list best_book">
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
                 </div>
               </div>
-            </div>
-  
-          </a>
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
-            </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
-                  </div>
-                </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
-                    </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
                     </div>
                   </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
-                </div>
-              </div>
-            </div>
-  
-          </a>
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
-            </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
-                  </div>
-                </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
                     </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
-                </div>
-              </div>
-            </div>
-  
-          </a>
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
-            </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
                   </div>
                 </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
-                    </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
+              </div>
+    
+            </a>
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
+                </div>
+              </div>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
                     </div>
                   </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
-                </div>
-              </div>
-            </div>
-  
-          </a>
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
-            </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
-                  </div>
-                </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
                     </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
-                </div>
-              </div>
-            </div>
-  
-          </a>
-          <a href="#book-modal_1" rel="modal:open" class="">
-            <img src="image/index/book-1.jpg" alt="">
-            <div class="audio_icon" title="有聲書"></div>
-            <div class="book_content">
-              <h4>What Do You Like?What Do You Like?</h4>
-              <div class="value">
-                <p>SR值：70</p>
-              </div>
-            </div>
-            <div class="try_icon" title="試閱"></div>
-  
-            <div id="book-modal_1" class="modal book-information-modal">
-              <div class="book-introduction">
-                <div class="modal-book-img" title="一個謝謝">
-                  <img src="image/index/book-1.jpg" alt="">
-                  <div class="audio_icon" title="有聲書"></div>
-                  <div class="grade-tag pre">
-                    Pre
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
                   </div>
                 </div>
-  
-                <div class="introduction-content">
-                  <div class="modal-btn">
-                    <ul>
-                      <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
-                      <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
-                    </ul>
-                  </div>
-                  <div class="introduction-item">
-                    <div class="item introduction">
-                      <p><span>書名：</span><span>一個謝謝</span></p>
-                      <p><span>作者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
-                      <p><span>出版社：</span><span>大好書屋</span></p>
-                      <p><span>出版日期：</span><span>2012/07/30</span></p>
-                      <p><span>ISBN：</span><span>9789865995676</span></p>
-                      <p><span>字數：</span><span>500</span></p>
-                    </div>
-                    <div class="item vocabulary">
-                      <p><ruby>
-                          <rb>买</rb>
-                          <rp>(</rp>
-                          <rt>mǎi</rt>
-                          <rp>)</rp>
-                        </ruby> buy</p>
-                      <p><ruby>
-                          <rb>花</rb>
-                          <rp>(</rp>
-                          <rt>huā</rt>
-                          <rp>)</rp>
-                        </ruby> flower</p>
+              </div>
+    
+            </a>
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
+                </div>
+              </div>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
                     </div>
                   </div>
-                </div>
-                <div class="book-content">
-                  <h4>書籍簡介</h4>
-                  <p>
-                    小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
-                  </p>
-                </div>
-                <div class="button">
-                  <a href="login.html" class="read cursor">試閱</a>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
+                    </div>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
+                  </div>
                 </div>
               </div>
-            </div>
-  
-          </a>
+    
+            </a>
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
+                </div>
+              </div>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
+                    </div>
+                  </div>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
+                    </div>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
+                  </div>
+                </div>
+              </div>
+    
+            </a>
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
+                </div>
+              </div>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
+                    </div>
+                  </div>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
+                    </div>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
+                  </div>
+                </div>
+              </div>
+    
+            </a>
+            <a href="#book-modal_1" rel="modal:open" class="">
+              <img src="image/index/book-1.jpg" alt="">
+              <div class="audio_icon" title="有聲書"></div>
+              <div class="book_content">
+                <h4>What Do You Like?What Do You Like?</h4>
+                <div class="value">
+                  <p>SR值：70</p>
+                </div>
+              </div>
+              <div class="try_icon" title="試閱"></div>
+    
+              <div id="book-modal_1" class="modal book-information-modal">
+                <div class="book-introduction">
+                  <div class="modal-book-img" title="一個謝謝">
+                    <img src="image/index/book-1.jpg" alt="">
+                    <div class="audio_icon" title="有聲書"></div>
+                    <div class="grade-tag pre">
+                      Pre
+                    </div>
+                  </div>
+    
+                  <div class="introduction-content">
+                    <div class="modal-btn">
+                      <ul>
+                        <li class="cursor introduction active" data-filter=".introduction">書籍資訊</li>
+                        <li class="cursor vocabulary" data-filter=".vocabulary"> 詞彙表</li>
+                      </ul>
+                    </div>
+                    <div class="introduction-item">
+                      <div class="item introduction">
+                        <p><span>書名：</span><span>一個謝謝</span></p>
+                        <p><span>作者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>繪者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>譯者：</span><span>大衛．羅伯茲</span></p>
+                        <p><span>出版社：</span><span>大好書屋</span></p>
+                        <p><span>出版日期：</span><span>2012/07/30</span></p>
+                        <p><span>ISBN：</span><span>9789865995676</span></p>
+                        <p><span>字數：</span><span>500</span></p>
+                      </div>
+                      <div class="item vocabulary">
+                        <p><ruby>
+                            <rb>买</rb>
+                            <rp>(</rp>
+                            <rt>mǎi</rt>
+                            <rp>)</rp>
+                          </ruby> buy</p>
+                        <p><ruby>
+                            <rb>花</rb>
+                            <rp>(</rp>
+                            <rt>huā</rt>
+                            <rp>)</rp>
+                          </ruby> flower</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="book-content">
+                    <h4>書籍簡介</h4>
+                    <p>
+                      小弟有著嚇人的骯髒習慣，他會當眾亂挖鼻孔甚至在花壇上小便，不論何時他都是髒兮兮的，小弟的家人時常會叫著「柏弟！不可以！會弄髒！」但他就是不改掉這些壞習慣！這是本有趣讓人發笑的童書，同時也告訴小讀者們，不丟掉壞習慣的話，將會像小弟一樣髒兮兮！
+                    </p>
+                  </div>
+                  <div class="button">
+                    <a href="login.html" class="read cursor">試閱</a>
+                  </div>
+                </div>
+              </div>
+    
+            </a>
+          </div>
+          <div class="page">
+            <span class="pagination">
+              <a disabled="disabled" class="pagenumber firstnn">First page</a>
+              <span class="active">1</span>
+              <a class="pagenumber" href="">2</a>
+              <a class="pagenumber" href="">3</a>
+              <a class="pagenumber" href="">4</a>
+              <a class="pagenumber" href="">5</a>
+              <a class="pagenumber lastnn" href="">Last page</a>
+            </span>
+          </div>
         </div>
+    
       </div>
-
+  
 
 
   </div>

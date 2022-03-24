@@ -1860,21 +1860,80 @@ div#toggle span:after {
   position: relative;
 }
 
+.main.grade_map .map_object .map_object_item {
+  line-height: 0;
+}
+
 .main.grade_map .map_object .map_object_item img {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.main.grade_map .map_book_area {
-  width: 80%;
-  margin: 80px auto 0px;
-  background-color: #EFE8E0;
-  padding: 80px 0px;
-  border-radius: 10px;
+.main.grade_map .map_object .map_object_item .map_object_roof {
+  position: relative;
 }
 
-.main.grade_map .map_book_area .ticket_area {
+.main.grade_map .map_object .map_object_item .map_object_roof img {
+  position: relative;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  -webkit-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_one img,
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_two img,
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_three img {
+  position: relative;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_one .map_object_sign_item img,
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_two .map_object_sign_item img,
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_three .map_object_sign_item img {
+  position: absolute;
+  z-index: -1;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_one,
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_three {
+  width: 30%;
+  position: relative;
+}
+
+.main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_two {
+  width: 65%;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+}
+
+.main.grade_map .map_book_area {
+  width: 100%;
+  margin: 0px auto;
+  background-color: #EFE8E0;
+}
+
+.main.grade_map .map_book_area .ticket_bg {
+  padding: 80px 0px 40px;
+  background-color: #006cb3;
+}
+
+.main.grade_map .map_book_area .ticket_bg .ticket_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1886,7 +1945,7 @@ div#toggle span:after {
   max-width: 1800px;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1894,16 +1953,16 @@ div#toggle span:after {
   /* 波浪線 */
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket {
   position: relative;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left {
   width: calc(100% - 115px);
   background-color: #f6d367;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
   display: none;
   width: 30%;
   position: absolute;
@@ -1913,7 +1972,7 @@ div#toggle span:after {
           transform: translate(0px, -50%) rotate(45deg);
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left:before, .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left:after {
   content: "";
   position: absolute;
   display: block;
@@ -1925,23 +1984,23 @@ div#toggle span:after {
   z-index: 1;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:before {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left:before {
   top: -5px;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left:after {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left:after {
   bottom: -5px;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .ticket_object {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left .ticket_object {
   line-height: 0;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_left .wave_line_right {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left .wave_line_right {
   display: none;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right {
   width: 115px;
   background-color: #f6d367;
   position: relative;
@@ -1957,35 +2016,35 @@ div#toggle span:after {
           justify-content: center;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right .receive button {
   background-color: #E54F4F;
   padding: 5px 10px;
   color: #fff;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive button:disabled {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right .receive button:disabled {
   background-color: grey;
   border-radius: 10px;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket.ticket_right .receive p {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right .receive p {
   color: #fff;
   cursor: pointer;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
   display: block;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_left .wave_line_right {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_left .wave_line_right {
   display: block;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap.exchange_ticket .ticket_right {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_right {
   display: none;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_left {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_left {
   position: absolute;
   top: 0;
   left: 0;
@@ -1997,7 +2056,7 @@ div#toggle span:after {
   max-width: 5px;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal {
   height: 100%;
   width: 100%;
   background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
@@ -2005,7 +2064,7 @@ div#toggle span:after {
   background-repeat: repeat-y;
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_right {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_right {
   position: absolute;
   top: 0;
   right: 0;
@@ -2019,7 +2078,7 @@ div#toggle span:after {
           transform: rotate(180deg);
 }
 
-.main.grade_map .map_book_area .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal {
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal {
   height: 100%;
   width: 100%;
   background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
@@ -2105,6 +2164,8 @@ div#toggle span:after {
 .main.grade_map .map_object .map_object_item .map_object_item_project {
   width: calc(100% / 5);
   position: absolute;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .main.grade_map .map_object .map_object_item .map_object_item_project.item_project_first_grade {
@@ -2156,22 +2217,14 @@ div#toggle span:after {
 }
 
 .main.grade_map .map_object .map_object_item .map_object_item_project:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .main.grade_map .map_object .map_object_item .map_object_item_project img {
   position: relative;
   top: auto;
   left: auto;
-}
-
-.main.grade_map .map_book_area {
-  width: 80%;
-  margin: 80px auto 0px;
-  background-color: #EFE8E0;
-  padding: 80px 0px;
-  border-radius: 10px;
 }
 
 .main.grade_map .map_book_area .book_area {
