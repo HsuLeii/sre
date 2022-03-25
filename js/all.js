@@ -166,7 +166,7 @@ $(".ninth_grade_background").click(function () {
 // 分級對應結束
 // 閱讀地圖開始
 
-document.getElementById("btn").addEventListener("click", function()
+document.getElementById("btn_1").addEventListener("click", function()
 {
   $(this).parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
@@ -207,6 +207,7 @@ document.getElementById("btn_5").addEventListener("click", function()
 
 // 閱讀地圖結束
 
+//閱讀地圖票券開始
 $(".owl-carousel").owlCarousel({
   center: true,
     loop:false, // 循環播放
@@ -224,10 +225,10 @@ $(".owl-carousel").owlCarousel({
     768: {
       items: 2.5
     },
-    1500: {
-      items: 3.5
+    1200: {
+      items: 5,
+      center: false,
     }
   }
 });
-
-
+//閱讀地圖票券結束

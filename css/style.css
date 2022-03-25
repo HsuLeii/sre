@@ -2228,7 +2228,6 @@ div#toggle span:after {
 }
 
 .main.grade_map .map_book_area .book_area {
-  width: 90%;
   margin: 80px auto 0px;
 }
 
@@ -2495,7 +2494,12 @@ div#toggle span:after {
 }
 
 .main.test .answer_area .connect tr {
-  margin: 0px 40px;
+  margin: 40px 0px;
+  display: block;
+}
+
+.main.test .answer_area .connect tr .connect_topic {
+  overflow-y: auto;
 }
 
 .main.test .answer_area .connect tr td {
@@ -2825,7 +2829,7 @@ h-ruby[rightangle][doubleline] h-ru[annotation] {
 }
 
 [zhuyin] {
-  margin-right: .2em;
+  margin-right: 0.8em;
   display: inline-block;
   line-height: 1.8;
 }
@@ -2877,7 +2881,7 @@ rt {
 
 .dummy2 {
   line-height: 1;
-  font-size: 5em;
+  font-size: 1em;
   font-family: BopomofoRuby, 'AR KaiB5', 'KaiTi TW', '標楷體';
 }
 
@@ -3031,7 +3035,7 @@ input[type="radio"] + *::before {
   border-color: #E54F4F;
   position: absolute;
   left: calc(-0.8rem - 0.75px);
-  top: calc(0.4rem - 3px);
+  top: 0.4rem;
 }
 
 input[type="radio" i] {
@@ -3306,10 +3310,6 @@ input[type="radio" i] ~ label {
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
-  .main.grade_map .map_book_area {
-    margin: 60px auto 0px;
-    padding: 45px 0px;
-  }
   .main.grade_map .map_book_area .ticket_area .ticket_wrap .ticket {
     position: relative;
   }
@@ -3469,6 +3469,12 @@ input[type="radio" i] ~ label {
   }
   footer .footer_copyright div {
     margin-bottom: 5px;
+  }
+  input[type="radio"] + *::before {
+    width: 0.6rem;
+    height: 0.6rem;
+    left: calc(-0.6rem - 0.75px);
+    top: 0.3rem;
   }
 }
 
@@ -3763,9 +3769,6 @@ input[type="radio" i] ~ label {
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
-  .main.grade_map .map_book_area {
-    width: 90%;
-  }
   .main.grade_map .map_book_area .ticket_area {
     width: 100%;
   }
@@ -3887,6 +3890,12 @@ input[type="radio" i] ~ label {
   footer .footer_information .products .products_logo img {
     margin: 10px 12px 10px 0;
     height: 45px;
+  }
+  input[type="radio"] + *::before {
+    width: 0.5rem;
+    height: 0.5rem;
+    left: calc(-0.5rem - 0.75px);
+    top: 0.25rem;
   }
 }
 
