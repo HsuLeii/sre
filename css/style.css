@@ -4230,6 +4230,9 @@ input[type="radio" i] ~ label {
   }
   /*test 讀後測驗結束*/
   /*login 登入開始*/
+  .main.login .login_area {
+    margin: 0 auto;
+  }
   .main.login .login_area .account_area .account_secret_area label {
     font-size: 13px;
   }
