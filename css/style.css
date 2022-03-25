@@ -2922,6 +2922,190 @@ rt {
 
 /*另一種注音結束*/
 /*test 讀後測驗結束*/
+/*login 登入開始*/
+.main.login {
+  background-image: url(../image/photo/slide/slide_login.png);
+  background-position: center top;
+  background-size: cover;
+  margin: 0px auto;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.main.login .login_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px grey;
+          box-shadow: 0 0 10px grey;
+  width: 450px;
+  margin-left: calc(95% - 450px);
+}
+
+.main.login .login_area .account_area .account_secret_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.main.login .login_area .account_area .account_secret_area label {
+  font-size: 17px;
+  width: 110px;
+}
+
+.main.login .login_area .account_area .account_secret_area input {
+  color: #5B3716;
+  background-color: #fff;
+  border: 1px solid #5B3716;
+  padding: 8px;
+  font-size: 17px;
+  border-radius: 10px;
+  width: calc(100% - 110px);
+}
+
+.main.login .login_area .account_area .account_secret_area select:focus,
+.main.login .login_area .account_area .account_secret_area input[type="text"]:focus,
+.main.login .login_area .account_area .account_secret_area input[type="password"]:focus {
+  outline: 0;
+  border: 1px solid #5B3716;
+  color: #5B3716;
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.main.login .login_area .account_area .login_button {
+  width: 100%;
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #E54F4F;
+  border: 1px solid #E54F4F;
+  padding: 6px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.main.login .login_area .account_area .login_button:hover {
+  background-color: #E54F4F;
+  color: #fff;
+}
+
+.main.login .login_area .forget_password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.login .login_area .forget_password .remember_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.main.login .login_area .forget_password .remember_me .checkmark {
+  position: relative;
+  top: 0.5em;
+  height: 1em;
+  width: 1em;
+  border: 1px solid #E54F4F;
+  -webkit-transform: translate(0px, -0.2em);
+          transform: translate(0px, -0.2em);
+}
+
+.main.login .login_area .forget_password .remember_me .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: 50%;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg) translate(-50%, -70%);
+          transform: rotate(45deg) translate(-50%, -70%);
+  z-index: 1;
+}
+
+.main.login .login_area .forget_password .remember_me input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.main.login .login_area .forget_password .remember_me input:hover ~ .checkmark,
+.main.login .login_area .forget_password .remember_me input:checked ~ .checkmark {
+  background-color: #E54F4F;
+}
+
+.main.login .login_area .forget_password .remember_me input:hover ~ .checkmark:after,
+.main.login .login_area .forget_password .remember_me input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.main.login .login_area .forget_password .remember_me p {
+  margin-left: 5px;
+}
+
+.main.login .login_area .forget_password a {
+  color: #5B3716;
+}
+
+.main.login .login_area .forget_password a:hover {
+  color: #E54F4F;
+}
+
+.main.login .login_area .signup {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #5B3716;
+}
+
+.main.login .login_area .signup p {
+  text-align: center;
+}
+
+.main.login .login_area .signup .signup_button {
+  width: 100%;
+  font-size: 17px;
+  margin-top: 15px;
+  color: grey;
+  border: 1px solid grey;
+  padding: 6px 0px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.main.login .login_area .signup .signup_button:hover {
+  background-color: #E54F4F;
+  border: 1px solid #E54F4F;
+  color: #fff;
+}
+
+/*login 登入結束*/
 footer {
   padding: 35px 0px;
   border-top: 1px solid #5B3716;
@@ -3447,6 +3631,45 @@ input[type="radio" i] ~ label {
     font-size: 17px;
   }
   /*test 讀後測驗結束*/
+  /*login 登入開始*/
+  .main.login {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .main.login .login_area {
+    width: 350px;
+    margin-left: calc(95% - 350px);
+  }
+  .main.login .login_area .account_area .account_secret_area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .main.login .login_area .account_area .account_secret_area label {
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .main.login .login_area .account_area .account_secret_area input {
+    font-size: 15px;
+    width: 100%;
+  }
+  .main.login .login_area .account_area .login_button {
+    font-size: 15px;
+  }
+  .main.login .login_area .signup {
+    margin-top: 25px;
+    padding-top: 15px;
+  }
+  .main.login .login_area .signup .signup_button {
+    font-size: 15px;
+  }
+  /*login 登入結束*/
   footer .footer_information .products {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -4006,6 +4229,25 @@ input[type="radio" i] ~ label {
     font-size: 14px;
   }
   /*test 讀後測驗結束*/
+  /*login 登入開始*/
+  .main.login .login_area .account_area .account_secret_area label {
+    font-size: 13px;
+  }
+  .main.login .login_area .account_area .account_secret_area input {
+    font-size: 13px;
+  }
+  .main.login .login_area .account_area .login_button {
+    font-size: 13px;
+  }
+  .main.login .login_area .signup {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .main.login .login_area .signup .signup_button {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  /*login 登入結束*/
   footer .footer_information .products .products_logo img {
     margin: 10px 15px 10px 0;
     height: 30px;
