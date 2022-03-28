@@ -234,6 +234,8 @@ div#toggle span:after {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 5%;
+  position: relative;
+  z-index: 2;
 }
 
 .header.map_first_grade_header {
