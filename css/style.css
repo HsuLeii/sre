@@ -1476,7 +1476,27 @@ div#toggle span:after {
   padding: 5px 10px;
   cursor: pointer;
   margin: 0px 10px 20px 0px;
-  background-color: #f6d367;
+  border: 1px solid #E54F4F;
+}
+
+.main.question .question_area .question_btn_area .question_btn p {
+  color: #E54F4F;
+}
+
+.main.question .question_area .question_btn_area .question_btn.question_book {
+  border: 1px solid #53c1e2;
+}
+
+.main.question .question_area .question_btn_area .question_btn.question_book p {
+  color: #53c1e2;
+}
+
+.main.question .question_area .question_btn_area .question_btn.question_test {
+  border: 1px solid #abc564;
+}
+
+.main.question .question_area .question_btn_area .question_btn.question_test p {
+  color: #abc564;
 }
 
 .main.question .question_area .question_btn_area .question_btn:hover {
@@ -1520,47 +1540,53 @@ div#toggle span:after {
 }
 
 .main.question .question_area .item_question.question_book {
-  background-color: #53c1e2;
   border: 1px solid #53c1e2;
 }
 
-.main.question .question_area .item_question.question_book .faq_question h4 {
-  color: black;
+.main.question .question_area .item_question.question_book .faq_question.faq_question_book h4 {
+  color: #53c1e2;
 }
 
-.main.question .question_area .item_question.question_book .faq_question span {
-  border: solid black;
+.main.question .question_area .item_question.question_book .faq_question.faq_question_book span {
+  border: solid #53c1e2;
   border-width: 0 3px 3px 0;
+}
+
+.main.question .question_area .item_question.question_book .faq_answer {
+  border-top: 1px solid #53c1e2;
 }
 
 .main.question .question_area .item_question.question_book .faq_answer h4 {
-  color: #fff;
+  color: #53c1e2;
 }
 
 .main.question .question_area .item_question.question_book .faq_answer p {
-  color: #fff;
+  color: #53c1e2;
 }
 
 .main.question .question_area .item_question.question_test {
-  background-color: #abc564;
   border: 1px solid #abc564;
 }
 
-.main.question .question_area .item_question.question_test .faq_question h4 {
-  color: black;
+.main.question .question_area .item_question.question_test .faq_question.faq_question_test h4 {
+  color: #abc564;
 }
 
-.main.question .question_area .item_question.question_test .faq_question span {
-  border: solid black;
+.main.question .question_area .item_question.question_test .faq_question.faq_question_test span {
+  border: solid #abc564;
   border-width: 0 3px 3px 0;
 }
 
+.main.question .question_area .item_question.question_test .faq_answer {
+  border-top: 1px solid #abc564;
+}
+
 .main.question .question_area .item_question.question_test .faq_answer h4 {
-  color: #fff;
+  color: #abc564;
 }
 
 .main.question .question_area .item_question.question_test .faq_answer p {
-  color: #fff;
+  color: #abc564;
 }
 
 .main.question .question_area .item_question.filter_question {
@@ -1612,6 +1638,7 @@ div#toggle span:after {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 20px 36px 0px 0px;
+  padding-top: 20px;
 }
 
 .main.question .question_area .item_question .faq_answer h4 {

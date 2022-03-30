@@ -44,6 +44,7 @@ $('.modal_btn ul li.vocabulary').click(function () {
 $("div.faq_answer").hide();
 $(".faq_question").click(function () {
   $("div.faq_answer").slideUp();
+  $(this).children("span").toggleClass("up");
   if ($("+div", this).css("display") == "none") {
     $("+div", this).slideDown();
     $(".faq_question").children("span").removeClass("up");
