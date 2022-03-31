@@ -3378,25 +3378,6 @@ input[type="radio" i] ~ label {
     font-size: 40px;
   }
   /*index 首頁結束*/
-  footer {
-    padding: 35px 0px;
-    border-top: 1px solid #5B3716;
-    background-color: #F2F2F2;
-  }
-  footer .footer_logo {
-    width: 80%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 35px;
-  }
-  footer .footer_logo img {
-    width: 40%;
-  }
   footer .footer_information {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
