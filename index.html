@@ -9,7 +9,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <!-- jQuery Modal -->
-    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.modal.min.js"></script>
     <link rel="stylesheet" href="css/jquery.modal.min.css" />
 
@@ -82,9 +81,6 @@
                             SmartReading-English將帶給您最豐富有趣的英文閱讀體驗!
                         </p>
                     </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="image/photo/slide/slide_index_1.png" alt="">
@@ -93,9 +89,6 @@
                         <p>
                             Smart-Reading English offers you the most amazing English reading experience!
                         </p>
-                    </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -106,9 +99,7 @@
                             無論什麼英語程度，都能在SmartReading-English找到適合自己的英文書籍!
                         </p>
                     </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
-                    </div>
+                    
                 </div>
                 <div class="swiper-slide">
                     <img src="image/photo/slide/slide_index_2.png" alt="">
@@ -118,9 +109,6 @@
                             No matter what English level you are in, you can find yourself the most suitable books in
                             Smart-Reading English.
                         </p>
-                    </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -134,9 +122,6 @@
                         </p>
                         <img src="image/logo/logo-text.svg" alt="">
                     </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="image/photo/slide/slide_index_3.png" alt="">
@@ -148,9 +133,6 @@
                             Guiding you through your magical reading journey by using accurate AI test results.
                         </p>
                         <img src="image/logo/logo-text.svg" alt="">
-                    </div>
-                    <div class="slide_book_logo">
-                        <img src="image/logo/book-logo.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -473,43 +455,29 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+        <svg version="1.1" class="footer_top_bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 130.57" style="enable-background:new 0 0 1920 130.57;" xml:space="preserve">
+<path d="M1920,90.14c-449.33-52.84-671.75,80.26-899.56,15.6C774.86,36.04,352.89-81.03,53.3,84.1C31.03,96.37,9.28,115.72,0,130.57
+	h1920V90.14z"/>
+</svg>
         <footer>
-            <div class="footer_logo">
-                <img src="image/logo/logo.svg" alt="">
-                <img src="image/logo/logo_ntnu.svg" alt="">
-            </div>
-            <div class="footer_information">
-                <div class="information">
-                    <div class="mail">
-                        <a href="mailto:service@smartreading.net"> service@smartreading.net</a>
-                    </div>
-                    <div class="map">
-                        <a href="https://goo.gl/maps/5Sv3LDvcfnnZanR97" target="_blank"> 台北市和平東路一段162號<br>國立台灣師範大學</a>
-                    </div>
-                </div>
-                <div class="products">
-                    <p>相關產品</p>
-                    <div class="products_logo">
-                        <img src="image/products/chinese-character.svg" alt="">
-                        <img src="image/products/srlogo.svg" alt="">
-                        <img src="image/products/srmlogo.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="footer_copyright">
-                <div>
-                    <a href="" class="cursor">使用條款</a>
-                    |
-                    <a href="" class="cursor">隱私政策</a>
-                </div>
-                <p>
-                    © 2021 College of Education e-Learning Lab. NTNU, All rights reserved.<br>
-                </p>
-            </div>
+            
         </footer>
         <script src="js/all.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+              //nowPage (此頁必留)
+              // $('.navTab-quiz').addClass('active');
+               $('footer').load('footer.html', function () {
+                // $('.navTab-quiz').addClass('active'); //nowPage
+               });
+            });
+          </script>
+          
         <script>
             var swiper = new Swiper(".mySwiper", {
 

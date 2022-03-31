@@ -400,13 +400,6 @@ div#toggle span:after {
   font-weight: 300;
 }
 
-.slide_index .slide_book_logo {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-  width: 5%;
-}
-
 .three_item {
   width: 80%;
   margin: 0 auto;
@@ -711,6 +704,25 @@ div#toggle span:after {
   overflow-y: auto;
   width: 100%;
   height: 100%;
+}
+
+.book_information_modal .book_introduction .book_introduction_right .introduction_content::-webkit-scrollbar {
+  background: transparent;
+  height: 3px;
+  width: 5px;
+}
+
+.book_information_modal .book_introduction .book_introduction_right .introduction_content::-webkit-scrollbar-thumb {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E54F4F;
+  border-radius: 10px;
+  min-height: 20px;
+}
+
+.book_information_modal .book_introduction .book_introduction_right .introduction_content::-webkit-scrollbar-track {
+  margin: 3px 0;
 }
 
 .book_information_modal .book_introduction .book_introduction_right .modal_book_button {
@@ -1460,7 +1472,7 @@ div#toggle span:after {
 }
 
 .main.question .question_area {
-  margin: 60px auto;
+  margin: 0px auto 60px;
 }
 
 .main.question .question_area .question_btn_area {
@@ -3135,9 +3147,16 @@ rt {
 }
 
 /*login 登入結束*/
+.footer_top_bg {
+  display: block;
+}
+
+.footer_top_bg path {
+  fill: #F2F2F2;
+}
+
 footer {
   padding: 35px 0px;
-  border-top: 1px solid #5B3716;
   background-color: #F2F2F2;
 }
 
@@ -3781,9 +3800,6 @@ input[type="radio" i] ~ label {
   .slide_index .slide_index_text.slide_index_3 h4 {
     font-size: 20px;
   }
-  .slide_index .slide_book_logo {
-    width: 25px;
-  }
   .three_item .project {
     width: 100%;
     margin: 25px 0px;
@@ -4194,11 +4210,6 @@ input[type="radio" i] ~ label {
   }
   .slide_index .slide_index_text.slide_index_3 h4 {
     font-size: 16px;
-  }
-  .slide_index .slide_book_logo {
-    width: 20px;
-    right: 5px;
-    bottom: 5px;
   }
   .best_book .swiper .swiper-slide .book_content h4 {
     height: 49.98px;
