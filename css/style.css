@@ -19,7 +19,7 @@
   max-width: 1200px;
 }
 
-/*swiper*/
+/*swiper 開始*/
 .swiper-pagination-bullet {
   background: #E54F4F;
 }
@@ -78,6 +78,20 @@
   left: auto;
 }
 
+/*swiper 結束*/
+/*phon.css 改寫開始*/
+label {
+  font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
+  border: 0px;
+  padding: 0px;
+  white-space: normal;
+}
+
+label:hover {
+  background: transparent;
+}
+
+/*phon.css 改寫結束*/
 body,
 div,
 dl,
@@ -2397,6 +2411,20 @@ div#toggle span:after {
   width: calc(45% - 15px);
 }
 
+.main.test .answer_area .test_form fieldset .answer_sound {
+  width: 20%;
+}
+
+.main.test .answer_area .test_form fieldset .answer_sound .img_sound img {
+  border: 0px solid;
+  padding: 15px;
+  background-color: #E54F4F;
+  border-radius: 50%;
+  cursor: pointer;
+  max-width: 140px;
+  width: 80%;
+}
+
 .main.test .answer_area .test_form .answer_list {
   margin: 15px;
 }
@@ -2505,8 +2533,26 @@ div#toggle span:after {
   line-height: 1.7;
 }
 
+.main.test .answer_area .connect tr td .connect_topic.connect_topic_audio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main.test .answer_area .connect tr td .connect_topic.connect_topic_audio img {
-  width: 100%;
+  width: 80%;
+  border: 0px solid;
+  padding: 15px;
+  background-color: #E54F4F;
+  border-radius: 50%;
+  cursor: pointer;
+  max-width: 140px;
 }
 
 .main.test .answer_area .connect tr td .test_audio_icon {
@@ -2836,65 +2882,10 @@ h-word {
 
 /*注音結束*/
 /*另一種注音開始*/
-ruby {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  -webkit-writing-mode: vertical-lr;
-  -moz-writing-mode: vertical-lr;
-  text-orientation: upright;
-}
-
-rt {
-  font-size: 26%;
-  ruby-align: center;
-  text-align: center;
-  text-orientation: upright;
-}
-
-@font-face {
-  font-family: BopomofoRuby;
-  src: url(BopomofoRuby1909-v1-Regular.ttf);
-}
-
 .dummy2 {
-  line-height: 1;
-  font-size: 1em;
-  font-family: BopomofoRuby, 'AR KaiB5', 'KaiTi TW', '標楷體';
-}
-
-.dummy2 rt {
-  font-family: 'BopomofoRuby';
-}
-
-.v {
-  line-height: 1.1;
-}
-
-.v ruby {
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  -webkit-writing-mode: vertical-lr;
-  -moz-writing-mode: vertical-lr;
-  text-orientation: upright;
-}
-
-.v rt {
-  letter-spacing: 0;
-}
-
-.h {
-  font-variant-east-asian: salt;
-  -webkit-font-feature-settings: "salt";
-  font-feature-settings: "salt";
-}
-
-.h ruby {
-  padding: 0;
-  line-height: 1.5;
-}
-
-.h rt {
-  letter-spacing: -0.4em;
+  font-size: 26px;
+  font-weight: bold;
+  color: #5B3716;
 }
 
 /*另一種注音結束*/
@@ -3190,7 +3181,8 @@ footer .footer_copyright p {
   font-size: 12px;
 }
 
-input[type="radio"]:checked + * {
+input[type="radio"]:checked + *,
+input[type="radio"]:hover + * {
   color: #E54F4F;
 }
 
@@ -3233,6 +3225,7 @@ input[type="radio" i] ~ label {
   padding-left: 20px;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -3602,6 +3595,11 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect tr td .connect_topic p {
     font-size: 17px;
   }
+  /*另一種注音開始*/
+  .dummy2 {
+    font-size: 22px;
+  }
+  /*另一種注音結束*/
   /*test 讀後測驗結束*/
   /*login 登入開始*/
   .main.login {
@@ -4028,6 +4026,13 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .test_form fieldset .answer_picture {
     width: 100%;
   }
+  .main.test .answer_area .test_form fieldset .answer_sound {
+    width: 45%;
+  }
+  .main.test .answer_area .test_form fieldset .answer_sound .img_sound img {
+    padding: 10px;
+    max-width: 90px;
+  }
   .main.test .answer_area .test_form img {
     max-width: calc(100% - 20px);
   }
@@ -4065,6 +4070,15 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect_area .connect tr td .connect_topic p {
     font-size: 15px;
   }
+  .main.test .answer_area .connect_area .connect tr td .connect_topic.connect_topic_audio img {
+    padding: 10px;
+    max-width: 90px;
+  }
+  /*另一種注音開始*/
+  .dummy2 {
+    font-size: 20px;
+  }
+  /*另一種注音結束*/
   /*test 讀後測驗結束*/
   footer {
     padding: 20px 0px;
@@ -4173,6 +4187,9 @@ input[type="radio" i] ~ label {
     width: 20%;
     margin: 0px auto;
   }
+  .main.test .answer_area .test_form fieldset .answer_sound .img_sound img {
+    max-width: 50px;
+  }
   .main.test .answer_area .topic .topic_text p {
     font-size: 19px;
   }
@@ -4201,6 +4218,14 @@ input[type="radio" i] ~ label {
   .main.test .answer_area .connect_area .connect tr td .connect_topic p {
     font-size: 14px;
   }
+  .main.test .answer_area .connect_area .connect tr td .connect_topic.connect_topic_audio img {
+    max-width: 50px;
+  }
+  /*另一種注音開始*/
+  .dummy2 {
+    font-size: 19px;
+  }
+  /*另一種注音結束*/
   /*test 讀後測驗結束*/
   /*login 登入開始*/
   .main.login .login_area {
