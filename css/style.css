@@ -2507,6 +2507,25 @@ div#toggle span:after {
   overflow-y: auto;
 }
 
+.main.test .answer_area .connect tr .connect_topic::-webkit-scrollbar {
+  background: transparent;
+  height: 3px;
+  width: 5px;
+}
+
+.main.test .answer_area .connect tr .connect_topic::-webkit-scrollbar-thumb {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E54F4F;
+  border-radius: 10px;
+  min-height: 20px;
+}
+
+.main.test .answer_area .connect tr .connect_topic::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
 .main.test .answer_area .connect tr td {
   width: 27.5%;
   position: relative;
