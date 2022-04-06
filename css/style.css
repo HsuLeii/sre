@@ -2912,6 +2912,7 @@ rt {
 
 .main.login .login_text {
   width: calc(85% - 450px);
+  max-width: 550px;
   margin-left: 5%;
   position: absolute;
   top: 50%;
