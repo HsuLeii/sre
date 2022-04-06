@@ -2907,6 +2907,16 @@ rt {
   margin: 0px auto;
   padding-top: 130px;
   padding-bottom: 130px;
+  position: relative;
+}
+
+.main.login .login_text {
+  width: calc(85% - 450px);
+  margin-left: 5%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .main.login .login_area {
@@ -3596,6 +3606,12 @@ input[type="radio" i] ~ label {
   .main.login {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .main.login .login_text {
+    width: calc(350px * 0.8);
+    margin-left: calc(95% - 350px * 0.9);
+    top: auto;
+    bottom: 0;
   }
   .main.login .login_area {
     width: 350px;
