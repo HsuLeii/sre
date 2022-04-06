@@ -41,16 +41,7 @@ $('.modal_btn ul li.vocabulary').click(function () {
 });
 // 彈跳視窗資訊書籍選擇結束
 // 常見問題開始
-$("div.faq_answer").hide();
-$(".faq_question").click(function () {
-  $("div.faq_answer").slideUp();
-  $(this).children("span").toggleClass("up");
-  if ($("+div", this).css("display") == "none") {
-    $("+div", this).slideDown();
-    $(".faq_question").children("span").removeClass("up");
-    $(this).children("span").toggleClass("up");
-  }
-})
+
 // 常見問題結束
 // 分級對應開始
 $(".grade_content").hide();
