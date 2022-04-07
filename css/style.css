@@ -1845,9 +1845,8 @@ div#toggle span:after {
 /*booklist 優選書單結束*/
 /*grade_map 地圖所有內頁開始*/
 .main.grade_map {
-  margin: 0px auto 0px;
+  margin: 0px auto;
   background-color: #EFE8E0;
-  padding: 0px 0px 130px;
 }
 
 .main.grade_map .map_object {
@@ -1985,6 +1984,10 @@ div#toggle span:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* 波浪線 */
 }
 
@@ -1993,7 +1996,7 @@ div#toggle span:after {
 }
 
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left {
-  width: calc(100% - 115px);
+  width: 100%;
   background-color: #f6d367;
 }
 
@@ -2031,15 +2034,12 @@ div#toggle span:after {
   line-height: 0;
 }
 
-.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left .wave_line_right {
-  display: none;
-}
-
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right {
-  width: 115px;
+  width: 100%;
+  height: 80px;
   background-color: #f6d367;
   position: relative;
-  border-left: 1px dotted #5B3716;
+  border-top: 1px dotted #5B3716;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2068,10 +2068,6 @@ div#toggle span:after {
 }
 
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
-  display: block;
-}
-
-.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_left .wave_line_right {
   display: block;
 }
 
@@ -2173,16 +2169,6 @@ div#toggle span:after {
 /*owlcarousel 票券輪播結束*/
 /*grade_map 地圖所有內頁結束*/
 /*map 閱讀地圖開始*/
-.main.grade_map {
-  margin: 0px auto 0px;
-  background-color: #EFE8E0;
-  padding: 0px 0px 130px;
-}
-
-.main.grade_map .map_object {
-  position: relative;
-}
-
 .main.grade_map .map_object .map_object_item .map_object_item_bg {
   width: 100%;
   position: absolute;
@@ -2969,9 +2955,7 @@ h-word {
   max-width: 550px;
   margin-left: 5%;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  bottom: 130px;
 }
 
 .main.login .login_area {
@@ -3672,8 +3656,9 @@ input[type="radio" i] ~ label {
   .main.login .login_text {
     width: calc(350px * 0.8);
     margin-left: calc(95% - 350px * 0.9);
-    top: auto;
     bottom: 0;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
   }
   .main.login .login_area {
     width: 350px;
