@@ -523,8 +523,11 @@ div#toggle span:after {
 }
 
 .three_item .project_img {
-  width: 80%;
   margin: 20px auto 0px;
+}
+
+.three_item .project_img img {
+  border-radius: 10px;
 }
 
 .best_book {
