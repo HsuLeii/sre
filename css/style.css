@@ -3162,7 +3162,6 @@ h-word {
   cursor: pointer;
 }
 
-.main.login .login_area .forget_password .remember_me input:hover ~ .checkmark,
 .main.login .login_area .forget_password .remember_me input:checked ~ .checkmark {
   background-color: #E54F4F;
 }
