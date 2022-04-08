@@ -164,7 +164,6 @@ document.getElementById("btn_1").addEventListener("click", function()
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_1").attr("src","image/photo/map/first_grade/color_1.png");
   $("#changeticket_2").attr("src","image/photo/ticket/first_grade/color_2.png");
-  $(this).parent().parent().parent(".ticket_wrap").css("padding-right" , "5%")
 });
 
 document.getElementById("btn_2").addEventListener("click", function()
@@ -174,7 +173,6 @@ document.getElementById("btn_2").addEventListener("click", function()
   $("#changeimage_2").attr("src","image/photo/map/first_grade/color_2.png");
   $("#changeticket_3").attr("src","image/photo/ticket/first_grade/color_3.png");
 
-  $(this).parent().parent().parent(".ticket_wrap").css("padding-right" , "5%")
 
 });
 
@@ -185,7 +183,6 @@ document.getElementById("btn_3").addEventListener("click", function()
   $("#changeimage_3").attr("src","image/photo/map/first_grade/color_3.png");
   $("#changeticket_4").attr("src","image/photo/ticket/first_grade/color_4.png");
 
-  $(this).parent().parent().parent(".ticket_wrap").css("padding-right" , "5%")
 
 });
 
@@ -196,7 +193,6 @@ document.getElementById("btn_4").addEventListener("click", function()
   $("#changeimage_4").attr("src","image/photo/map/first_grade/color_4.png");
   $("#changeticket_5").attr("src","image/photo/ticket/first_grade/color_5.png");
 
-  $(this).parent().parent().parent(".ticket_wrap").css("padding-right" , "5%")
 
 });
 
@@ -206,7 +202,6 @@ document.getElementById("btn_5").addEventListener("click", function()
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_5").attr("src","image/photo/map/first_grade/color_5.png");
 
-  $(this).parent().parent().parent(".ticket_wrap").css("padding-right" , "5%")
 
 });
 

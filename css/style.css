@@ -1310,8 +1310,53 @@ div#toggle span:after {
           align-items: flex-start;
 }
 
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag {
+  width: 90px;
+  margin: 0px 10px;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.first_grade_grade_tag {
+  background-color: #E54F4F;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.second_grade_grade_tag {
+  background-color: #EB772A;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.third_grade_grade_tag {
+  background-color: #F3BA03;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.fourth_grade_grade_tag {
+  background-color: #8DA429;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.fifth_grade_grade_tag {
+  background-color: #00AD5E;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.sixth_grade_grade_tag {
+  background-color: #00B1B9;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.seventh_grade_grade_tag {
+  background-color: #0163C6;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.eighth_grade_grade_tag {
+  background-color: #4F1AC4;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.ninth_grade_grade_tag {
+  background-color: #8400A1;
+}
+
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
-  width: calc(100%);
+  width: calc(100% - 90px);
   padding: 10px;
   background-color: #fff;
   border: 1px solid;
@@ -1391,21 +1436,17 @@ div#toggle span:after {
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
-  margin-right: 20px;
-  -webkit-transition: .5S;
-  transition: .5S;
+  margin-right: 10px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_tag {
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .grade_tag {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
-  margin-left: 20px;
-  -webkit-transition: .5S;
-  transition: .5S;
+  margin-left: 10px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
@@ -1432,6 +1473,42 @@ div#toggle span:after {
   width: 3px;
   content: '';
   background: #E54F4F;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.first_level_correspondence_marker:before {
+  background: #E54F4F;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.second_level_correspondence_marker:before {
+  background: #EB772A;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.third_level_correspondence_marker:before {
+  background: #F3BA03;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.fourth_level_correspondence_marker:before {
+  background: #8DA429;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.fifth_level_correspondence_marker:before {
+  background: #00AD5E;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.sixth_level_correspondence_marker:before {
+  background: #00B1B9;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.seventh_level_correspondence_marker:before {
+  background: #0163C6;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.eighth_level_correspondence_marker:before {
+  background: #4F1AC4;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.ninth_level_correspondence_marker:before {
+  background: #8400A1;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
@@ -2065,6 +2142,10 @@ div#toggle span:after {
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right .receive p {
   color: #fff;
   cursor: pointer;
+}
+
+.main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket {
+  padding-right: 5%;
 }
 
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap.exchange_ticket .ticket_left .exchange {
@@ -3499,6 +3580,68 @@ input[type="radio" i] ~ label {
   .main.grade .chart_content .grade_content {
     padding: 15px;
   }
+  .main.grade .level_correspondence_area {
+    margin: 40px auto;
+  }
+  .main.grade .level_correspondence_area h3 {
+    margin: 40px auto;
+    text-align: left;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item {
+    margin-bottom: 40px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 15px;
+    height: 15px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker::before {
+    bottom: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag {
+    margin: 0px 0px 15px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+    width: 100%;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .grade_tag {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 15px;
+    height: 15px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+    bottom: -40px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
   /*grade 分級對應結束*/
   /*booklist 優選書單開始*/
   .book_area {
@@ -3943,51 +4086,6 @@ input[type="radio" i] ~ label {
   .main.grade .grade_introduce .grade_introduce_button a:hover {
     color: #fff;
     background-color: #E54F4F;
-  }
-  .main.grade .level_correspondence_area {
-    margin: 40px auto;
-  }
-  .main.grade .level_correspondence_area h3 {
-    margin: 40px auto;
-    text-align: left;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item {
-    margin-bottom: 40px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
-    -webkit-box-orient: initial;
-    -webkit-box-direction: initial;
-        -ms-flex-direction: initial;
-            flex-direction: initial;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker .level_correspondence_marker_inner {
-    width: 15px;
-    height: 15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker::before {
-    bottom: 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
-    margin-right: auto;
-    margin-left: 20px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
-    width: 15px;
-    height: 15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
-    bottom: -40px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
-    -ms-flex-preferred-size: 0%;
-        flex-basis: 0%;
   }
   /*grade 分級對應結束*/
   /*question 常見問題開始*/
