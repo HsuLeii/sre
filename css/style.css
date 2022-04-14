@@ -465,6 +465,8 @@ div#toggle span:after {
   position: absolute;
   bottom: 50px;
   left: 65%;
+  width: 25%;
+  max-width: 400px;
 }
 
 .three_item .project .project_text h4 {
@@ -485,6 +487,8 @@ div#toggle span:after {
 .three_item .project:nth-child(even) .project_text {
   left: auto;
   right: 65%;
+  width: 25%;
+  max-width: 400px;
 }
 
 .three_item .project:nth-child(even) .project_num {
@@ -1252,6 +1256,11 @@ div#toggle span:after {
   position: relative;
 }
 
+.main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+  border-left: 10px solid;
+  border-right: 0px solid;
+}
+
 .main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1274,139 +1283,97 @@ div#toggle span:after {
           align-items: flex-start;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag {
-  width: 90px;
-  margin: 0px 10px;
-  color: #fff;
-  border-radius: 10px;
-  text-align: center;
-  padding: 3px 0px;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.first_grade_grade_tag {
-  background-color: #E54F4F;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.second_grade_grade_tag {
-  background-color: #EB772A;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.third_grade_grade_tag {
-  background-color: #F3BA03;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.fourth_grade_grade_tag {
-  background-color: #8DA429;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.fifth_grade_grade_tag {
-  background-color: #00AD5E;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.sixth_grade_grade_tag {
-  background-color: #00B1B9;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.seventh_grade_grade_tag {
-  background-color: #0163C6;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.eighth_grade_grade_tag {
-  background-color: #4F1AC4;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag.ninth_grade_grade_tag {
-  background-color: #8400A1;
-}
-
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
-  width: calc(100% - 90px);
+  width: 100%;
   padding: 10px;
   background-color: #fff;
-  border: 1px solid;
+  border-right: 10px solid;
   border-radius: 10px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
   border-color: #E54F4F;
+  background-color: rgba(229, 79, 79, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction h4 {
-  color: #E54F4F;
+  color: #ca1e1e;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
   border-color: #EB772A;
+  background-color: rgba(235, 119, 42, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
-  color: #EB772A;
+  color: #b75311;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction {
   border-color: #F3BA03;
+  background-color: rgba(243, 186, 3, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction h4 {
-  color: #F3BA03;
+  color: #a78002;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
   border-color: #8DA429;
+  background-color: rgba(141, 164, 41, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction h4 {
-  color: #8DA429;
+  color: #58671a;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
   border-color: #00AD5E;
+  background-color: rgba(0, 173, 94, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction h4 {
-  color: #00AD5E;
+  color: #006134;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
   border-color: #00B1B9;
+  background-color: rgba(0, 177, 185, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction h4 {
-  color: #00B1B9;
+  color: #00686d;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
   border-color: #0163C6;
+  background-color: rgba(1, 99, 198, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction h4 {
-  color: #0163C6;
+  color: #013d7a;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
   border-color: #4F1AC4;
+  background-color: rgba(79, 26, 196, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction h4 {
-  color: #4F1AC4;
+  color: #341180;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
   border-color: #8400A1;
+  background-color: rgba(132, 0, 161, 0.1);
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction h4 {
-  color: #8400A1;
+  color: #450055;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
   margin-right: 10px;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .grade_tag {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
@@ -1476,10 +1443,16 @@ div#toggle span:after {
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
   z-index: 1;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  padding: 5px 20px;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner p {
+  -webkit-transform: skewX(30deg);
+          transform: skewX(30deg);
+  color: #fff;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner {
@@ -1533,138 +1506,17 @@ div#toggle span:after {
   margin: 0px auto 60px;
 }
 
-.main.question .question_area .question_btn_area {
-  margin: 0px 0px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.main.question .question_area .question_btn_area .question_btn {
-  padding: 5px 10px;
-  cursor: pointer;
-  margin: 0px 10px 20px 0px;
-  border: 1px solid #E54F4F;
-}
-
-.main.question .question_area .question_btn_area .question_btn p {
-  color: #E54F4F;
-}
-
-.main.question .question_area .question_btn_area .question_btn.question_book {
-  border: 1px solid #53c1e2;
-}
-
-.main.question .question_area .question_btn_area .question_btn.question_book p {
-  color: #53c1e2;
-}
-
-.main.question .question_area .question_btn_area .question_btn.question_test {
-  border: 1px solid #abc564;
-}
-
-.main.question .question_area .question_btn_area .question_btn.question_test p {
-  color: #abc564;
-}
-
-.main.question .question_area .question_btn_area .question_btn:hover {
-  background-color: #E54F4F;
-}
-
-.main.question .question_area .question_btn_area .question_btn:hover p {
-  color: #fff;
-}
-
-.main.question .question_area .question_btn_area .question_btn:hover.question_book {
-  background-color: #53c1e2;
-}
-
-.main.question .question_area .question_btn_area .question_btn:hover.question_test {
-  background-color: #abc564;
-}
-
-.main.question .question_area .question_btn_area .question_btn.active {
-  background-color: #E54F4F;
-}
-
-.main.question .question_area .question_btn_area .question_btn.active p {
-  color: #fff;
-}
-
-.main.question .question_area .question_btn_area .question_btn.active.question_book {
-  background-color: #53c1e2;
-}
-
-.main.question .question_area .question_btn_area .question_btn.active.question_test {
-  background-color: #abc564;
-}
-
 .main.question .question_area .item_question {
-  padding: 20px 15px;
   background-color: #fff;
   border: 1px solid #E54F4F;
   border-radius: 10px;
   margin: 0px auto 40px;
+  overflow: hidden;
 }
 
-.main.question .question_area .item_question.question_book {
-  border: 1px solid #53c1e2;
-}
-
-.main.question .question_area .item_question.question_book .faq_question.faq_question_book h4 {
-  color: #53c1e2;
-}
-
-.main.question .question_area .item_question.question_book .faq_question.faq_question_book span {
-  border: solid #53c1e2;
+.main.question .question_area .item_question span {
+  border: solid #E54F4F;
   border-width: 0 3px 3px 0;
-}
-
-.main.question .question_area .item_question.question_book .faq_answer {
-  border-top: 1px solid #53c1e2;
-}
-
-.main.question .question_area .item_question.question_book .faq_answer h4 {
-  color: #53c1e2;
-}
-
-.main.question .question_area .item_question.question_book .faq_answer p {
-  color: #53c1e2;
-}
-
-.main.question .question_area .item_question.question_test {
-  border: 1px solid #abc564;
-}
-
-.main.question .question_area .item_question.question_test .faq_question.faq_question_test h4 {
-  color: #abc564;
-}
-
-.main.question .question_area .item_question.question_test .faq_question.faq_question_test span {
-  border: solid #abc564;
-  border-width: 0 3px 3px 0;
-}
-
-.main.question .question_area .item_question.question_test .faq_answer {
-  border-top: 1px solid #abc564;
-}
-
-.main.question .question_area .item_question.question_test .faq_answer h4 {
-  color: #abc564;
-}
-
-.main.question .question_area .item_question.question_test .faq_answer p {
-  color: #abc564;
-}
-
-.main.question .question_area .item_question.filter_question {
-  display: none;
-}
-
-.main.question .question_area .item_question.show {
-  display: block;
 }
 
 .main.question .question_area .item_question .faq_question {
@@ -1675,10 +1527,12 @@ div#toggle span:after {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  padding: 20px 15px;
 }
 
 .main.question .question_area .item_question .faq_question h4 {
   margin: 0 10px 0px 0px;
+  color: #E54F4F;
 }
 
 .main.question .question_area .item_question .faq_question h4:nth-child(2) {
@@ -1698,6 +1552,16 @@ div#toggle span:after {
 .main.question .question_area .item_question .faq_question span.up {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+}
+
+.main.question .question_area .item_question .faq_question.open {
+  background-color: #E54F4F;
+}
+
+.main.question .question_area .item_question .faq_question.open h4 {
+  color: #fff;
 }
 
 .main.question .question_area .item_question .faq_answer {
@@ -1708,7 +1572,8 @@ div#toggle span:after {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 20px 36px 0px 0px;
-  padding-top: 20px;
+  padding: 0px 15px 20px;
+  color: #5B3716;
 }
 
 .main.question .question_area .item_question .faq_answer h4 {
@@ -3421,6 +3286,7 @@ input[type="radio" i] ~ label {
   .three_item .project .project_text {
     left: 60%;
     width: 40%;
+    max-width: none;
   }
   .three_item .project .project_text h4 {
     font-size: 35px;
@@ -3428,6 +3294,7 @@ input[type="radio" i] ~ label {
   .three_item .project:nth-child(even) .project_text {
     right: 60%;
     width: 40%;
+    max-width: none;
   }
   /*index 首頁結束*/
   footer .footer_information {
@@ -3595,15 +3462,15 @@ input[type="radio" i] ~ label {
   .main.grade .level_correspondence_area .level_correspondence_item {
     margin-bottom: 40px;
   }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+    border-left: 0px solid;
+    border-right: 10px solid;
+  }
   .main.grade .level_correspondence_area .level_correspondence_item:nth-child(2n) {
     -webkit-box-orient: initial;
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker .level_correspondence_marker_inner {
-    width: 15px;
-    height: 15px;
   }
   .main.grade .level_correspondence_area .level_correspondence_item:nth-last-child(1) .level_correspondence_marker::before {
     bottom: 0px;
@@ -3621,24 +3488,45 @@ input[type="radio" i] ~ label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .grade_tag {
-    margin: 0px 0px 15px;
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
+    border-color: #E54F4F;
+    background-color: rgba(229, 79, 79, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
-    width: 100%;
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
+    border-color: #EB772A;
+    background-color: rgba(235, 119, 42, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction {
+    border-color: #F3BA03;
+    background-color: rgba(243, 186, 3, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
+    border-color: #8DA429;
+    background-color: rgba(141, 164, 41, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
+    border-color: #00AD5E;
+    background-color: rgba(0, 173, 94, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
+    border-color: #00B1B9;
+    background-color: rgba(0, 177, 185, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
+    border-color: #0163C6;
+    background-color: rgba(1, 99, 198, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
+    border-color: #4F1AC4;
+    background-color: rgba(79, 26, 196, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
+    border-color: #8400A1;
+    background-color: rgba(132, 0, 161, 0.1);
   }
   .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
     margin-right: auto;
     margin-left: 20px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .grade_tag {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
-    width: 15px;
-    height: 15px;
   }
   .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
     bottom: -40px;

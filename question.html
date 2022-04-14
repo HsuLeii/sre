@@ -27,19 +27,8 @@
             <h1>常見問題</h1>
         </div>
         <div class="question_area">
-            <div id="question_btn_area" class="question_btn_area">
-                <button type="button" class="question_btn active" onclick="filterSelection('all')">
-                    <p>全部問題</p>
-                </button>
-                <button type="button" class="question_btn question_book" onclick="filterSelection('question_book')">
-                    <p>書籍問題</p>
-                </button>
-                <button type="button" class="question_btn question_test" onclick="filterSelection('question_test')">
-                    <p>測驗問題</p>
-                </button>
-            </div>
-            <div class="item_question filter_question question_book">
-                <div class="faq_question faq_question_book">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統在書籍分級上是否有國際通用的標準?</h4>
                     <span class="arrow"></span>
@@ -53,8 +42,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_book">
-                <div class="faq_question faq_question_book">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>使用者該如何取得系統推薦的書籍?</h4>
                     <span class="arrow"></span>
@@ -67,8 +56,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_test">
-                <div class="faq_question faq_question_test">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>能力測驗的分數，老師該如何解讀?</h4>
                     <span class="arrow"></span>
@@ -81,8 +70,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_test">
-                <div class="faq_question faq_question_test">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>DCEC測驗的時間長短為何?</h4>
                     <span class="arrow"></span>
@@ -95,8 +84,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_test">
-                <div class="faq_question faq_question_test">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>若施測DCEC時，做到一半因網路連線斷線，或是其他因素暫無法完成測驗，之後是否需要重做測驗?</h4>
                     <span class="arrow"></span>
@@ -109,8 +98,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_test">
-                <div class="faq_question faq_question_test">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統是否允許同一位使用者進行多次測驗?</h4>
                     <span class="arrow"></span>
@@ -123,8 +112,8 @@
                 </div>
             </div>
 
-            <div class="item_question filter_question question_test">
-                <div class="faq_question faq_question_test">
+            <div class="item_question">
+                <div class="faq_question">
                     <h4>Q</h4>
                     <h4>系統在書籍分級上是否有國際通用的標準?</h4>
                     <span class="arrow"></span>
@@ -169,14 +158,16 @@
             $(this).children("span").toggleClass("up");
             if ($("+div", this).css("display") == "none") {
                 $("div.faq_answer").slideUp();
+                $(".item_question").children(".faq_question").removeClass("open");
                 $("+div", this).slideDown();
                 $(".faq_question").children("span").removeClass("up");
                 $(this).children("span").toggleClass("up");
+                $(this).addClass("open");
             }
         })
     </script>
 
-    <script>
+    <!-- <script>
         filterSelection("all")
 
         function filterSelection(c) {
@@ -222,7 +213,8 @@
                 this.className += " active";
             });
         }
-    </script>
+    </script> -->
+
 </body>
 
 </html>
