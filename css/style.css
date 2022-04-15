@@ -1274,7 +1274,7 @@ div#toggle span:after {
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
   padding: 10px;
   background-color: #fff;
-  border: 10px solid;
+  border: 5px solid;
   border-radius: 10px;
   position: relative;
 }
@@ -1386,31 +1386,31 @@ div#toggle span:after {
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
   border-right: 10px solid #E54F4F;
   border-left: 0px solid;
-  left: -20px;
+  left: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
   border-right: 10px solid #F3BA03;
   border-left: 0px solid;
-  left: -20px;
+  left: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
   border-right: 10px solid #00AD5E;
   border-left: 0px solid;
-  left: -20px;
+  left: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
   border-right: 10px solid #0163C6;
   border-left: 0px solid;
-  left: -20px;
+  left: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
   border-right: 10px solid #8400A1;
   border-left: 0px solid;
-  left: -20px;
+  left: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
@@ -1423,25 +1423,25 @@ div#toggle span:after {
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
   border-left: 10px solid #EB772A;
   border-right: 0px solid;
-  right: -20px;
+  right: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
   border-left: 10px solid #8DA429;
   border-right: 0px solid;
-  right: -20px;
+  right: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
   border-left: 10px solid #00B1B9;
   border-right: 0px solid;
-  right: -20px;
+  right: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
   border-left: 10px solid #4F1AC4;
   border-right: 0px solid;
-  right: -20px;
+  right: -15px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
@@ -3446,6 +3446,283 @@ input[type="radio" i] ~ label {
     max-width: none;
   }
   /*index 首頁結束*/
+  /*grade 分級對應開始*/
+  .main.grade .level_correspondence_area {
+    margin: 40px auto;
+  }
+  .main.grade .level_correspondence_area h3 {
+    margin: 40px auto;
+    text-align: left;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 25px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: calc(100% - 75px);
+    margin-left: 75px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+    border: 3px solid;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction::before {
+    top: 0;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+    margin-left: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
+    border-right: 0px solid #E54F4F;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
+    border-right: 0px solid #F3BA03;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
+    border-right: 0px solid #00AD5E;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
+    border-right: 0px solid #0163C6;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
+    border-right: 0px solid #8400A1;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+    border-right: 10px solid #EB772A;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+    border-right: 10px solid #8DA429;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+    border-right: 10px solid #00B1B9;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+    border-right: 10px solid #4F1AC4;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
+    margin-right: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+    border-right: 10px solid #E54F4F;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+    border-right: 10px solid #F3BA03;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+    border-right: 10px solid #00AD5E;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+    border-right: 10px solid #0163C6;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+    border-right: 10px solid #8400A1;
+    border-left: 0px solid;
+    left: -13px;
+    top: calc(75px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
+    border-left: 0px solid;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
+    border-left: 0px solid;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
+    border-left: 0px solid;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
+    border-left: 0px solid;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+    border-left: 3px solid;
+    border-right: 0px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
+    border-color: #E54F4F;
+    background-color: rgba(229, 79, 79, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
+    border-color: #EB772A;
+    background-color: rgba(235, 119, 42, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
+    border-color: #F3BA03;
+    background-color: rgba(243, 186, 3, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
+    border-color: #8DA429;
+    background-color: rgba(141, 164, 41, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
+    border-color: #00AD5E;
+    background-color: rgba(0, 173, 94, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
+    border-color: #00B1B9;
+    background-color: rgba(0, 177, 185, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
+    border-color: #0163C6;
+    background-color: rgba(1, 99, 198, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
+    border-color: #4F1AC4;
+    background-color: rgba(79, 26, 196, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
+    border-color: #8400A1;
+    background-color: rgba(132, 0, 161, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+    border-left: 3px solid;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction {
+    border-color: #E54F4F;
+    background-color: rgba(229, 79, 79, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction {
+    border-color: #EB772A;
+    background-color: rgba(235, 119, 42, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction {
+    border-color: #F3BA03;
+    background-color: rgba(243, 186, 3, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction {
+    border-color: #8DA429;
+    background-color: rgba(141, 164, 41, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction {
+    border-color: #00AD5E;
+    background-color: rgba(0, 173, 94, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction {
+    border-color: #00B1B9;
+    background-color: rgba(0, 177, 185, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction {
+    border-color: #0163C6;
+    background-color: rgba(1, 99, 198, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction {
+    border-color: #4F1AC4;
+    background-color: rgba(79, 26, 196, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction {
+    border-color: #8400A1;
+    background-color: rgba(132, 0, 161, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+    border-left: 3px solid;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
+    border-color: #E54F4F;
+    background-color: rgba(229, 79, 79, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
+    border-color: #EB772A;
+    background-color: rgba(235, 119, 42, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
+    border-color: #F3BA03;
+    background-color: rgba(243, 186, 3, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
+    border-color: #8DA429;
+    background-color: rgba(141, 164, 41, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
+    border-color: #00AD5E;
+    background-color: rgba(0, 173, 94, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
+    border-color: #00B1B9;
+    background-color: rgba(0, 177, 185, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
+    border-color: #0163C6;
+    background-color: rgba(1, 99, 198, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
+    border-color: #4F1AC4;
+    background-color: rgba(79, 26, 196, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
+    border-color: #8400A1;
+    background-color: rgba(132, 0, 161, 0.1);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+    bottom: -40px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 75px;
+  }
+  /*grade 分級對應結束*/
   footer .footer_information {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3600,230 +3877,6 @@ input[type="radio" i] ~ label {
   }
   .main.grade .chart_content .grade_content {
     padding: 15px;
-  }
-  .main.grade .level_correspondence_area {
-    margin: 40px auto;
-  }
-  .main.grade .level_correspondence_area h3 {
-    margin: 40px auto;
-    text-align: left;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item {
-    margin-bottom: 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    width: calc(100% - 75px);
-    margin-left: 75px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
-    border: 5px solid;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction::before {
-    top: 0;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
-    margin-left: 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
-    margin-right: 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
-    border-right: 10px solid #EB772A;
-    border-left: 0px solid;
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
-    border-right: 10px solid #8DA429;
-    border-left: 0px solid;
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
-    border-right: 10px solid #00B1B9;
-    border-left: 0px solid;
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
-    border-right: 10px solid #4F1AC4;
-    border-left: 0px solid;
-    left: -15px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content:nth-child(1) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
-    border-left: 5px solid;
-    border-right: 0px;
-    border-radius: 0px 0px 10px 10px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
-    border-color: #E54F4F;
-    background-color: rgba(229, 79, 79, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
-    border-color: #EB772A;
-    background-color: rgba(235, 119, 42, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
-    border-color: #F3BA03;
-    background-color: rgba(243, 186, 3, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
-    border-color: #8DA429;
-    background-color: rgba(141, 164, 41, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
-    border-color: #00AD5E;
-    background-color: rgba(0, 173, 94, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
-    border-color: #00B1B9;
-    background-color: rgba(0, 177, 185, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
-    border-color: #0163C6;
-    background-color: rgba(1, 99, 198, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
-    border-color: #4F1AC4;
-    background-color: rgba(79, 26, 196, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
-    border-color: #8400A1;
-    background-color: rgba(132, 0, 161, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
-    border-left: 5px solid;
-    border-radius: 10px 10px 0px 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction {
-    border-color: #E54F4F;
-    background-color: rgba(229, 79, 79, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction {
-    border-color: #EB772A;
-    background-color: rgba(235, 119, 42, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction {
-    border-color: #F3BA03;
-    background-color: rgba(243, 186, 3, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction {
-    border-color: #8DA429;
-    background-color: rgba(141, 164, 41, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction {
-    border-color: #00AD5E;
-    background-color: rgba(0, 173, 94, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction {
-    border-color: #00B1B9;
-    background-color: rgba(0, 177, 185, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction {
-    border-color: #0163C6;
-    background-color: rgba(1, 99, 198, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction {
-    border-color: #4F1AC4;
-    background-color: rgba(79, 26, 196, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction {
-    border-color: #8400A1;
-    background-color: rgba(132, 0, 161, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
-    border-left: 5px solid;
-    border-radius: 10px 10px 0px 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
-    border-color: #E54F4F;
-    background-color: rgba(229, 79, 79, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
-    border-color: #EB772A;
-    background-color: rgba(235, 119, 42, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
-    border-color: #F3BA03;
-    background-color: rgba(243, 186, 3, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
-    border-color: #8DA429;
-    background-color: rgba(141, 164, 41, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
-    border-color: #00AD5E;
-    background-color: rgba(0, 173, 94, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
-    border-color: #00B1B9;
-    background-color: rgba(0, 177, 185, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
-    border-color: #0163C6;
-    background-color: rgba(1, 99, 198, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
-    border-color: #4F1AC4;
-    background-color: rgba(79, 26, 196, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
-    border-color: #8400A1;
-    background-color: rgba(132, 0, 161, 0.1);
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
-    border-radius: 0px 0px 10px 10px;
-    border-bottom: 0px;
-    border-top: 0px;
-    border-right: 0px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
-    position: absolute;
-    left: 0;
-    height: 100%;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
-    bottom: -40px;
-  }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
-    width: 75px;
   }
   /*grade 分級對應結束*/
   /*booklist 優選書單開始*/
@@ -4294,6 +4347,69 @@ input[type="radio" i] ~ label {
     color: #fff;
     background-color: #E54F4F;
   }
+  .main.grade .level_correspondence_area {
+    margin: 20px auto;
+  }
+  .main.grade .level_correspondence_area h3 {
+    margin: 20px auto;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+    margin-left: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+    top: calc(50px / 2);
+    left: -11px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+    width: 1.5px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 50px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner img {
+    padding: 3px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner:after {
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    border: 1.5px solid;
+  }
   /*grade 分級對應結束*/
   /*question 常見問題開始*/
   .main.question .question_area {
@@ -4515,6 +4631,61 @@ input[type="radio" i] ~ label {
     height: 49.98px;
   }
   /*index 首頁結束*/
+  /*grade 分級對應開始*/
+  .main.grade {
+    width: 80%;
+  }
+  .main.grade .chart_content {
+    margin: 20px auto;
+  }
+  .main.grade .grade_introduce .grade_introduce_button a {
+    color: #E54F4F;
+    border: 1px solid #E54F4F;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+  .main.grade .grade_introduce .grade_introduce_button a:hover {
+    color: #fff;
+    background-color: #E54F4F;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+    width: calc(100% - 35px);
+    margin-left: 35px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+    margin-left: 0px;
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+    top: calc(35px / 2);
+  }
+  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+    width: 35px;
+  }
+  /*grade 分級對應結束*/
   /*test 讀後測驗開始*/
   .main.test {
     margin: 0px auto 60px;
