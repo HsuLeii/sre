@@ -210,6 +210,6 @@ else {
 
 
 $(".button-menu ul li button").click(function() {
-  $(this).siblings().addClass("open");
+  $(this).siblings().toggleClass("open");
   $(this).parent().siblings().children().siblings().removeClass("open");
 });
