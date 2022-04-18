@@ -143,67 +143,73 @@ if ($(window).width() <= 1024) {
 else {
 }
 
-word.addEventListener('click', function () {
-  // this.classList.toggle("end-word");
-  vocabulary.classList.toggle("open");
-  speaking.classList.remove("open");
-  enlarge.classList.remove("open");
-  read.classList.remove("open");
-  text.classList.remove("open");
-});
-arrow.addEventListener('click', function () {
-  box.classList.toggle("open");
-  book.classList.toggle("move");
-});
-sound.addEventListener('click', function () {
-  this.classList.toggle("mute");
-});
-verbatim.addEventListener('click', function () {
-  read.classList.toggle("open");
-  enlarge.classList.remove("open");
-  speaking.classList.remove("open");
-  enlarge.classList.remove("open");
-  text.classList.remove("open");
-  vocabulary.classList.remove("open");
-});
-speak.addEventListener('click', function () {
-  speaking.classList.toggle("open");
-  page.classList.remove("screen");
-  text.classList.remove("open");
-  enlarge.classList.remove("open");
-  read.classList.remove("open");
-  vocabulary.classList.remove("open");
-});
-magnifier.addEventListener('click', function () {
-  enlarge.classList.toggle("open");
-  page.classList.remove("screen");
-  speaking.classList.remove("open");
-  text.classList.remove("open");
-  read.classList.remove("open");
-  vocabulary.classList.remove("open");
-});
-font.addEventListener('click', function () {
-  text.classList.toggle("open");
-  page.classList.remove("screen");
-  speaking.classList.remove("open");
-  enlarge.classList.remove("open");
-  read.classList.remove("open");
-  vocabulary.classList.remove("open");
-});
-screen.addEventListener('click', function () {
-  this.classList.toggle("end-screen");
-  box.classList.remove("open");
-  document.getElementById("word-id").checked = false;
-  book.classList.remove("move");
-  if (page.classList.contains('screen')) {
-    page.classList.remove('screen')
-  } else {
-    page.classList.add('screen')
-  }
-});
-play.addEventListener('click', function () {
-  this.classList.toggle("pause");
-});
-favorite.addEventListener('click', function () {
-  this.classList.toggle("click");
+// word.addEventListener('click', function () {
+//   // this.classList.toggle("end-word");
+//   vocabulary.classList.toggle("open");
+//   speaking.classList.remove("open");
+//   enlarge.classList.remove("open");
+//   read.classList.remove("open");
+//   text.classList.remove("open");
+// });
+// arrow.addEventListener('click', function () {
+//   box.classList.toggle("open");
+//   book.classList.toggle("move");
+// });
+// sound.addEventListener('click', function () {
+//   this.classList.toggle("mute");
+// });
+// verbatim.addEventListener('click', function () {
+//   read.classList.toggle("open");
+//   enlarge.classList.remove("open");
+//   speaking.classList.remove("open");
+//   enlarge.classList.remove("open");
+//   text.classList.remove("open");
+//   vocabulary.classList.remove("open");
+// });
+// speak.addEventListener('click', function () {
+//   speaking.classList.toggle("open");
+//   page.classList.remove("screen");
+//   text.classList.remove("open");
+//   enlarge.classList.remove("open");
+//   read.classList.remove("open");
+//   vocabulary.classList.remove("open");
+// });
+// magnifier.addEventListener('click', function () {
+//   enlarge.classList.toggle("open");
+//   page.classList.remove("screen");
+//   speaking.classList.remove("open");
+//   text.classList.remove("open");
+//   read.classList.remove("open");
+//   vocabulary.classList.remove("open");
+// });
+// font.addEventListener('click', function () {
+//   text.classList.toggle("open");
+//   page.classList.remove("screen");
+//   speaking.classList.remove("open");
+//   enlarge.classList.remove("open");
+//   read.classList.remove("open");
+//   vocabulary.classList.remove("open");
+// });
+// screen.addEventListener('click', function () {
+//   this.classList.toggle("end-screen");
+//   box.classList.remove("open");
+//   document.getElementById("word-id").checked = false;
+//   book.classList.remove("move");
+//   if (page.classList.contains('screen')) {
+//     page.classList.remove('screen')
+//   } else {
+//     page.classList.add('screen')
+//   }
+// });
+// play.addEventListener('click', function () {
+//   this.classList.toggle("pause");
+// });
+// favorite.addEventListener('click', function () {
+//   this.classList.toggle("click");
+// });
+
+
+$(".button-menu ul li button").click(function() {
+  $(this).siblings().addClass("open");
+  $(this).parent().siblings().children().siblings().removeClass("open");
 });
