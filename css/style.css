@@ -3012,7 +3012,7 @@ h-word {
 .main.login .login_text {
   width: calc(85% - 450px);
   max-width: 550px;
-  margin-left: 5%;
+  margin-left: 10%;
   position: absolute;
   top: 45px;
 }
@@ -3723,6 +3723,19 @@ input[type="radio" i] ~ label {
     width: 75px;
   }
   /*grade 分級對應結束*/
+  /*login 登入開始*/
+  .main.login {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .main.login .login_text {
+    width: calc(450px * 0.8);
+    margin-left: calc(95% - 450px * 0.9);
+    top: calc(130px / 2);
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  /*login 登入結束*/
   footer .footer_information {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4028,17 +4041,9 @@ input[type="radio" i] ~ label {
   /*另一種注音結束*/
   /*test 讀後測驗結束*/
   /*login 登入開始*/
-  .main.login {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
   .main.login .login_text {
     width: calc(350px * 0.8);
     margin-left: calc(95% - 350px * 0.9);
-    bottom: 0;
-    top: auto;
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
   }
   .main.login .login_area {
     width: 350px;
