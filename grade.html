@@ -11,6 +11,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 
   <!-- this page widgets CSS -->
+  <!-- modal -->
+  <link rel="stylesheet" href="css/jquery.modal.min.css" />
 
   <!-- my core CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -165,7 +167,7 @@
         本團隊透過AI讀本分級技術大量分析不同領域以及不同難度的書籍，建立SRE值（書籍文本的難度值）。書籍的SRE值越大，表示這本書的難度越高，需要的閱讀能力也越高。SRE值亦能對應歐盟CEFR的英語水平等級，使用者可參考各等級的描述，判斷自身閱讀能力，挑選適合自己的書籍。
       </p>
       <div class="grade_introduce_button">
-        <a href="">什麼是CEFR?</a>
+        <a href="#cefr_modal" rel="modal:open">什麼是CEFR?</a>
       </div>
       <div class="grade_introduce_button">
         <a href="">什麼是Lexile?</a>
@@ -187,7 +189,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker first_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner first_grade_marker_inner"><img src="image/svg/level_1.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner first_grade_marker_inner"><img src="image/svg/level_1.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -220,7 +223,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker second_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner second_grade_marker_inner"><img src="image/svg/level_2.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner second_grade_marker_inner"><img src="image/svg/level_2.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner level_correspondence_img right">
@@ -247,7 +251,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker third_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner third_grade_marker_inner"><img src="image/svg/level_3.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner third_grade_marker_inner"><img src="image/svg/level_3.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -280,7 +285,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker fourth_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner fourth_grade_marker_inner"><img src="image/svg/level_4.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner fourth_grade_marker_inner"><img src="image/svg/level_4.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -307,7 +313,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker fifth_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner fifth_grade_marker_inner"><img src="image/svg/level_5.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner fifth_grade_marker_inner"><img src="image/svg/level_5.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -336,7 +343,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker sixth_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner sixth_grade_marker_inner"><img src="image/svg/level_6.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner sixth_grade_marker_inner"><img src="image/svg/level_6.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -363,7 +371,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker seventh_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner seventh_grade_marker_inner"><img src="image/svg/level_7.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner seventh_grade_marker_inner"><img src="image/svg/level_7.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -392,7 +401,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker eighth_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner eighth_grade_marker_inner"><img src="image/svg/level_8.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner eighth_grade_marker_inner"><img src="image/svg/level_8.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -419,7 +429,8 @@
             </div>
           </div>
           <div class="level_correspondence_marker ninth_level_correspondence_marker">
-            <div class="level_correspondence_marker_inner ninth_grade_marker_inner"><img src="image/svg/level_9.svg" alt=""></div>
+            <div class="level_correspondence_marker_inner ninth_grade_marker_inner"><img src="image/svg/level_9.svg"
+                alt=""></div>
           </div>
           <div class="level_correspondence_content">
             <div class="level_correspondence_content_inner right">
@@ -438,6 +449,23 @@
       </div>
     </div>
 
+    <!-- CEFR彈跳視窗開始 -->
+    <div id="cefr_modal" class="modal grade_information_modal">
+      <div class="lightbulb_bg">
+        <div class="grade_introduction grade_introduction_cefr">
+          <p>歐洲共同語言參考架構 (The Common European Framework of Reference for Languages， CEFR) 是一套用來描述外語學習者語言能力水平的國際標準，此標準可適用多種語言能力水平的描述，包含英語和歐洲語言等。在CEFR的架構下，語言能力水平劃分成A1入門級、A2初級、B1中級、B2中高級、C1高級和C2精通級，共六個級別，其能力指標更廣泛作為與各大國際語言檢定考試的能力界定參考標準，舉凡雅思IELTS、托福TOEFL和全民英檢GEPT等考試。因此，CEFR的語言能力參考標準讓外語學習者更輕易對應與衡量自己的語言能力水平。</p>
+        </div>
+      </div>
+      <div class="modal_stationery_right decorative_figure">
+        <img src="image/svg/modal_stationery_right.svg" alt="">
+      </div>
+      <div class="modal_rides_left decorative_figure">
+        <img src="image/svg/modal_stationery_left.svg" alt="">
+      </div>
+
+  </div>
+  <!-- CEFR彈跳視窗結束 -->
+
 
 
 
@@ -453,13 +481,15 @@
   <script src="js/all.js"></script>
 
   <!-- this page widgets JS -->
+  <!-- modal -->
+  <script src="js/jquery.modal.min.js"></script>
 
   <script>
     $(document).ready(function () {
-        $('header').load('header.html', function () {});
-        $('footer').load('footer.html', function () {});
+      $('header').load('header.html', function () {});
+      $('footer').load('footer.html', function () {});
     });
-</script>
+  </script>
 
 </body>
 

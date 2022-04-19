@@ -1645,6 +1645,73 @@ div#toggle span:after {
       flex-basis: 50%;
 }
 
+.grade_information_modal {
+  width: 80%;
+  max-width: 1024px;
+  background-color: #004981;
+  max-height: 80vh;
+  padding: 5px 0px;
+}
+
+.grade_information_modal .lightbulb_bg {
+  background-color: #004981;
+  background-image: url(../image/svg/lightbulb.svg);
+  background-repeat: space;
+  background-size: 25px 25px;
+  background-position: center center;
+  padding: 25px;
+  border-radius: 10px;
+  max-height: calc(80vh - 10px);
+}
+
+.grade_information_modal .lightbulb_bg .grade_introduction {
+  background-color: #fff;
+  border: 10px solid #B83A26;
+  border-radius: 10px;
+  padding: 25px;
+  padding: 25px;
+  max-height: calc(80vh - 60px);
+  overflow: auto;
+}
+
+.grade_information_modal .lightbulb_bg .grade_introduction::-webkit-scrollbar {
+  background: transparent;
+  height: 3px;
+  width: 5px;
+}
+
+.grade_information_modal .lightbulb_bg .grade_introduction::-webkit-scrollbar-thumb {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E54F4F;
+  border-radius: 10px;
+  min-height: 20px;
+}
+
+.grade_information_modal .lightbulb_bg .grade_introduction::-webkit-scrollbar-track {
+  margin: 3px 0;
+}
+
+.grade_information_modal .decorative_figure {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 15%;
+}
+
+.grade_information_modal .decorative_figure.modal_stationery_right {
+  right: 0;
+  -webkit-transform: translate(75%, -50%);
+          transform: translate(75%, -50%);
+}
+
+.grade_information_modal .decorative_figure.modal_rides_left {
+  left: 0;
+  -webkit-transform: translate(-75%, -50%);
+          transform: translate(-75%, -50%);
+}
+
 /*grade 分級對應結束*/
 /*question 常見問題開始*/
 .main.question {
