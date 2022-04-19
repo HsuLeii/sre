@@ -40,7 +40,7 @@
                     <div class="slide_index_text">
                         <img src="image/logo/logo-text.svg" alt="">
                         <p>
-                            Smart-Reading English offers you the most amazing English reading experience!
+                            SmartReading-English offers you the most amazing English reading experience!
                         </p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <img src="image/logo/logo-text.svg" alt="">
                         <p>
                             No matter what English level you are in, you can find yourself the most suitable books in
-                            Smart-Reading English.
+                            SmartReading-English.
                         </p>
                     </div>
                 </div>
@@ -485,10 +485,12 @@
         <script>
             var swiper_slide = new Swiper(".mySwiper_slide", {
 
-                autoplay: true,
                 loop: true,
                 navigation: true,
-
+                autoplay: {
+          delay: 8000,
+          disableOnInteraction: false
+        },
                 navigation: {
                     nextEl: '.swiper_slide_next',
                     prevEl: '.swiper_slide_prev',

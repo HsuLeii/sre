@@ -592,7 +592,7 @@ div#toggle span:after {
   -webkit-box-orient: vertical;
   white-space: normal;
   width: 100%;
-  height: 66px;
+  height: 60px;
   margin-bottom: 8px;
 }
 
@@ -3014,7 +3014,7 @@ h-word {
   max-width: 550px;
   margin-left: 5%;
   position: absolute;
-  bottom: 130px;
+  top: 45px;
 }
 
 .main.login .login_area {
@@ -4036,6 +4036,7 @@ input[type="radio" i] ~ label {
     width: calc(350px * 0.8);
     margin-left: calc(95% - 350px * 0.9);
     bottom: 0;
+    top: auto;
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
