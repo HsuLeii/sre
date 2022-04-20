@@ -1802,14 +1802,6 @@ div#toggle span:after {
 /*booklist 優選書單開始*/
 .main.booklist {
   width: 80%;
-  -webkit-transition: 3s;
-  transition: 3s;
-  -webkit-transition: all 8s ease-in-out;
-  transition: all 8s ease-in-out;
-}
-
-.main.booklist * {
-  scroll-behavior: smooth !important;
 }
 
 .main.booklist .booklist_introduce .booklist_introduce_button {
@@ -1950,9 +1942,6 @@ div#toggle span:after {
   display: flex;
   margin: 0 auto;
   padding: 65px 0px;
-  scroll-behavior: smooth;
-  -webkit-transition: all 8s ease-in-out;
-  transition: all 8s ease-in-out;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list {
@@ -1963,8 +1952,6 @@ div#toggle span:after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: 30px;
-  -webkit-transition: all 8s ease-in-out;
-  transition: all 8s ease-in-out;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_title {
@@ -2061,43 +2048,6 @@ div#toggle span:after {
 
 .main.booklist .book_area .booklist_best_book .book_list a .book_content .value {
   width: calc(100% - 35px);
-}
-
-.main.booklist .book_area .page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.main.booklist .book_area .page .pagination {
-  display: inline-block;
-}
-
-.main.booklist .book_area .page .pagination a,
-.main.booklist .book_area .page .pagination span {
-  float: left;
-  padding: 2px 10px;
-  cursor: pointer;
-  color: #5B3716;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  margin: 5px 8px;
-}
-
-.main.booklist .book_area .page .pagination a:hover,
-.main.booklist .book_area .page .pagination span:hover {
-  border: 1px solid #E54F4F;
-}
-
-.main.booklist .book_area .page .pagination a.active,
-.main.booklist .book_area .page .pagination span.active {
-  border: 1px solid #E54F4F;
-  background-color: #E54F4F;
-  color: white;
-  cursor: auto;
 }
 
 .main.booklist .level_correspondence_marker {
