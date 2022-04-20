@@ -1830,10 +1830,12 @@ div#toggle span:after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: 3;
+  background-color: #EFE8E0;
 }
 
 .main.booklist .book_area .book_area_menu .book_selection {
-  margin: 0px 15px 15px 0px;
+  margin: 15px 15px 15px 0px;
 }
 
 .main.booklist .book_area .book_area_menu .book_selection a {
@@ -1941,7 +1943,7 @@ div#toggle span:after {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 65px 0px;
+  padding: 65px 0px 0px;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list {
@@ -1965,39 +1967,39 @@ div#toggle span:after {
   margin: calc(42px / 2) 0px 0px 1.3%;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.first_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.first_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.first_grade_book_list span {
   color: #E54F4F;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.second_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.second_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.second_grade_book_list span {
   color: #EB772A;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.third_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.third_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.third_grade_book_list span {
   color: #F3BA03;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.fourth_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.fourth_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.fourth_grade_book_list span {
   color: #8DA429;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.fifth_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.fifth_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.fifth_grade_book_list span {
   color: #00AD5E;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.sixth_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.sixth_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.sixth_grade_book_list span {
   color: #00B1B9;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.seventh_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.seventh_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.seventh_grade_book_list span {
   color: #0163C6;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.eighth_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.eighth_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.eighth_grade_book_list span {
   color: #4F1AC4;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list .book_list_title.ninth_grade_book_list h3 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title.ninth_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.ninth_grade_book_list span {
   color: #8400A1;
 }
 
