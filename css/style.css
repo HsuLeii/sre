@@ -1832,6 +1832,10 @@ div#toggle span:after {
       flex-wrap: wrap;
   z-index: 3;
   background-color: #EFE8E0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 10px 0px 0px;
 }
 
 .main.booklist .book_area .book_area_menu .book_selection {
@@ -1937,13 +1941,13 @@ div#toggle span:after {
 
 .main.booklist .book_area .booklist_best_book {
   max-width: none;
-  width: 100%;
+  width: calc(100% - 10px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  padding: 65px 0px 0px;
+  margin: 0 0 0 10px;
+  padding: 90px 0px 0px;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list {
@@ -2071,8 +2075,8 @@ div#toggle span:after {
 
 .main.booklist .level_correspondence_marker:before {
   position: absolute;
-  top: 65px;
-  bottom: -65px;
+  top: 90px;
+  bottom: -90px;
   width: 3px;
   content: '';
   background: #E54F4F;
