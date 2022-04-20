@@ -1279,6 +1279,18 @@ div#toggle span:after {
   border: 5px solid;
   border-radius: 10px;
   position: relative;
+  max-width: 530px;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0px;
+}
+
+.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p span {
+  margin-right: 5px;
 }
 
 .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction:before {

@@ -164,6 +164,10 @@
                 $(this).children("span").toggleClass("up");
                 $(this).addClass("open");
             }
+            else if ($("+div", this).css("display") !== "none"){
+                $(this).removeClass("open");
+                $("+div", this).slideUp();
+            }
         })
     </script>
 
