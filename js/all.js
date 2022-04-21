@@ -204,7 +204,7 @@ document.getElementById("btn_1").addEventListener("click", function()
   $(this).parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_6").attr("src","image/photo/map/second_grade/color_1.png");
-  $("#changeticket_2").attr("src","image/photo/ticket/second_grade/color_2.png");
+  $("#changeticket_7").attr("src","image/photo/ticket/second_grade/color_2.png");
 });
 
 document.getElementById("btn_2").addEventListener("click", function()
@@ -212,7 +212,7 @@ document.getElementById("btn_2").addEventListener("click", function()
   $(this).parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_7").attr("src","image/photo/map/second_grade/color_2.png");
-  $("#changeticket_3").attr("src","image/photo/ticket/second_grade/color_3.png");
+  $("#changeticket_8").attr("src","image/photo/ticket/second_grade/color_3.png");
 });
 
 document.getElementById("btn_3").addEventListener("click", function()
@@ -220,7 +220,7 @@ document.getElementById("btn_3").addEventListener("click", function()
   $(this).parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_8").attr("src","image/photo/map/second_grade/color_3.png");
-  $("#changeticket_4").attr("src","image/photo/ticket/second_grade/color_4.png");
+  $("#changeticket_9").attr("src","image/photo/ticket/second_grade/color_4.png");
 });
 
 document.getElementById("btn_4").addEventListener("click", function()
@@ -228,7 +228,7 @@ document.getElementById("btn_4").addEventListener("click", function()
   $(this).parent().parent().parent(".ticket_wrap").addClass("exchange_ticket");
   $(this).parent().parent().parent().parent().next(".owl-item").children().children().children().children().removeAttr("disabled");;
   $("#changeimage_9").attr("src","image/photo/map/second_grade/color_4.png");
-  $("#changeticket_5").attr("src","image/photo/ticket/second_grade/color_5.png");
+  $("#changeticket_10").attr("src","image/photo/ticket/second_grade/color_5.png");
 });
 
 document.getElementById("btn_5").addEventListener("click", function()
