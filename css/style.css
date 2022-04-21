@@ -306,7 +306,7 @@ div#toggle span:after {
   -webkit-transform: translate(-50%, 6px);
           transform: translate(-50%, 6px);
   z-index: 1;
-  background-color: #ffe4d1;
+  background-color: #FFE4D1;
   border-radius: 0px 0px 10px 10px;
   white-space: nowrap;
 }
@@ -2237,6 +2237,10 @@ div#toggle span:after {
 .main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_three .map_object_sign_item img {
   position: absolute;
   z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .main.grade_map .map_object .map_object_item .map_object_sign .map_object_sign_one,
@@ -2262,43 +2266,15 @@ div#toggle span:after {
   background-position: center;
   background-size: contain;
   padding: 240px 0px 0px;
-  position: relative;
-}
-
-.main.grade_map .map_book_area_bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 23px;
-  background-image: url(../image/photo/map/map_object/map_book_area_bg_top.png);
-  background-position: center;
-  background-size: 100%;
 }
 
 .main.grade_map .map_book_area {
-  width: 90%;
+  width: 100%;
   padding: 0px 0% 50px;
   margin: 0px auto;
   background-color: #EFE8E0;
   position: relative;
-  border: 10px solid #4160a4;
-}
-
-.main.grade_map .map_book_area::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background-color: #EFE8E0;
-  border-radius: 50% 50% 0% 0%;
-  -webkit-transform: translate(-10px, -100%);
-          transform: translate(-10px, -100%);
-  border: 10px solid #4160a4;
-  border-bottom: 0px solid #EFE8E0;
+  border: 10px solid #004981;
 }
 
 .main.grade_map .map_book_area .ticket_bg {
@@ -2335,7 +2311,7 @@ div#toggle span:after {
 
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left {
   width: 100%;
-  background-color: #f6d367;
+  background-color: #e3cea5;
 }
 
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_left .exchange {
@@ -2375,7 +2351,7 @@ div#toggle span:after {
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .ticket.ticket_right {
   width: 100%;
   height: 80px;
-  background-color: #f6d367;
+  background-color: #e3cea5;
   position: relative;
   border-top: 1px dotted #5B3716;
   display: -webkit-box;
@@ -2432,7 +2408,7 @@ div#toggle span:after {
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal {
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
+  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #e3cea5 0);
   background-size: 0.3rem 0.7rem;
   background-repeat: repeat-y;
 }
@@ -2454,7 +2430,7 @@ div#toggle span:after {
 .main.grade_map .map_book_area .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal {
   height: 100%;
   width: 100%;
-  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #f6d367 0);
+  background: radial-gradient(circle at 0 50%, #EFE8E0 50%, #e3cea5 0);
   background-size: 0.3rem 0.7rem;
   background-repeat: repeat-y;
 }
@@ -2633,8 +2609,8 @@ div#toggle span:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #E54F4F), color-stop(50%, #efe8e0));
-  background: linear-gradient(0deg, #E54F4F 50%, #efe8e0 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #E54F4F), color-stop(50%, #EFE8E0));
+  background: linear-gradient(0deg, #E54F4F 50%, #EFE8E0 50%);
   position: relative;
   padding: 20px 10px;
   z-index: -1;
@@ -2665,7 +2641,7 @@ div#toggle span:after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #F2F2F2;
+  background-color: #fff;
   border-radius: 16px;
   padding: 15px;
   -ms-flex-wrap: wrap;
