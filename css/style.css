@@ -9,7 +9,7 @@
   transition: all .3s ease;
 }
 
-.best_book .swiper .swiper-slide, .main.booklist .book_area .booklist_best_book .book_list a, .owl-prev,
+.best_book .swiper .swiper-slide, .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a, .owl-prev,
 .owl-next {
   -webkit-box-shadow: 1px 1px 5px #4b4b4b45;
           box-shadow: 1px 1px 5px #4b4b4b45;
@@ -1236,17 +1236,17 @@ div#toggle span:after {
   background-color: #E54F4F;
 }
 
-.main.grade .level_correspondence_area {
+.level_correspondence_area {
   margin: 60px auto;
 }
 
-.main.grade .level_correspondence_area h3 {
+.level_correspondence_area h3 {
   color: #E54F4F;
   text-align: center;
   margin: 60px auto;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item {
+.level_correspondence_area .level_correspondence_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1261,18 +1261,18 @@ div#toggle span:after {
   padding: 25px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
   padding: 10px;
   background-color: #fff;
   border: 5px solid;
@@ -1281,18 +1281,18 @@ div#toggle span:after {
   max-width: 530px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 5px 0px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p span {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction p span {
   margin-right: 5px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction:before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction:before {
   content: "";
   width: 0;
   height: 0;
@@ -1307,88 +1307,88 @@ div#toggle span:after {
           transform: translate(0%, -50%);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction {
   border-color: #E54F4F;
   background-color: rgba(229, 79, 79, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.first_grade_introduction h4 {
   color: #ca1e1e;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction {
   border-color: #EB772A;
   background-color: rgba(235, 119, 42, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.second_grade_introduction h4 {
   color: #b75311;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction {
   border-color: #F3BA03;
   background-color: rgba(243, 186, 3, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.third_grade_introduction h4 {
   color: #a78002;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction {
   border-color: #8DA429;
   background-color: rgba(141, 164, 41, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fourth_grade_introduction h4 {
   color: #58671a;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction {
   border-color: #00AD5E;
   background-color: rgba(0, 173, 94, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.fifth_grade_introduction h4 {
   color: #006134;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction {
   border-color: #00B1B9;
   background-color: rgba(0, 177, 185, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.sixth_grade_introduction h4 {
   color: #00686d;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction {
   border-color: #0163C6;
   background-color: rgba(1, 99, 198, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.seventh_grade_introduction h4 {
   color: #013d7a;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction {
   border-color: #4F1AC4;
   background-color: rgba(79, 26, 196, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.eighth_grade_introduction h4 {
   color: #341180;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction {
   border-color: #8400A1;
   background-color: rgba(132, 0, 161, 0.1);
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction h4 {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction.ninth_grade_introduction h4 {
   color: #450055;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
   margin-left: 25px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -1396,79 +1396,79 @@ div#toggle span:after {
   position: relative;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
   border-right: 10px solid #E54F4F;
   border-left: 0px solid;
   left: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
   border-right: 10px solid #F3BA03;
   border-left: 0px solid;
   left: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
   border-right: 10px solid #00AD5E;
   border-left: 0px solid;
   left: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
   border-right: 10px solid #0163C6;
   border-left: 0px solid;
   left: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
   border-right: 10px solid #8400A1;
   border-left: 0px solid;
   left: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
   margin-right: 25px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
   border-left: 10px solid #EB772A;
   border-right: 0px solid;
   right: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
   border-left: 10px solid #8DA429;
   border-right: 0px solid;
   right: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
   border-left: 10px solid #00B1B9;
   border-right: 0px solid;
   right: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
+.level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
   border-left: 10px solid #4F1AC4;
   border-right: 0px solid;
   right: -15px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+.level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
   border-bottom: 0px;
   border-top: 0px;
   border-left: 0px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+.level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
   border: 0px;
   background-color: transparent;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
+.level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1477,18 +1477,23 @@ div#toggle span:after {
           justify-content: flex-end;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+.level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
   border: 0px;
   background-color: transparent;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+.level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
   border-bottom: 0px;
   border-top: 0px;
   border-right: 0px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
+.level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.level_correspondence_marker {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
@@ -1505,7 +1510,7 @@ div#toggle span:after {
           justify-content: center;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker:before {
+.level_correspondence_marker:before {
   position: absolute;
   top: 0;
   bottom: 0px;
@@ -1514,50 +1519,50 @@ div#toggle span:after {
   background: #E54F4F;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.first_level_correspondence_marker:before {
+.level_correspondence_marker.first_level_correspondence_marker:before {
   background: #E54F4F;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.second_level_correspondence_marker:before {
+.level_correspondence_marker.second_level_correspondence_marker:before {
   background: #EB772A;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.third_level_correspondence_marker:before {
+.level_correspondence_marker.third_level_correspondence_marker:before {
   background: #F3BA03;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.fourth_level_correspondence_marker:before {
+.level_correspondence_marker.fourth_level_correspondence_marker:before {
   background: #8DA429;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.fifth_level_correspondence_marker:before {
+.level_correspondence_marker.fifth_level_correspondence_marker:before {
   background: #00AD5E;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.sixth_level_correspondence_marker:before {
+.level_correspondence_marker.sixth_level_correspondence_marker:before {
   background: #00B1B9;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.seventh_level_correspondence_marker:before {
+.level_correspondence_marker.seventh_level_correspondence_marker:before {
   background: #0163C6;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.eighth_level_correspondence_marker:before {
+.level_correspondence_marker.eighth_level_correspondence_marker:before {
   background: #4F1AC4;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker.ninth_level_correspondence_marker:before {
+.level_correspondence_marker.ninth_level_correspondence_marker:before {
   background: #8400A1;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+.level_correspondence_marker .level_correspondence_marker_inner {
   z-index: 2;
   width: 90px;
   line-height: 0;
   position: relative;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1572,90 +1577,85 @@ div#toggle span:after {
   z-index: -1;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner p {
+.level_correspondence_marker .level_correspondence_marker_inner p {
   color: #fff;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner img {
   border-radius: 50%;
   padding: 5px;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner img {
   background-color: #E54F4F;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner::after {
   border-color: #E54F4F;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner img {
   background-color: #EB772A;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner::after {
   border-color: #EB772A;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner img {
   background-color: #F3BA03;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner::after {
   border-color: #F3BA03;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner img {
   background-color: #8DA429;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner::after {
   border-color: #8DA429;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner img {
   background-color: #00AD5E;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner::after {
   border-color: #00AD5E;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner img {
   background-color: #00B1B9;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner::after {
   border-color: #00B1B9;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner img {
   background-color: #0163C6;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner::after {
   border-color: #0163C6;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner img {
   background-color: #4F1AC4;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner::after {
   border-color: #4F1AC4;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner img {
+.level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner img {
   background-color: #8400A1;
 }
 
-.main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner::after {
+.level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner::after {
   border-color: #8400A1;
-}
-
-.main.grade .level_correspondence_area .level_correspondence_item .x-timeline-item_meta {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
 }
 
 .grade_information_modal {
@@ -1790,7 +1790,7 @@ div#toggle span:after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 3;
-  background-color: #EFE8E0;
+  background-color: #e71619;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -1900,12 +1900,12 @@ div#toggle span:after {
 
 .main.booklist .book_area .booklist_best_book {
   max-width: none;
-  width: calc(100% - 10px);
+  width: calc(95% - 10px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0 0 10px;
+  margin: 0 auto;
   padding: 90px 0px 0px;
 }
 
@@ -1966,7 +1966,24 @@ div#toggle span:after {
   color: #8400A1;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list a {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area {
+  width: calc(100% - 180px);
+  position: relative;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper {
+  height: auto;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  height: auto;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a {
   position: relative;
   background: #fff;
   display: -webkit-box;
@@ -1984,21 +2001,20 @@ div#toggle span:after {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   width: 22%;
-  margin: 0px 1.3% 0px;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list a:hover {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
 
-.main.booklist .book_area .booklist_best_book .book_list a .book_content {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a .book_content {
   width: 80%;
   margin: 0px auto;
   padding: 15px 0px;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list a .book_content h4 {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a .book_content h4 {
   color: #5B3716;
   overflow: hidden;
   white-space: nowrap;
@@ -2011,173 +2027,62 @@ div#toggle span:after {
   margin-bottom: 8px;
 }
 
-.main.booklist .book_area .booklist_best_book .book_list a .book_content .value {
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a .book_content .value {
   width: calc(100% - 35px);
 }
 
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next,
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #E54F4F;
+  z-index: 2;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next::before,
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1.5px solid #E54F4F;
+  border-radius: 50%;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next::after,
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev::after {
+  font-size: 30px;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next {
+  right: 0px;
+  left: auto;
+  -webkit-transform: translate(calc(100% + 10px), 0%);
+          transform: translate(calc(100% + 10px), 0%);
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev {
+  left: 0px;
+  left: auto;
+  -webkit-transform: translate(calc(-100% - 10px), 0%);
+          transform: translate(calc(-100% - 10px), 0%);
+}
+
 .main.booklist .level_correspondence_marker {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .main.booklist .level_correspondence_marker:before {
-  position: absolute;
   top: 90px;
   bottom: -90px;
-  width: 3px;
-  content: '';
-  background: #E54F4F;
-}
-
-.main.booklist .level_correspondence_marker.first_level_correspondence_marker:before {
-  background: #E54F4F;
-}
-
-.main.booklist .level_correspondence_marker.second_level_correspondence_marker:before {
-  background: #EB772A;
-}
-
-.main.booklist .level_correspondence_marker.third_level_correspondence_marker:before {
-  background: #F3BA03;
-}
-
-.main.booklist .level_correspondence_marker.fourth_level_correspondence_marker:before {
-  background: #8DA429;
-}
-
-.main.booklist .level_correspondence_marker.fifth_level_correspondence_marker:before {
-  background: #00AD5E;
-}
-
-.main.booklist .level_correspondence_marker.sixth_level_correspondence_marker:before {
-  background: #00B1B9;
-}
-
-.main.booklist .level_correspondence_marker.seventh_level_correspondence_marker:before {
-  background: #0163C6;
-}
-
-.main.booklist .level_correspondence_marker.eighth_level_correspondence_marker:before {
-  background: #4F1AC4;
-}
-
-.main.booklist .level_correspondence_marker.ninth_level_correspondence_marker:before {
-  background: #8400A1;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner {
-  z-index: 2;
-  width: 90px;
-  line-height: 0;
-  position: relative;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  border: 3px solid;
-  background-color: #EFE8E0;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner p {
-  color: #fff;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner img {
-  border-radius: 50%;
-  padding: 5px;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner img {
-  background-color: #E54F4F;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.first_grade_marker_inner::after {
-  border-color: #E54F4F;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner img {
-  background-color: #EB772A;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.second_grade_marker_inner::after {
-  border-color: #EB772A;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner img {
-  background-color: #F3BA03;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.third_grade_marker_inner::after {
-  border-color: #F3BA03;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner img {
-  background-color: #8DA429;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.fourth_grade_marker_inner::after {
-  border-color: #8DA429;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner img {
-  background-color: #00AD5E;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.fifth_grade_marker_inner::after {
-  border-color: #00AD5E;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner img {
-  background-color: #00B1B9;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.sixth_grade_marker_inner::after {
-  border-color: #00B1B9;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner img {
-  background-color: #0163C6;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.seventh_grade_marker_inner::after {
-  border-color: #0163C6;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner img {
-  background-color: #4F1AC4;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.eighth_grade_marker_inner::after {
-  border-color: #4F1AC4;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner img {
-  background-color: #8400A1;
-}
-
-.main.booklist .level_correspondence_marker .level_correspondence_marker_inner.ninth_grade_marker_inner::after {
-  border-color: #8400A1;
 }
 
 /*booklist 優選書單結束*/
@@ -3706,213 +3611,214 @@ input[type="radio" i] ~ label {
   }
   /*index 首頁結束*/
   /*grade 分級對應開始*/
-  .main.grade .level_correspondence_area {
+  .level_correspondence_area {
     margin: 40px auto;
   }
-  .main.grade .level_correspondence_area h3 {
+  .level_correspondence_area h3 {
     margin: 40px auto;
     text-align: left;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item {
+  .level_correspondence_area .level_correspondence_item {
     margin-bottom: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 25px;
+    padding: 0 0 0 25px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: calc(100% - 75px);
     margin-left: 75px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction {
     border: 3px solid;
+    max-width: none;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner .level_introduction::before {
     top: 0;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
     margin-left: 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction::before {
     border-right: 0px solid #E54F4F;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction::before {
     border-right: 0px solid #F3BA03;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction::before {
     border-right: 0px solid #00AD5E;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction::before {
     border-right: 0px solid #0163C6;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction::before {
     border-right: 0px solid #8400A1;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
     border-right: 10px solid #EB772A;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
     border-right: 10px solid #8DA429;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
     border-right: 10px solid #00B1B9;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
     border-right: 10px solid #4F1AC4;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left {
     margin-right: 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
     border-right: 10px solid #E54F4F;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
     border-right: 10px solid #F3BA03;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
     border-right: 10px solid #00AD5E;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
     border-right: 10px solid #0163C6;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
     border-right: 10px solid #8400A1;
     border-left: 0px solid;
     left: -13px;
     top: calc(75px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction::before {
     border-left: 0px solid;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction::before {
     border-left: 0px solid;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction::before {
     border-left: 0px solid;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction::before {
     border-left: 0px solid;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content:nth-child(1) {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content:nth-child(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
     border-left: 3px solid;
     border-right: 0px;
     border-radius: 0px 0px 10px 10px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
     border-color: #E54F4F;
     background-color: rgba(229, 79, 79, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
     border-color: #EB772A;
     background-color: rgba(235, 119, 42, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
     border-color: #F3BA03;
     background-color: rgba(243, 186, 3, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
     border-color: #8DA429;
     background-color: rgba(141, 164, 41, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
     border-color: #00AD5E;
     background-color: rgba(0, 173, 94, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
     border-color: #00B1B9;
     background-color: rgba(0, 177, 185, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
     border-color: #0163C6;
     background-color: rgba(1, 99, 198, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
     border-color: #4F1AC4;
     background-color: rgba(79, 26, 196, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
     border-color: #8400A1;
     background-color: rgba(132, 0, 161, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
     border-left: 3px solid;
     border-radius: 10px 10px 0px 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.first_grade_introduction {
     border-color: #E54F4F;
     background-color: rgba(229, 79, 79, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction {
     border-color: #EB772A;
     background-color: rgba(235, 119, 42, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.third_grade_introduction {
     border-color: #F3BA03;
     background-color: rgba(243, 186, 3, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction {
     border-color: #8DA429;
     background-color: rgba(141, 164, 41, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fifth_grade_introduction {
     border-color: #00AD5E;
     background-color: rgba(0, 173, 94, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction {
     border-color: #00B1B9;
     background-color: rgba(0, 177, 185, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.seventh_grade_introduction {
     border-color: #0163C6;
     background-color: rgba(1, 99, 198, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction {
     border-color: #4F1AC4;
     background-color: rgba(79, 26, 196, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(even) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.ninth_grade_introduction {
     border-color: #8400A1;
     background-color: rgba(132, 0, 161, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3920,53 +3826,53 @@ input[type="radio" i] ~ label {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction {
     border-left: 3px solid;
     border-radius: 10px 10px 0px 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction {
     border-color: #E54F4F;
     background-color: rgba(229, 79, 79, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.second_grade_introduction {
     border-color: #EB772A;
     background-color: rgba(235, 119, 42, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction {
     border-color: #F3BA03;
     background-color: rgba(243, 186, 3, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fourth_grade_introduction {
     border-color: #8DA429;
     background-color: rgba(141, 164, 41, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction {
     border-color: #00AD5E;
     background-color: rgba(0, 173, 94, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.sixth_grade_introduction {
     border-color: #00B1B9;
     background-color: rgba(0, 177, 185, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction {
     border-color: #0163C6;
     background-color: rgba(1, 99, 198, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.eighth_grade_introduction {
     border-color: #4F1AC4;
     background-color: rgba(79, 26, 196, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction {
     border-color: #8400A1;
     background-color: rgba(132, 0, 161, 0.1);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
+  .level_correspondence_area .level_correspondence_item:nth-child(odd) .level_correspondence_content .level_correspondence_content_inner.right .level_introduction {
     border-radius: 0px 0px 10px 10px;
     border-bottom: 0px;
     border-top: 0px;
     border-right: 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker {
+  .level_correspondence_marker {
     position: absolute;
     left: 0;
     height: 100%;
@@ -3975,13 +3881,25 @@ input[type="radio" i] ~ label {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+  .level_correspondence_marker::before {
     bottom: -40px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+  .level_correspondence_marker .level_correspondence_marker_inner {
     width: 75px;
   }
   /*grade 分級對應結束*/
+  /*booklist 優選書單開始*/
+  .level_correspondence_marker {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: initial;
+  }
+  .level_correspondence_marker:before {
+    top: 90px;
+    bottom: -90px;
+  }
+  /*booklist 優選書單結束*/
   /*login 登入開始*/
   .main.login {
     padding-top: 100px;
@@ -4612,65 +4530,65 @@ input[type="radio" i] ~ label {
     color: #fff;
     background-color: #E54F4F;
   }
-  .main.grade .level_correspondence_area {
+  .level_correspondence_area {
     margin: 20px auto;
   }
-  .main.grade .level_correspondence_area h3 {
+  .level_correspondence_area h3 {
     margin: 20px auto;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content {
     width: calc(100% - 50px);
     margin-left: 50px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
     margin-left: 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
     top: calc(50px / 2);
     left: -11px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker::before {
+  .level_correspondence_marker::before {
     width: 1.5px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+  .level_correspondence_marker .level_correspondence_marker_inner {
     width: 50px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner img {
+  .level_correspondence_marker .level_correspondence_marker_inner img {
     padding: 3px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner:after {
+  .level_correspondence_marker .level_correspondence_marker_inner:after {
     width: calc(100% + 5px);
     height: calc(100% + 5px);
     border: 1.5px solid;
@@ -4913,41 +4831,41 @@ input[type="radio" i] ~ label {
     color: #fff;
     background-color: #E54F4F;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content {
     width: calc(100% - 35px);
     margin-left: 35px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right {
     margin-left: 0px;
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.second_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.fourth_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.sixth_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.right .level_introduction.eighth_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.first_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.third_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.fifth_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.seventh_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
+  .level_correspondence_area .level_correspondence_item .level_correspondence_content .level_correspondence_content_inner.left .level_introduction.ninth_grade_introduction::before {
     top: calc(35px / 2);
   }
-  .main.grade .level_correspondence_area .level_correspondence_item .level_correspondence_marker .level_correspondence_marker_inner {
+  .level_correspondence_marker .level_correspondence_marker_inner {
     width: 35px;
   }
   /*grade 分級對應結束*/
