@@ -1906,7 +1906,7 @@ div#toggle span:after {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 90px 0px 0px;
+  padding: 50px 0px 0px;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list {
@@ -4117,9 +4117,6 @@ input[type="radio" i] ~ label {
   }
   /*grade 分級對應結束*/
   /*booklist 優選書單開始*/
-  .main.booklist .book_area .booklist_best_book {
-    padding: 110px 0px 0px;
-  }
   .main.booklist .book_area .booklist_best_book .book_list {
     width: calc(100% - 90px);
     margin-left: 15px;
