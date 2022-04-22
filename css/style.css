@@ -1790,11 +1790,11 @@ div#toggle span:after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 3;
-  background-color: #e71619;
+  background-color: #EFE8E0;
+  border-bottom: 1.5px solid #E54F4F;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  padding: 10px 0px 0px;
 }
 
 .main.booklist .book_area .book_area_menu .book_selection {
@@ -1900,7 +1900,7 @@ div#toggle span:after {
 
 .main.booklist .book_area .booklist_best_book {
   max-width: none;
-  width: calc(95% - 10px);
+  width: calc(95% - 20px);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1910,7 +1910,7 @@ div#toggle span:after {
 }
 
 .main.booklist .book_area .booklist_best_book .book_list {
-  width: 100%;
+  width: calc(100% - 120px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1924,10 +1924,25 @@ div#toggle span:after {
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 {
-  margin: 0 auto;
-  border-radius: 10px;
   text-align: left;
-  margin: calc(42px / 2) 0px 0px 1.3%;
+  margin: calc(45px / 2) 0px 0px 1.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 span {
+  padding: 0 5px;
+  border-right: 1px solid;
+}
+
+.main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 span:nth-last-child(1) {
+  border-right: 0px solid;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_title.first_grade_book_list h3, .main.booklist .book_area .booklist_best_book .book_list .book_list_title.first_grade_book_list span {
@@ -1967,8 +1982,9 @@ div#toggle span:after {
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area {
-  width: calc(100% - 180px);
+  width: 100%;
   position: relative;
+  margin-top: 60px;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper {
@@ -1979,7 +1995,7 @@ div#toggle span:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   height: auto;
 }
 
@@ -2000,7 +2016,6 @@ div#toggle span:after {
   overflow: hidden;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
-  width: 22%;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper .swiper-wrapper a:hover {
@@ -2039,6 +2054,8 @@ div#toggle span:after {
   color: #fff;
   background-color: #E54F4F;
   z-index: 2;
+  right: 0;
+  top: -15px;
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next::before,
@@ -2061,17 +2078,15 @@ div#toggle span:after {
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next {
-  right: 0px;
+  right: 10px;
   left: auto;
-  -webkit-transform: translate(calc(100% + 10px), 0%);
-          transform: translate(calc(100% + 10px), 0%);
 }
 
 .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev {
-  left: 0px;
+  right: 10px;
   left: auto;
-  -webkit-transform: translate(calc(-100% - 10px), 0%);
-          transform: translate(calc(-100% - 10px), 0%);
+  -webkit-transform: translate(calc(-100% - 20px), 0%);
+          transform: translate(calc(-100% - 20px), 0%);
 }
 
 .main.booklist .level_correspondence_marker {
@@ -3889,15 +3904,47 @@ input[type="radio" i] ~ label {
   }
   /*grade 分級對應結束*/
   /*booklist 優選書單開始*/
-  .level_correspondence_marker {
+  .main.booklist {
+    width: 100%;
+  }
+  .main.booklist .tittle,
+  .main.booklist .booklist_introduce {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main.booklist .book_area {
+    width: 100%;
+  }
+  .main.booklist .book_area .book_area_menu {
+    padding: 15px 5% 0px;
+  }
+  .main.booklist .book_area .book_area_menu .book_selection {
+    margin: 0px 15px 15px 0px;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list {
+    width: calc(100% - 105px);
+  }
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 {
+    margin: calc(38px / 2) 0px 0px 1.3%;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area {
+    margin-top: 35px;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next,
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    top: 0px;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next::after,
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev::after {
+    font-size: 20px;
+  }
+  .main.booklist .level_correspondence_marker {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     position: initial;
-  }
-  .level_correspondence_marker:before {
-    top: 90px;
-    bottom: -90px;
   }
   /*booklist 優選書單結束*/
   /*login 登入開始*/
@@ -4070,8 +4117,16 @@ input[type="radio" i] ~ label {
   }
   /*grade 分級對應結束*/
   /*booklist 優選書單開始*/
-  .book_area {
-    margin: 0px auto 80px;
+  .main.booklist .book_area .booklist_best_book {
+    padding: 110px 0px 0px;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list {
+    width: calc(100% - 90px);
+    margin-left: 15px;
+  }
+  .main.booklist .level_correspondence_marker:before {
+    top: 110px;
+    bottom: -110px;
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
@@ -4600,23 +4655,23 @@ input[type="radio" i] ~ label {
   }
   /*question 常見問題結束*/
   /*booklist 優選書單開始*/
-  .book_area .booklist_best_book .book_list_title h3 {
-    margin: 0 auto;
+  .main.booklist .book_area .booklist_best_book .book_list {
+    width: calc(100% - 65px);
   }
-  .book_area .booklist_best_book .book_list a {
-    width: 47.4%;
-    margin: 15px 1.3% 0px;
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 {
+    margin: calc(25px / 2) 0px 0px 1.3%;
   }
-  .book_area .booklist_best_book .book_list a .book_content h4 {
-    height: 50px;
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area {
+    margin-top: 30px;
   }
-  .book_area .page .pagination a,
-  .book_area .page .pagination span {
-    margin: 5px;
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next,
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev {
+    width: 30px;
+    height: 30px;
   }
-  .book_area .page .pagination .firstnn,
-  .book_area .page .pagination .lastnn {
-    display: none;
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-next::after,
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_swiper_area .swiper-button-prev::after {
+    font-size: 15px;
   }
   /*booklist 優選書單結束*/
   /*grade_map 地圖所有內頁開始*/
@@ -4869,6 +4924,20 @@ input[type="radio" i] ~ label {
     width: 35px;
   }
   /*grade 分級對應結束*/
+  /*booklist 優選書單開始*/
+  .main.booklist .book_area .book_area_menu {
+    padding: 15px 1% 0px;
+  }
+  .main.booklist .book_area .book_area_menu .book_selection {
+    margin: 0px 5px 15px 0px;
+  }
+  .main.booklist .book_area .book_area_menu .book_selection a {
+    padding: 5px;
+  }
+  .main.booklist .book_area .booklist_best_book .book_list .book_list_title h3 {
+    margin: 0px 0px 0px 1.3%;
+  }
+  /*booklist 優選書單結束*/
   /*test 讀後測驗開始*/
   .main.test {
     margin: 0px auto 60px;
