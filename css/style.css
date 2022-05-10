@@ -3180,7 +3180,7 @@ h-word {
 /*login 登入開始*/
 .main.login {
   background-image: url(../image/photo/slide/slide_login.png);
-  background-position: left top;
+  background-position: left center;
   background-size: cover;
   margin: 0px auto;
   padding-top: 130px;
