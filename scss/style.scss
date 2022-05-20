@@ -2630,27 +2630,20 @@ div#toggle {
 /*map 閱讀地圖結束*/
 
 /*map_first_grade 一年級地圖開始*/
-.main.map_first_grade {
-    background-color: $map_first_grade_bg;
-
-    .booklist_introduce {
-        .booklist_introduce_button {
-            margin: 20px 0px;
-
-            a {
-                color: $main_color;
-                border: 1px solid $main_color;
-                border-radius: 10px;
-                padding: 5px 10px;
-
-                &:hover {
-                    color: $white;
-                    background-color: $main_color;
+.main {
+    &.grade_map{
+        .map_book_area_bg{
+            .map_book_area{
+                .book_area{
+                    .best_book{
+                        .book_list{
+                            display: flex;
+                        }
+                    }
                 }
             }
         }
     }
-
 }
 
 /*map_first_grade 一年級地圖結束*/

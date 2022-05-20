@@ -2492,24 +2492,10 @@ div#toggle span:after {
 
 /*map 閱讀地圖結束*/
 /*map_first_grade 一年級地圖開始*/
-.main.map_first_grade {
-  background-color: #c4cc23;
-}
-
-.main.map_first_grade .booklist_introduce .booklist_introduce_button {
-  margin: 20px 0px;
-}
-
-.main.map_first_grade .booklist_introduce .booklist_introduce_button a {
-  color: #E54F4F;
-  border: 1px solid #E54F4F;
-  border-radius: 10px;
-  padding: 5px 10px;
-}
-
-.main.map_first_grade .booklist_introduce .booklist_introduce_button a:hover {
-  color: #fff;
-  background-color: #E54F4F;
+.main.grade_map .map_book_area_bg .map_book_area .book_area .best_book .book_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*map_first_grade 一年級地圖結束*/
