@@ -176,54 +176,54 @@
         width: 100%;
         height: 100%;
 
-        .swiper-slide {
-            position: relative;
-            background: $white;
+        .swiper-wrapper{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 10px;
-            overflow: hidden;
-            transform: scale(0.95);
-            @extend %boxShadow_gray;
-
-            &:hover {
-                transform: scale(0.98);
-            }
-
             .swiper-slide {
-                img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                position: relative;
+                background: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                overflow: hidden;
+                transform: scale(0.95);
+                @extend %boxShadow_gray;
+    
+                &:hover {
+                    transform: scale(0.98);
                 }
-            }
-
-            .book_content {
-                width: 80%;
-                margin: 0px auto;
-                padding: 15px 0px;
-
-                h4 {
-                    color: $brown;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    white-space: normal;
-                    width: 100%;
-                    height: 60px;
-                    margin-bottom: 8px;
+    
+                .swiper-slide {
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
-
-                .value {
-                    width: calc(100% - 35px);
+    
+                .book_content {
+                    width: 80%;
+                    margin: 0px auto;
+                    padding: 15px 0px;
+    
+                    h4 {
+                        color: $brown;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        white-space: normal;
+                        width: 100%;
+                        height: 60px;
+                        margin-bottom: 8px;
+                    }
                 }
             }
         }
+
     }
 
     .swiper-pagination {
@@ -542,15 +542,24 @@
     .best_book {
         margin: 0 auto 60px;
 
-        .book_content {
-            h4 {
-                height: 58.13px;
-                margin-bottom: 15px;
+        .swiper {
+            .swiper-wrapper{
+                .swiper-slide {        
+                    .book_content {
+                        h4 {
+                            height: 55px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
             }
         }
+            
+    }
 
     }
-}
+
+
 
 @media screen and (max-width: 768px){
     .slide_index {
@@ -623,16 +632,20 @@
     }
 
     .best_book {
+
         .swiper {
-            .swiper-slide {
-                .book_content {
-                    h4 {
-                        height: 51.66px;
-                        margin-bottom: 5px;
+            .swiper-wrapper{
+                .swiper-slide {        
+                    .book_content {
+                        h4 {
+                            height: 51.66px;
+                            margin-bottom: 5px;
+                        }
                     }
                 }
             }
         }
+            
     }
 
     .book_information_modal {
@@ -735,14 +748,18 @@
     }
 
     .best_book {
+
         .swiper {
-            .swiper-slide {
-                .book_content {
-                    h4 {
-                        height: 49.98px;
+            .swiper-wrapper{
+                .swiper-slide {        
+                    .book_content {
+                        h4 {
+                            height: 49.98px;
+                        }
                     }
                 }
             }
         }
+            
     }
 }
